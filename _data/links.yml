@@ -1,0 +1,70 @@
+menu:
+  - name: "Página Inicial"
+    link: "./"
+    description: "Retorne à página inicial"
+  - name: "Episódios"
+    link: "episodios"
+    description: "Acesse todos os nossos episódios"
+  - name: "Convidados"
+    link: "convidados"
+    description: "Veja quem já participou"
+  - name: "Sobre"
+    link: "sobre"
+    description: "Conheça quem faz"
+  - name: "Contato"
+    link: "contato"
+    description: "Fale conosco"
+
+network:
+  - name: Instagram
+    link: http://www.instagram.com/focoacessivel
+    icon: '<i class="bi bi-instagram"></i>'
+    color: "c13584"
+  - name: Twitter
+    link: http://www.twitter.com/focoacessivel
+    icon: '<i class="bi bi-twitter"></i>'
+    color: "1da1f2"
+  - name: YouTube
+    link: https://www.youtube.com/@focoacessivelpodcast?sub_confirmation=1
+    icon: '<i class="bi bi-youtube"></i>'
+    color: "ff0000"
+  - name: Facebook
+    link: http://www.facebook.com/focoacessivel
+    icon: '<i class="bi bi-facebook"></i>'
+    color: "1877f2"
+  - name: Tik Tok
+    link: http://www.tiktok.com/@focoacessivel
+    icon: '<i class="bi bi-tiktok"></i>'
+    color: "000000"
+
+plataformas:
+  - name: Apple
+    link: "http://apple.com"
+    icon: 'img/plataforma/apple.svg'
+  - name: Google
+    link: "http://Google.com"
+    icon: 'img/plataforma/google.svg'
+  # - name: Overcast
+  #   link: "http://Overcast.com"
+  #   icon: 'img/plataforma/overcast.svg'
+  - name: Deezer
+    link: "http://deezer.com"
+    icon: 'img/plataforma/deezer.svg'
+  # - name: Pocket Casts
+  #   link: "http://Pocket.com"
+  #   icon: 'img/plataforma/pocket.svg'
+  # - name: Radiopublic
+  #   link: "http://Radiopublic.com"
+  #   icon: 'img/plataforma/radiopublic.svg'
+  - name: Spotify
+    link: "http://Spotify.com"
+    icon: 'img/plataforma/spotify.svg'
+  - name: Soundcloud
+    link: "https://soundcloud.com/focoacessivel"
+    icon: 'img/plataforma/soundcloud.svg'
+  - name: Amazon Music
+    link: 'Amazon Music'
+    icon: 'img/plataforma/amazon.svg'
+  - name: Assine o RSS do nosso site
+    link: 'feed.xml'
+    icon: 'img/plataforma/rss.svg'

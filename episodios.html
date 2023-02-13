@@ -1,0 +1,11 @@
+---
+layout: page
+title: "Episódios"
+permalink: episodios.html
+---
+
+<ul class="row list-unstyled">
+    {% for post in site.categories.episodio%}
+        {% include looping.html %}
+    {% endfor %}
+</ul>

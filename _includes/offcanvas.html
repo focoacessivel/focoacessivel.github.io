@@ -1,0 +1,27 @@
+<div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+        <h2 class="offcanvas-title h5" id="offcanvasLabel">Links do site</h2>
+        <button type="button" title="Fechar menu" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between">
+        <section class="paginas py-3">
+            <h3 class="h6 mb-3" id="menu-principal">Menu do Site</h3>
+            {% include menu.html %}
+
+        </section>
+
+        <section class=" py-3 plataformas">
+            <h3 class="h6 mb-3" id="menu-plataformas">Plataformas</h3>
+            <ul class="list-group list-group-flush">
+                {% for item in site.data.links.plataformas %}
+                <li class="list-group-item px-0">
+                    <a href="{{item.link}}" target="_blank" title="Assine no {{item.name}} - nova aba"
+                        rel="noopener noreferrer">
+                        <img class=" me-2" src="{{site.url}}/{{item.icon}}" height="32" width="32" alt="Ícone do {{item.name}}">{{item.name}}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</div>

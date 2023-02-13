@@ -1,0 +1,35 @@
+<a class="visually-hidden-focusable text-white" title="Acesso direto ao" href="#main">conteúdo</a>
+<a class="visually-hidden-focusable text-white" title="Acesso direto ao"  data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas">menu</a>
+{% if page.path contains '_posts' %}<a class="visually-hidden-focusable text-white" title="Acesso direto ao" href="#walkman">Ouça o episódio</a>{% else %}{% endif %}
+<header>
+    <nav class="navbar pt-5 bg-transparent">
+        <div class="container align-items justify-content-center justify-content-md-between">
+            <h1 class="navbar-brand">
+                <a href="{{site.url}}" class='logo text-decoration-none' title="{{site.title}}">
+                    <span>●</span>
+                    Foco Acessível
+                </a>
+            </h1>
+            <ul class="nav align-items-center justify-content-center mt-3 mt-md-0">
+                {% for item in site.data.links.network %}
+                <li class="nav-item">
+                    <a href="{{item.link}}" target="_blank" class="nav-link " title="{{item.name}}">
+                        {{item.icon}}
+                        <span class="visually-hidden">
+                            {{item.name}}
+                        </span>
+                    </a>
+                </li>
+                {% endfor %}
+
+                <li class="nav-item">
+                    <a class="nav-link nav-link-menu" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
+                        aria-controls="offcanvas" title="Acesse todos os links do site">Menu
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+</header>

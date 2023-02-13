@@ -1,0 +1,19 @@
+url: "" 
+baseurl: "" 
+title: "Foco Acessível" 
+description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque!"
+
+permalink: /:categories/:title
+
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
+plugins:
+  - jekyll-feed
+  - jekyll-brotli

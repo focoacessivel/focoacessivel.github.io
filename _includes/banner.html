@@ -1,0 +1,32 @@
+<section class="position-relative">
+  <div class="card border-0 mb-3 w-100">
+    <div class="row g-0">
+      <figure class="col-md-4">
+        <img src="{{site.url}}/{{post.image}}" class="object-fit-cover img-fluid rounded" alt="{{post.alt}}">
+      </figure>
+      <div class="col-md-8 d-flex flex-column justify-content-between">
+        <div class="card-body">
+          <h3 class="h2 border-bottom pb-3 mb-3 ">{{post.title}}</h5>
+          <p class="card-text lead">
+            {{post.description}}
+          </p>
+        </div>
+        <p class="p-3 w-100 text-center">
+          <a href="{{post.url}}" class="px-4 rounded btn btn-acesse ">
+            <i class="bi bi-headphones me-2"></i>Acesse
+          </a>
+        </p>
+        <small class="px-3 d-flex justify-content-between text-muted">
+          <span title="Convidado">
+            <i class="bi bi-people-fill me-2"></i>{{post.guest}}
+          </span>
+          <span title="Duração">
+            <i class="bi bi-clock me-2"></i>{{post.duracao}}
+          </span>
+  
+        </small>
+        <div class="p-3"></div>
+      </div>
+    </div>
+  </div>
+</section>

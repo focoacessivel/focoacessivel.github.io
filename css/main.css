@@ -1,0 +1,164 @@
+:root {
+    --color-principal: #147979
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    padding-bottom: 10rem;
+    background: var(--color-principal);
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand a,
+.navbar-brand a span {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.navbar-brand a {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.navbar-brand a span {
+    border: 1px dashed #fff;
+    margin-right: 1rem;
+    width: 42px;
+    height: 42px;
+    line-height: 1;
+}
+
+.nav-link:focus,
+.nav-link:hover,
+.nav-link {
+    color: #fff;
+}
+
+.nav-link-menu {
+    font-size: var(--bs-body-font-size);
+}
+
+.offcanvas-body a,
+footer a,
+article a {
+    color: var(--color-principal);
+}
+
+article a {
+    text-decoration: none;
+}
+
+article a:hover {
+
+    text-decoration: underline;
+
+
+}
+
+main .btn {
+    background-color: var(--color-principal);
+    border-color: var(--color-principal);
+    color: #fff;
+}
+
+main .btn:active,
+main .btn:focus-visible,
+main .btn:hover {
+    border-color: var(--color-principal);
+    background: #fff;
+    color: var(--color-principal);
+    box-shadow: 1px 1px 1px var(--color-principal);
+}
+
+main a {
+    color: var(--color-principal)
+}
+
+article .btn-listen {
+    background: #fff;
+    border-color: #000;
+    color: #000;
+    box-shadow: 1px 1px 1px #000;
+}
+
+article .btn-listen:hover {
+    color: #fff;
+    border-color: #000;
+    background-color: #000;
+    box-shadow: 1px 1px 1px #000;
+}
+
+a.btn-platform {
+    display: flex !important;
+    align-content: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+}
+
+footer,
+.offcanvas-body {
+    font-size: small;
+}
+
+.offcanvas-body a,
+footer a {
+    text-decoration: none;
+}
+
+.offcanvas-body a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.btn-rss {
+    background-color: #fff;
+    border-color: #F26522;
+    color: #F26522;
+}
+
+.btn-rss:hover {
+    background-color: #F26522;
+    border-color: #F26522;
+    color: #fff;
+}
+
+.episodes ul li:first-child {
+    display: none;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.credits,
+.text-meta {
+    color: rgba(33, 37, 41, 0.75);
+    font-size: small;
+}
+
+.list-links:after {
+    content: ", ";
+}
+
+.list-links:nth-child(4):after {
+    content: " ou no ";
+}
+
+.list-links:last-child:after {
+    content: "."
+}
+
+.transcription-container {
+    overflow-y: auto;
+    height: 15rem
+}

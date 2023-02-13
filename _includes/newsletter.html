@@ -1,0 +1,74 @@
+<!-- Begin Sendinblue Form -->
+<!-- START - We recommend to place the below code in head tag of your website html  -->
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+<style>
+    .sib-form {
+        padding: 0;
+    }
+ 
+
+    .sib-form-block__button {
+        font-size: 16px;
+        text-align: left;
+        font-weight: 700;
+        font-family: "Helvetica", sans-serif;
+        color: #FFFFFF;
+        background-color: #3E4857;
+        border-radius: 3px;
+        border-width: 0px;
+    }   .clickable_link,
+    .form-check-label {
+        font-size: small !important;
+    }
+</style>
+
+<div class="sib-form p-0">
+    <div id="sib-form-container" class="sib-form-container">
+        <div id="error-message" class="sib-form-message-panel alert alert-danger p-2 " role="alert"><i
+                class="bi bi-info-circle me-2"></i>Sua assinatura não pôde ser validada.</div>
+        <div id="success-message" class="sib-form-message-panel alert alert-success p-2 " role="alert"><i
+                class="bi bi-check-circle me-2"></i>Você fez sua assinatura com sucesso.</div>
+
+        <div id="sib-container" class="sib-container--large sib-container--vertical p-0">
+            <form id="sib-form" method="POST" action="https://748309b3.sibforms.com/serve/MUIEAGyYYoaRAAgIEX-AIEeXUnDEc1Bb8EJgEaU82caS87wdQsaXZSBwBH2ECZpWnxbq2_SBBZqLCrskB2FgfnKp2BLbdkEJpVMBSy9p27gM24LKgOtQzEsR2PO8X6i9L8CSFmj9RcQQjjOq1RbwQTQd-4Lm3g-xGOIQMbRswjHj_Hs-Q-FPDKdXnNPVswEARrvjxQfIbXckDgHl" data-type="subscription">
+                <input class="rounded p-2 py-2 m-0 mb-1 border w-100" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Insira seu e-mail para fazer sua assinatura" data-required="true" required />
+                <div class="d-flex justift-content-between my-3 align-items-center">
+                    <div class=" flex-grow-1 form-check">
+                        <label class="form-check-label" for="OPT_IN">
+                        <input class="form-check-input" type="checkbox" value="1" id="OPT_IN" name="OPT_IN">
+                            Concolordo em receber os emails.
+                        </label>
+                        <a target="_blank" title=" Usamos a Sendinblue como nossa plataforma de marketing. Ao clicar abaixo para enviar este formulário, você reconhece que as informações fornecidas por você serão transferidas para a Sendinblue para processamento, de acolordo com o termos de uso deles" class="clickable_link" href="https://pt.sendinblue.com/legal/termsofuse/">Termos de uso</a>
+                    </div>
+
+                    <div class="sib-form-block">
+
+                        <button class="sib-form-block__button sib-form-block__button-with-loader"
+                            form="sib-form" type="submit">
+                            ASSINAR
+                        </button>
+
+                    </div>
+                </div>
+                <input type="text" name="email_address_check" value="" class="input--hidden">
+                <input type="hidden" name="locale" value="pt">
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    window.REQUIRED_CODE_ERROR_MESSAGE = 'Escolha um código de país';
+    window.LOCALE = 'pt';
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "A informação fornecida não é válida. Verifique o formato do campo e tente novamente.";
+    window.REQUIRED_ERROR_MESSAGE = "Este campo não pode ser deixado em branco. ";
+    window.GENERIC_INVALID_MESSAGE = "A informação fornecida não é válida. Verifique o formato do campo e tente novamente.";
+    window.translation = {
+        common: {
+            selectedList: '{quantity} lista selecionada',
+            selectedLists: '{quantity} listas selecionadas'
+        }
+    };
+
+    var AUTOHIDE = Boolean(0);
+</script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
