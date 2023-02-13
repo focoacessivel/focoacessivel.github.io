@@ -1,5 +1,6 @@
-url: "" 
-baseurl: "" 
+domain: focoacessivel.github.io
+url: http://focoacessivel.github.io
+baseurl: /focoacessivel/ 
 title: "Foco Acessível" 
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque!"
 
