@@ -11,18 +11,8 @@ image: 'img/banner.png'
 {% endfor %}
 
 <section class="text-center py-5 my-5">
-  <h2 class="h4 mb-5">Acesse o podcast através das plataformas</h2>
-  <div class="d-flex col-12 col-md-8 mx-auto justify-content-evenly">
-    {% for item in site.data.links.plataformas %}
-    <h3>
-      <a href="{{item.link}}" class="btn-platform" target="_blank" title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer">
-      <img title="Assine no {{item.name}}" src="{{site.url}}/{{item.icon}}" height="32" width="32" alt="{{item.alt}}">
-      <span class="visually-hidden-focusable">{{item.name}}</span>
-    </a>
-  
-  </h3>
-    {% endfor %}
-  </div>
+  <h2 class="h4 mb-4">Acesse o podcast através das plataformas</h2>
+  {% include platforms.html %}   
 </section>
 
 <section class="episodes">

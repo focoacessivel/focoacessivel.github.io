@@ -6,7 +6,11 @@
       </figure>
       <div class="col-md-8 d-flex flex-column justify-content-between">
         <div class="card-body">
-          <h3 class="h2 border-bottom pb-3 mb-3 ">{{post.title}}</h5>
+          <h3 class="h2 border-bottom pb-3 mb-3 ">
+            <a href="{{post.url}}" class="text-decoration-none">
+              {{post.title}}
+            </a>
+          </h3>
           <p class="card-text lead">
             {{post.description}}
           </p>

@@ -2,7 +2,11 @@
   <div class="card pb-2">
     <img src="{{site.url}}/{{post.image}}" class="card-img-top" alt="{{post.alt}}">
     <div class="card-body">
-      <h3 class="card-title h5 mb-3">{{post.title}}</h3>
+      <h3 class="card-title h5 mb-3">
+        <a href="{{post.url}}" class="text-decoration-none">
+          {{post.title}}
+        </a>
+      </h3>
       <p class="card-text text-muted">{{post.description}}</p>
     </div>
     

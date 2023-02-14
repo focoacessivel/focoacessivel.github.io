@@ -1,0 +1,22 @@
+<div class="d-flex flex-wrap justify-content-center">
+  {% for item in site.data.links.plataformas %}
+  <a
+    href="{{item.link}}"
+    target="_blank"
+    title="Assine no {{item.name}} - nova aba"
+    rel="noopener noreferrer"
+    class="platform-{{item.link | slugify}} p-4"
+  >
+    <img
+      src="{{site.url}}/{{item.icon}}"
+      style="
+        width: 2rem !important;
+        height: 2rem !important;
+        max-width: 2rem !important;
+      "
+      alt="{{item.alt}}"
+      class="d-block"
+    />
+  </a>
+  {% endfor %}
+</div>

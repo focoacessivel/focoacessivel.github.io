@@ -15,16 +15,9 @@
 
   <div class="col-12 col-md-4 mb-3">
     <h3 class="h5 mb-4">Plataformas</h3>
-    <div class="row d-flex justify-content-center">
-      {% for item in site.data.links.plataformas %}
-          <div class="col-4 col-md-4 pb-5 text-center platform-{{item.link | slugify}}">
-            <a href="{{item.link}}" target="_blank" title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer">
-              <img src="{{site.url}}/{{item.icon}}" height="32" width="32" alt="{{item.alt}}">
-            </a>
-          </div>
-      {% endfor %}
+    <div class="d-flex flex-wrap justify-content-center">
+      {% include platforms.html %}   
 
-      
     </div>
   </div>
 
