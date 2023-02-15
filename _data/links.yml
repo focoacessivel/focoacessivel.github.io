@@ -40,31 +40,31 @@ network:
 plataformas:
   - name: Apple
     link: "http://apple.com"
-    icon: 'img/plataforma/apple.svg'
+    icon: 'apple.svg'
   - name: Google
     link: "http://Google.com"
-    icon: 'img/plataforma/google.svg'
+    icon: 'google.svg'
   # - name: Overcast
   #   link: "http://Overcast.com"
-  #   icon: 'img/plataforma/overcast.svg'
+  #   icon: 'overcast.svg'
   - name: Deezer
     link: "http://deezer.com"
-    icon: 'img/plataforma/deezer.svg'
+    icon: 'deezer.svg'
   # - name: Pocket Casts
   #   link: "http://Pocket.com"
-  #   icon: 'img/plataforma/pocket.svg'
+  #   icon: 'pocket.svg'
   # - name: Radiopublic
   #   link: "http://Radiopublic.com"
-  #   icon: 'img/plataforma/radiopublic.svg'
+  #   icon: 'radiopublic.svg'
   - name: Spotify
     link: "http://Spotify.com"
-    icon: 'img/plataforma/spotify.svg'
+    icon: 'spotify.svg'
   - name: Soundcloud
     link: "https://soundcloud.com/focoacessivel"
-    icon: 'img/plataforma/soundcloud.svg'
+    icon: 'soundcloud.svg'
   - name: Amazon Music
     link: 'Amazon Music'
-    icon: 'img/plataforma/amazon.svg'
+    icon: 'amazon.svg'
   - name: Assine o RSS do nosso site
     link: 'feed.xml'
-    icon: 'img/plataforma/rss.svg'
+    icon: 'rss.svg'
