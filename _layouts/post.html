@@ -2,18 +2,17 @@
 layout: default
 ---
 
-<link rel="stylesheet" href="{{site.url}}/css/plyr.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.3/plyr.css">
 <article class=" position-relative">
 
-  <section class="position-relative">
-    <div class="card border-0 mb-3 w-100">
+    <header class="card border-0 mb-3 w-100 position-relative">
       <div class="row g-0">
         <figure class="col-md-4">
           <img src="{{site.url}}/{{page.image}}" class="object-fit-cover img-fluid rounded" alt="{{page.alt}}">
         </figure>
         <div class="col-md-8 d-flex flex-column justify-content-between">
           <div class="card-body">
-            <h3 class="h2 border-bottom pb-3 mb-3 ">{{page.title}}</h5>
+            <h2 class="h2 border-bottom pb-3 mb-3 ">{{page.title}}</h2>
             <p class="card-text lead">
               {{page.description}}
             </p>
@@ -39,9 +38,7 @@ layout: default
           <div class="p-3"></div>
         </div>
       </div>
-    </div>
-  </section>
-  
+  </header>
   <div class="content pt-4 mt-4 border-top p-0" id="conteudo">
     
     {{ content }}
@@ -57,6 +54,5 @@ layout: default
 
 </article>
 
-<script src="{{site.url}}/js/polyfill.min.js"></script>
-<script src="{{site.url}}/js/plyr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.3/plyr.min.js"></script>
 <script src="{{site.url}}/js/main.js"></script>

@@ -1,7 +1,8 @@
 <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
     <div class="offcanvas-header">
         <h2 class="offcanvas-title h5" id="offcanvasLabel">Links do site</h2>
-        <button type="button" title="Fechar menu" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button type="button" title="Fechar menu" class="btn-close" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
     </div>
     <div class="offcanvas-body d-flex flex-column justify-content-between">
         <section class="paginas py-3">
@@ -17,7 +18,8 @@
                 <li class="list-group-item px-0">
                     <a href="{{item.link}}" target="_blank" title="Assine no {{item.name}} - nova aba"
                         rel="noopener noreferrer">
-                        <img class=" me-2" src="{{site.url}}/{{item.icon}}" height="32" width="32" alt="Ícone do {{item.name}}">{{item.name}}
+                        <img class=" me-2" src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" height="32"
+                            width="32" alt="Ícone do {{item.name}}">{{item.name}}
                     </a>
                 </li>
                 {% endfor %}

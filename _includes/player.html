@@ -1,4 +1,4 @@
-<p class="h4 my-5">Ouça o episódio através do player</p>
+<p class="h4 my-5">Ouça o episódio</p>
 
 <div id="walkman">
   <audio id="player" crossorigin playsinline controls>
@@ -7,13 +7,4 @@
 </div>
 <div class="border-top my-5"></div>
 
-
-<h2 class="h4 mb-5">Ouça o episódio em outras plataformas plataformas</h2>
-  <div class="d-flex col-12 col-md-8 mx-auto justify-content-evenly">
-    {% for item in site.data.links.plataformas %}
-    <a href="{{item.link}}" class="btn-platform" target="_blank" title="Assine no {{item.name}} - nova aba"
-      rel="noopener noreferrer">
-      <img title="Assine no {{item.name}}" src="{{site.url}}/{{item.icon}}" height="32" width="32" alt="{{item.alt}}">
-    </a>
-    {% endfor %}
-  </div>
+{% include platforms.html %}   
