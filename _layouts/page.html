@@ -3,12 +3,13 @@ layout: default
 ---
 
 
-<div class="pt-4 p-3">
+<div class="">
+    {% include breadcrumbs.html %}
     {% if page.image %}
-   <figure class="mb-5">
+    <figure class="mb-5">
         <img src="{{page.image}}" title="Banner da página" alt="{{page.alt}}" class="w-100 rounded img-fluid">
         <figcaption class="text-small text-muted text-center"><small>{{page.legenda}}</small></figcaption>
-    </figure> 
+    </figure>
     {% else%}
 
     {% endif %}

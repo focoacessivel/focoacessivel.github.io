@@ -1,5 +1,5 @@
 :root {
-  --main-color: #480607;
+  --main-color: #127979;
 }
 img {
   max-width: 100%;
@@ -7,6 +7,7 @@ img {
 body {
   padding-bottom: 10rem;
   background: var(--main-color);
+  font-family: "Noto Sans", sans-serif;
 }
 .navbar-brand {
   margin: 0;
@@ -21,6 +22,8 @@ body {
 .navbar-brand a {
   color: #fff;
   font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .navbar-brand a span {
   border: 1px dashed #fff;
@@ -104,13 +107,6 @@ footer a:hover {
   background-color: #f26522;
   border-color: #f26522;
   color: #fff;
-}
-.episodes ul li:first-child {
-  display: none;
-  overflow: hidden;
-  width: 0;
-  height: 0;
-  opacity: 0;
 }
 .credits,
 .text-meta {
