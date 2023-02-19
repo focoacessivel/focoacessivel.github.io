@@ -1,20 +1,15 @@
 ---
 layout: default
 ---
-
-
 <div class="">
     {% include breadcrumbs.html %}
     {% if page.image %}
-    <figure class="mb-5">
-        <img src="{{page.image}}" title="Banner da página" alt="{{page.alt}}" class="w-100 rounded img-fluid">
-        <figcaption class="text-small text-muted text-center"><small>{{page.legenda}}</small></figcaption>
-    </figure>
-    {% else%}
-
+        <figure class="mb-5">
+            <img src="{{page.image}}" title="Banner da página" alt="{{page.alt}}" class="w-100 rounded img-fluid">
+            <figcaption class="text-small text-muted text-center"><small>{{page.legenda}}</small></figcaption>
+        </figure>
+        {% else%}
     {% endif %}
-
     <h2 class="display-4 mb-4" id="intro">{{page.title}}</h2>
-
     {{ content }}
 </div>

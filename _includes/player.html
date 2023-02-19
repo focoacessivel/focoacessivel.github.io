@@ -1,10 +1,15 @@
-<p class="h4 my-5">Ouça o episódio</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.3/plyr.css">
 
+<p class="h4 my-5">Ouça o episódio</p>
 <div id="walkman">
   <audio id="player" crossorigin playsinline controls>
-    <source src="{{page.file}}" type="audio/mp3" />
+    {% if page.file-ogg %}<source src="{{page.file-ogg}}" type="audio/ogg" />{% else %}{% endif %}
+    {% if page.file-mp3 %}<source src="{{page.file-mp3}}" type="audio/mp3" />{% else %}{% endif %}
   </audio>
 </div>
 <div class="border-top my-5"></div>
 
-{% include platforms.html %}   
+{% include platforms.html %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.3/plyr.min.js"></script>
+<script src="{{site.url}}/js/main.js"></script>
