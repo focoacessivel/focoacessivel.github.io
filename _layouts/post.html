@@ -19,10 +19,17 @@ layout: default
           <a href="#conteudo" title="Acesse o conteúdo do episódio" class="px-4 rounded btn ">
             <i class="bi bi-arrow-down me-2"></i>Descrição do episódio
           </a>
+
+          {% if page.file-ogg or page.file-mp3 %}
           <span class="d-block d-md-inline-block p-2"></span>
           <a href="#walkman" title="Clique para acessar o player do episódio" class="px-4 rounded btn btn-listen">
             <i class="bi bi-headphones me-2"></i>Ouça o episódio
           </a>
+          {% else %}
+          {% endif %}
+
+
+
         </p>
         <small class="px-3 d-flex justify-content-between text-muted">
           <span title="Convidado">
@@ -47,13 +54,15 @@ layout: default
   <div class="content pt-4 mt-4 border-top p-0" id="conteudo">
     <!-- Conteudo -->
     {{ content }}
-    
+
     <!-- Player -->
     {% if page.file-ogg or page.file-mp3 %}
-      {% include player.html %}
-      {% else %}
+    {% include player.html %}
+    {% else %}
     {% endif %}
-  
+
   </div>
   {% include share.html %}
 </article>
+{% include comments.html %} 
+    

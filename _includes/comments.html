@@ -1,0 +1,25 @@
+{% if page.comments %}
+<h3 class="mt-5">Comentários</h3>
+
+
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    var disqus_shortname = '{{ site.disqus_shortname }}';
+  var disqus_identifier = '{{ page.url | absolute }}';
+  };
+  (function () {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://foco-acessivel.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+
+
+<script id="dsq-count-scr" src="//foco-acessivel.disqus.com/count.js" async></script>
+
+
+{% endif %}

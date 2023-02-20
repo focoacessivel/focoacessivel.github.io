@@ -1,0 +1,73 @@
+---
+layout: compress
+title: "Nossos Links"
+image: 'img/banner.png'
+permalink: links.html
+---
+
+{% include head.html %}
+<div class="p-5 container-fluid ">
+    <figure class="mx-auto d-block rounded-circle bg-white m-2" style="width:100px; height:100px; ">
+        <img src="{{site.url}}/img/icon/icon-1.png" class=" rounded-circle img-fluid" alt="Dois círculos um maior, com fundo branco e tracejado verde e um menor no centro com fundo verde">
+    </figure>
+
+    <header class="text-center text-white">
+        <h1 class="fw-bolder text-uppercase">{{site.title}}</h1>
+        <div class="description">{{site.description-short}}</div>
+    </header>
+   
+    <section class="my-5 ">
+        <h2 class="mt-3 fw-bold text-white">Nosso site</h2>
+        <a href="{{site.url}}" class="text-muted text-decoration-none">
+            <figure class="card shadow">
+                <img src="{{site.url}}/img/banner.png" class="card-img-top" alt="...">
+                <div class="card-body text-center"><strong class="card-text">Acesse nosso site </strong></div>
+            </figure>
+        </a>
+    </section>
+    <section>
+        <h2 class="mt-3 fw-bold text-white">Últimos episódios</h2>
+        <ul class="list-group  shadow">
+            {% for post in site.categories.episodios limit:4%}
+            <li class="p-3 list-group-item"><a href="{{post.url}}" class="text-decoration-none text-muted" tltle="Acesse o episódio">{{post.title}}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="my-5">
+        <h2 class="fw-bold text-white">Fale conosco</h2>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="mailto:{{site.email}}" class="text-decoration-none text-muted d-flex align-items-center">
+                    <i class=" fs-2 me-3 bi bi-envelope-fill" style="color: #ea4335"></i> <span>Fale conosco</span>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="https://messenger.me/focoacessivel" class="text-decoration-none text-muted d-flex align-items-center">
+                    <i class=" fs-2 me-3 bi bi-messenger" style="color: #0084ff"></i> <span>Messenger</span>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="https://t.me/+fzpvdBFiPgM4ODBh" class="text-decoration-none text-muted d-flex align-items-center">
+                    <i class=" fs-2 me-3 bi bi-telegram" style="color: #0088cc"></i> <span>Canal do Telegram</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2 class="mt-3 fw-bold text-white">Nossas redes</h2>
+        <ul class="list-group">
+           {% for item in site.data.links.network %}
+            <li class="list-group-item">
+                <a href="{{item.link}}" target="_blank" class="text-decoration-none text-muted d-flex align-items-center" title="Nos acompanhe também no {{item.name}} - nova aba">
+                <span class="fs-2 me-3" style="color: #{{item.color}}">{{item.icon}}</span>
+                <span>{{item.name}}</span>
+            </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>
+</body>
+
+</html>

@@ -57,4 +57,4 @@ plataformas:
   - name: Amazon Music
     link: 'Amazon Music'
   - name: RSS
-    link: 'feed.xml'
+    link: "http://focoacessivel.github.io/feed.xml"
