@@ -5,6 +5,5 @@ permalink: contato.html
 ---
 
 <p>Esse podcast é feito através de feedbacks. Para mandar elogios, críticas ou sugestões, basta escrever um email para <a href="mailto:focoacessivel@gmail.com" title="Iremos responder o mas rápido possível">focoacessivel@gmail.com</a>.</p>
-<p>Siga também nossos perfis nas network sociais: {% for item in site.data.links.network %}<span class="list-links"><a href="{{item.link}}" target="_blank" title="Nos acompanhe também no {{item.name}} - Nova aba" style="color: #{{item.color}}">{{item.name}}</a></span>{% endfor %}</p>
-
+<p>Siga também nossos perfis nas network sociais: <span class="list-links">{% for item in site.data.links.network %}<span><a href="{{item.link}}" target="_blank" title="Nos acompanhe também no {{item.name}} - Nova aba">{{item.name}}</a></span>{% endfor %}</span></p>
 <p>Não se esqueça de <a href="#newsletter">assinar nossa newsletter</a> e nosso <a href="{{site.url}}/feed.xml">RSS</a> 😀.</p>

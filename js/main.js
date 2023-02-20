@@ -1,6 +1,12 @@
-// Change "{}" to your options:
-// https://github.com/sampotts/plyr/#options
+//Player
 const player = new Plyr("#player");
 
-// Expose player so it can be used from the console
 window.player = player;
+
+// Analitycs
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+gtag("config", "G-JSVR5N10GY");

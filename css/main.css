@@ -113,16 +113,23 @@ footer a:hover {
   color: rgba(33, 37, 41, 0.75);
   font-size: small;
 }
-.list-links:after {
+
+.list-links span:first-child:before {
+  content: "";
+}
+.list-links span:before {
   content: ", ";
 }
-.list-links:nth-child(4):after {
-  content: " ou no ";
+.list-links span:last-child:before {
+  content: " e ";
 }
-.list-links:last-child:after {
+.list-links span:last-child:after {
   content: ".";
 }
 .transcription-container {
   overflow-y: auto;
   height: 15rem;
+}
+.avatar .user--refresh {
+  background: transparent;
 }
