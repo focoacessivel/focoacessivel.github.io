@@ -1,14 +1,45 @@
 title: "Foco Acessível" 
 description: "Foco Acessível: conversas inspiradoras e informativas sobre acessibilidade e inclusão com uso da tecnologia. Junte-se a nós!"
-description-short: Podcast com profissionais de tecnologia e acessibilidade
-
-
-site.banner: 'img/banner.png'
-
+tagline : Podcast com profissionais de tecnologia e acessibilidade
 permalink: /:categories/:title
 
 email: focoacessivel@gmail.com
 disqus_shortname: foco-acessivel
+
+author: Wagner Beethoven
+banner: 'img/banner.png'
+image: 'img/banner.png'
+logo: '/img/logo/logo.png'
+
+twitter:
+  username: focoacessivel
+  card: summary_large_image
+
+facebook:
+  # app_id: 1234
+  publisher: 111914578444788  # page
+  admins: 10161123949632868   # profile
+
+social:
+  name: Wagner Beethoven
+  links:
+    - https://twitter.com/wagnerbeethoven
+    - https://www.facebook.com/wagnerbeethoven
+    - https://www.linkedin.com/in/wagnerbeethoven
+    - https://github.com/wagnerbeethoven
+    - https://behance.net/wagnerbeethoven
+    - https://wagnerbeethoven.medium.com/
+
+locale: pt-BR
+
+webmaster_verifications:
+  google: 7-Sd29Rki1XiyKpJpJprXYqISN18fWrbioJ9-SheyC0
+  bing: 0CA3CBC6739B201C0C6101FDC414E75B
+  # alexa: 1234
+  # yandex: 1234
+  # baidu: 1234
+  # facebook: 1234
+
 
 compress_html:
   clippings: []
@@ -22,3 +53,4 @@ compress_html:
 plugins:
   - jekyll-feed
   - jekyll-brotli
+  - jekyll-seo-tag
