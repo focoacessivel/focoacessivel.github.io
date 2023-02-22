@@ -86,6 +86,11 @@ a.btn-platform {
   width: 64px;
   height: 64px;
 }
+.platforms a img {
+  width: 2rem;
+  height: 2rem;
+  max-width: 2rem;
+}
 footer,
 .offcanvas-body {
   font-size: small;
@@ -112,6 +117,21 @@ footer a:hover {
 .text-meta {
   color: rgba(33, 37, 41, 0.75);
   font-size: small;
+}
+.social-instagram {
+  color: #c13584;
+}
+.social-twitter {
+  color: #1da1f2;
+}
+.social-youtube {
+  color: #ff0000;
+}
+.social-facebook {
+  color: #1877f2;
+}
+.social-tik-tok {
+  color: #000000;
 }
 
 .list-links span:first-child:before {

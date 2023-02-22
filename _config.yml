@@ -1,6 +1,9 @@
 title: "Foco Acessível" 
-description: "O FOco Acessível tem o objetivo de criar uma conversa significativa e informativa sobre acessibilidade e inclusão, e esperamos inspirar e informar nossos ouvintes sobre como a tecnologia pode ser usada para construir uma sociedade mais acessível e inclusiva."
+description: "Foco Acessível: conversas inspiradoras e informativas sobre acessibilidade e inclusão com uso da tecnologia. Junte-se a nós!"
 description-short: Podcast com profissionais de tecnologia e acessibilidade
+
+
+site.banner: 'img/banner.png'
 
 permalink: /:categories/:title
 

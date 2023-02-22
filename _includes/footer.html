@@ -30,10 +30,10 @@
       <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.pt_BR" title="Detalhes sobre o atribuição não comercial 4.0 internacional - nova aba" target="_blank">CC BY-NC 4.0</a>
       Feito no <a href="http://jekyllrb.com" target="_blank" title="Site do Jekyll - nova aba">Jekyll</a> com <span title="Amor">❤️</span> e <span title="Café">☕</span> em Olinda, Pernambuco.
     </p>
-    <ul class="list-unstyled d-flex mb-0 justify-content-center">
+    <ul class="socials list-unstyled d-flex mb-0 justify-content-center">
       {% for item in site.data.links.network %}
       <li class="mx-2">
-        <a href="{{item.link}}" target="_blank" class="nav-link px-0 " title="Nos acompanhe também no {{item.name}} - nova aba" style="color: #{{item.color}}">{{item.icon}}<span class="visually-hidden-focusable">{{item.name}}</span></a>
+        <a href="{{item.link}}" target="_blank" class="social-{{item.name | slugify }} nav-link px-0 " title="Nos acompanhe também no {{item.name}} - nova aba">{{item.icon}}<span class="visually-hidden-focusable">{{item.name}}</span></a>
       </li>
       {% endfor %}
     </ul>
@@ -47,4 +47,3 @@
 
 <script src="{{site.url}}/js/main.js"></script>
 {% include offcanvas.html %}
-</body>

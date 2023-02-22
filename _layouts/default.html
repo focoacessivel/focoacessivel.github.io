@@ -2,9 +2,24 @@
 layout: compress
 ---
 
-{% include head.html %}
-{% include header.html %}
-<main id='main' class="container mt-5 p-5 bg-white rounded shadow">
-    {{ content }}
-</main>
-{% include footer.html %}
+<body class="p-4 mb-5">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JSVR5N10GY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JSVR5N10GY');
+    </script>
+    {% include head.html %}
+    {% include header.html %}
+    <main id='main' class="container mt-5 p-5 bg-white rounded shadow">
+        {{ content }}
+    </main>
+    {% include footer.html %}
+
+</body>
+
+</html>

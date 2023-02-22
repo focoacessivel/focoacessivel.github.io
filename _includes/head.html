@@ -19,19 +19,27 @@
 
     <meta name="description" content="{% if description.size > 10 %}{{ description }}{% else %}{{ site.description }}{% endif %}">
   
-    <meta property="og:title" content="{{ page.title }}"/>
-    <meta property="og:image" content="{{ page.image }}"/>
-    <meta property="og:url" content="{{ site.url }}/{{ page.url }}"/>
-    <meta property="og:type" content="article">
-    <meta property="og:site_name" content="{{ site.title }}"/>
-    <meta property="og:description" content="{% if description.size > 10 %}{{ description }}{% else %}{{ site.description }}{% endif %}"/>
+    <meta property="og:type"                content="article">  
+    <meta property="article:publisher"      content="http://www.facebook.com/focoacessivel" />
+    <meta property="article:author"         content="https://www.facebook.com/wagnerbeethoven" />
+    <meta property="article:published_time" content="{{ page.date }}" />
+    <meta property="og:locale"              content="pt_BR">
+    <meta property="og:title"               content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:url"                 content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:site_name"           content="{{ site.title }}"/>
+    <meta property="og:description"         content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:image"               content="{{ site.url }}/{{ page.image }}" />
 
-    <meta name="twitter:card" content="summary">
+
+    <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content="@focoacessivel">
-    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta name="twitter:image" content="{{ site.url }}/{{ page.image }}" />
     <meta name="twitter:url" content="{{ site.url }}/{{ page.url }}" />
-    <meta name="twitter:description" content="{% if description.size > 10 %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:site" content="@webjeda" />
+    <meta name="twitter:creator" content="@wagnerbeethoven">
+    <meta name="twitter:card" content="summary">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
@@ -40,14 +48,3 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 
-<body class="p-4 mb-5">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JSVR5N10GY"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-JSVR5N10GY');
-    </script>
