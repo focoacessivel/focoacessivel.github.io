@@ -31,15 +31,13 @@
     <meta property="og:image"               content="{{ site.url }}/{{ page.image }}" />
 
 
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:site" content="@focoacessivel">
-    <meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="twitter:image" content="{{ site.url }}/{{ page.image }}" />
-    <meta name="twitter:url" content="{{ site.url }}/{{ page.url }}" />
-    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="twitter:site" content="@webjeda" />
-    <meta name="twitter:creator" content="@wagnerbeethoven">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card"               content="summary_large_image"/>
+    <meta name="twitter:site"               content="@focoacessivel">
+    <meta name="twitter:title"              content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:image"              content="{{ site.url }}/{{ page.image }}" />
+    <meta name="twitter:url"                content="{{ site.url }}/{{ page.url }}" />
+    <meta name="twitter:description"        content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:creator"            content="@wagnerbeethoven">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
