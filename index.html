@@ -4,26 +4,30 @@ image: 'img/banner.png'
 title: Podcast sobre tecnologia, acessibilidade e inclusão
 ---
 
-<h2 class="h4 mb-5">Episódio recente</h2>
 
 {% for post in site.categories.episodios limit:1%}
-  {% include banner.html %}
+<h2 class="h4 mb-5">Episódio recente</h2>
+{% include banner.html %}
 {% endfor %}
 
 <section class="text-center py-5 my-5">
   <h2 class="h4 mb-4">Acesse o podcast através das plataformas</h2>
-  {% include platforms.html %}   
+  {% include platforms.html %}
 </section>
 
+{% for post in site.categories.episodios limit:1%}
 <section class="episodes">
   <h2 class="mb-4">Outros episódios</h2>
   <div class="list-group">
-
+    {% endfor %}
     {% for post in site.categories.episodios limit:4%}
+
     {% include looping.html %}
     {% endfor %}
+    {% for post in site.categories.episodios limit:1%}
   </div>
 </section>
+{% endfor %}
 
 </body>
 

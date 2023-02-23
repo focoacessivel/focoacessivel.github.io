@@ -1,31 +1,7 @@
 guest:
-  - name: Terra Macfarlane
-    image: http://lorempixel.com.br/500/500/?1
-    role: Condimentum 
-    bio: Curabitur sed enim nostra mi non sed rutrum purus taciti.
-    link: #
-    alt: image alt
-  - name: Cassy James
-    image: http://lorempixel.com.br/500/500/?2
-    role: Est
-    bio: Justo lobortis mauris sapien lacus lobortis.
-    link: #
-    alt: image alt
-  - name: Justina Ferreira
-    image: http://lorempixel.com.br/500/500/?3
-    role: Etiam
-    bio: Imperdiet tempus mollis dolor himenaeos ac risus.
-    link: #
-    alt: image alt
-  - name: Makeda Howard
-    image: http://lorempixel.com.br/500/500/?4
-    role: Molestie 
-    bio: Lacinia euismod augue dictumst consectetur habitant quisque euismod class maecenas.
-    link: #
-    alt: image alt
-  - name: Cathrine Wallis
-    image: http://lorempixel.com.br/500/500/?5
-    role: Curabitur
-    bio: Class a erat per nibh. Vehicula scelerisque donec hendrerit justo nibh curabitur.
-    link: #
-    alt: image alt
+  # - name: Terra Macfarlane
+  #   image: http://lorempixel.com.br/500/500/?1
+  #   role: Condimentum 
+  #   bio: Curabitur sed enim nostra mi non sed rutrum purus taciti.
+  #   link: #
+  #   alt: image alt
