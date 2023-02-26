@@ -8,7 +8,7 @@ permalink: links.html
 {% include head.html %}
 <div class="p-5 container-fluid ">
     <figure class="mx-auto d-block rounded-circle bg-white m-2" style="width:100px; height:100px; ">
-        <img src="{{site.url}}/img/icon/icon-1.png" class=" rounded-circle img-fluid" alt="Dois círculos um maior, com fundo branco e tracejado verde e um menor no centro com fundo verde">
+        <img src="{{site.url}}/img/icon/icon-1.svg" class=" rounded-circle img-fluid" alt="Dois círculos um maior, com fundo branco e tracejado verde e um menor no centro com fundo verde">
     </figure>
 
     <header class="text-center text-white">
@@ -25,14 +25,19 @@ permalink: links.html
             </figure>
         </a>
     </section>
+
+    {% for post in site.categories.episodios limit:1%}
     <section>
         <h2 class="mt-3 fw-bold text-white">Últimos episódios</h2>
         <ul class="list-group  shadow">
-            {% for post in site.categories.episodios limit:4%}
-            <li class="p-3 list-group-item"><a href="{{post.url}}" class="text-decoration-none text-muted" tltle="Acesse o episódio">{{post.title}}</a></li>
-            {% endfor %}
+    {% endfor %}
+    {% for post in site.categories.episodios limit:4%}
+        <li class="p-3 list-group-item"><a href="{{post.url}}" class="text-decoration-none text-muted" tltle="Acesse o episódio">{{post.title}}</a></li>
+    {% endfor %}
+    {% for post in site.categories.episodios limit:1%}
         </ul>
     </section>
+    {% endfor %}
 
     <section class="my-5">
         <h2 class="fw-bold text-white">Fale conosco</h2>
@@ -40,11 +45,6 @@ permalink: links.html
             <li class="list-group-item">
                 <a href="mailto:{{site.email}}" class="text-decoration-none text-muted d-flex align-items-center">
                     <i class=" fs-2 me-3 bi bi-envelope-fill" style="color: #ea4335"></i> <span>Fale conosco</span>
-                </a>
-            </li>
-            <li class="list-group-item">
-                <a href="https://messenger.me/focoacessivel" class="text-decoration-none text-muted d-flex align-items-center">
-                    <i class=" fs-2 me-3 bi bi-messenger" style="color: #0084ff"></i> <span>Messenger</span>
                 </a>
             </li>
             <li class="list-group-item">

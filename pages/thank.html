@@ -13,4 +13,4 @@ permalink: obrigado.html
 <p>Sinceramente,</p>
 <p><strong>Wagner Beethoven</strong>, idealizador do projeto </p>
 
-<small>PS: Aproveitando a oportunidade, nos siga nas redes sociais:  {% for item in site.data.links.network %}<span class="list-links"><a href="{{item.link}}" target="_blank" title="Nos acompanhe também no {{item.name}} - Nova aba" style="color: #{{item.color}}">{{item.name}}</a></span>{% endfor %} 😉</small>
+<small>PS: Aproveitando a oportunidade, nos siga nas redes sociais:  <span class="list-links">{% for item in site.data.links.network %}<span><a href="{{item.link}}" target="_blank" title="Nos acompanhe também no {{item.name}} - Nova aba">{{item.name}}</a></span>{% endfor %}</span> 😉</small>
