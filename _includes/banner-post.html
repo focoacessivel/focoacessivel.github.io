@@ -1,0 +1,46 @@
+<section class="position-relative banner">
+  <div class="card border-0 mb-3 w-100">
+    <div class="row g-0">
+      <figure class="banner-guest col-md-4">
+        <img src="{{site.url}}/{{page.image}}" class="object-fit-cover img-fluid rounded" alt="{{page.alt}}">
+        <figcaption class="d-flex flex-column justify-content-center">
+          <strong class="mb-3 d-block">Descrição da imagem</strong>
+          {{page.alt}}</figcaption>
+      </figure>
+      <div class="col-md-8 d-flex flex-column justify-content-between">
+        <div class="card-body">
+          <h3 class="h2 border-bottom pb-3 mb-3 ">
+            <a href="{{page.url}}" class="text-decoration-none">
+              {{page.title}}
+            </a>
+          </h3>
+          <p class="card-text lead">
+            {{page.description}}
+          </p>
+        </div>
+        <p class="p-3 w-100 text-center">
+          <a href="{{page.url}}" class="px-4 rounded btn btn-acesse ">
+            <i class="bi bi-headphones me-2"></i>Acesse o episódio
+          </a>
+        </p>
+        <small class="px-3 d-flex justify-content-between text-muted">
+          <span title="Convidado">
+            <i class="bi bi-people-fill me-2"></i>{{page.guest}}
+          </span>
+
+          <span><span title="Data">
+              <i class="bi bi-calendar me-2"></i>
+              {{ page.date | date: "%m/ %Y" }}
+            </span>
+            <span class="p-2"></span>
+
+
+            <span title="Duração">
+              <i class="bi bi-clock me-2"></i>{{page.duracao}}
+            </span></span>
+        </small>
+        <div class="p-3"></div>
+      </div>
+    </div>
+  </div>
+</section>

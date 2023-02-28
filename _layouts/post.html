@@ -4,53 +4,11 @@ layout: default
 
 <article class="position-relative">
   {% include breadcrumbs.html %}
-
-  <header class="card border-0 mb-3 w-100 position-relative">
-    <div class="row g-0">
-      <figure class="col-md-4">
-        <img src="{{site.url}}/{{page.image}}" class="object-fit-cover img-fluid rounded" alt="{{page.alt}}" />
-      </figure>
-      <div class="col-md-8 d-flex flex-column justify-content-between">
-        <div class="card-body">
-          <h2 class="h2 border-bottom pb-3 mb-3">{{page.title}}</h2>
-          <p class="card-text lead">{{page.description}}</p>
-        </div>
-        <p class="p-3 w-100 d-flex flex-md-row flex-column align-content-stretch justify-content-center">
-          <a href="#conteudo" title="Acesse o conteúdo do episódio" class="px-4 rounded btn ">
-            <i class="bi bi-arrow-down me-2"></i>Descrição do episódio
-          </a>
-
-          {% if page.file-ogg or page.file-mp3 %}
-          <span class="d-block d-md-inline-block p-2"></span>
-          <a href="#walkman" title="Clique para acessar o player do episódio" class="px-4 rounded btn btn-listen">
-            <i class="bi bi-headphones me-2"></i>Ouça o episódio
-          </a>
-          {% else %}
-          {% endif %}
+  
+  
+  {% include banner-post.html %}
 
 
-
-        </p>
-        <small class="px-3 d-flex justify-content-between text-muted">
-          <span title="Convidado">
-            <i class="bi bi-people-fill me-2"></i>{{page.guest}}
-          </span>
-
-          <span><span title="Data">
-              <i class="bi bi-calendar me-2"></i>
-              {{ page.date | date: "%m/ %Y" }}
-            </span>
-            <span class="p-2"></span>
-
-
-            <span title="Duração">
-              <i class="bi bi-clock me-2"></i>{{page.duracao}}
-            </span></span>
-        </small>
-        <div class="p-3"></div>
-      </div>
-    </div>
-  </header>
   <div class="content pt-4 mt-4 border-top p-0" id="conteudo">
     <!-- Conteudo -->
     {{ content }}
