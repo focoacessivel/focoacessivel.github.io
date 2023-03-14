@@ -16,8 +16,8 @@
 .compartilhe .mail:hover>i {color: #7D7D7D;}
 </style>
 
-<div class="border-top mt-5 pt-5 compartilhe">
-    <span class="fw-bold d-block mb-3">Compartilhe: </span>
+<section class="border-top mt-5 pt-5 compartilhe">
+    <h3 class="mb-3">Compartilhe</h3>
     <a target="_blank" class="facebook" title="Este link vai abrir uma nova aba para você compartiilhar no Facebook" href="http://www.facebook.com/share.php?u={{ site.url }}{{ pageurl }}"><i class="bi bi-facebook"></i></a>
     <a target="_blank" class="ms-3 twitter" title="Este link vai abrir uma nova aba para você compartiilhar no Twitter" href='http://twitter.com/home?status={{ site.url }}{{ pageurl }}'><i class="bi bi-twitter"></i></a>
     <a target="_blank" class="ms-3 linkedin" title="Este link vai abrir uma nova aba para você compartiilhar no Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ pageurl }}&title=&summary=&source="><i class="bi bi-linkedin"></i></a>
@@ -25,4 +25,4 @@
     <a target="_blank" class="ms-3 pinterest" title="Este link vai abrir uma nova aba para você compartiilhar no  Pinterest" href="https://pinterest.com/pin/create/button/?url=&media={{ site.url }}{{ page.image }}&description="><i class="bi bi-pinterest"></i></a>
     {% endif %}
     <a target="_blank" class="ms-3 mail" title="Este link vai abrir uma nova aba para você enviar esse link por Email" href="mailto:?&body={{ site.url }}{{ pageurl }}"><i class="bi bi-envelope-fill"></i></a>
-</div>
+</section>

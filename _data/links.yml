@@ -38,23 +38,27 @@ network:
     color: "000000"
 
 plataformas:
-  - name: Apple
-    link: "http://apple.com"
-  - name: Google
-    link: "http://Google.com"
-  # - name: Overcast
-  #   link: "http://Overcast.com"
-  - name: Deezer
-    link: "http://deezer.com"
-  # - name: Pocket Casts
-  #   link: "http://Pocket.com"
-  # - name: Radiopublic
-  #   link: "http://Radiopublic.com"
-  - name: Spotify
-    link: "http://Spotify.com"
-  - name: Soundcloud
-    link: "https://soundcloud.com/focoacessivel"
   - name: Amazon Music
     link: 'Amazon Music'
+  - name: Apple
+    link: "http://apple.com"
+  - name: Deezer
+    link: "http://deezer.com"
+  - name: Google
+    link: "http://Google.com"
+  - name: Overcast
+    link: "http://Overcast.com"
+  - name: Pocket Casts
+    link: "http://Pocket.com"
+  - name: Radiopublic
+    link: "http://Radiopublic.com"
+  - name: Soundcloud
+    link: "https://soundcloud.com/focoacessivel"
+  - name: Spotify
+    link: "http://Spotify.com"
+  - name: Tune In
+    link: "http://tunein.com"
+  - name: Youtube
+    link: "https://www.youtube.com/@focoacessivelpodcast?sub_confirmation=1"
   - name: RSS
     link: "http://focoacessivel.github.io/feed.xml"

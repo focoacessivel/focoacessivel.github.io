@@ -1,7 +1,7 @@
 <div class="platforms d-flex flex-wrap justify-content-center">
   {% for item in site.data.links.plataformas %}
   <a href="{{item.link}}" target="_blank" title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer"
-    class="platform-{{item.link | slugify}} p-4">
+    class="platform-{{item.link | slugify}} p-3">
     <img src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" alt="Logo da {{item.name}}" class="d-block" />
   </a>
   {% endfor %}

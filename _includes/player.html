@@ -1,12 +1,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.3/plyr.css">
+<section>
 
-<h3 class="h4 my-5">Ouça o episódio</h3>
-<div id="walkman">
-  <audio id="player" crossorigin playsinline controls>
-    {% if page.file-ogg %}<source src="{{page.file-ogg}}" type="audio/ogg" />{% else %}{% endif %}
-    {% if page.file-mp3 %}<source src="{{page.file-mp3}}" type="audio/mp3" />{% else %}{% endif %}
-  </audio>
-</div>
-<div class="border-top my-5"></div>
-
-{% include platforms.html %}
+  <h3 class="h4 my-5">Ouça o episódio</h3>
+  <div id="walkman">
+    <audio id="player" crossorigin playsinline controls>
+      {% if page.file-ogg %}
+      <source src="{{page.file-ogg}}" type="audio/ogg" />{% else %}{% endif %}
+      {% if page.file-mp3 %}
+      <source src="{{page.file-mp3}}" type="audio/mp3" />{% else %}{% endif %}
+    </audio>
+  </div>
+</section>
+<section>
+  <h3 class="h4 mb-4 text-center border-top  pt-5 mt-5">Acesse esse e outros episódios também nas plataformas</h3>
+  {% include platforms.html %}
+</section>
