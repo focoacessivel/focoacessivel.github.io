@@ -2,27 +2,134 @@
 layout: default
 ---
 
-<article class="position-relative">
-  {% include breadcrumbs.html %}
-  
-  
-  {% include banner-post.html %}
+<article class="page">
+  {% include breadcrumbs.html  %}
 
+  <header class="text-center">
+    <h2 class="sub-title">
+      {{page.categories}}
+      {% if page.number %} — {{page.number}}{% else %}{% endif%}
+      {% if page.duration %} / {{page.duration}}{% else %}{% endif%}
+    </h2>
+    <h4 class="h6 mb-3"><span> {{page.guest}} &bull; {{page.role}}</span></h4>
+    <h3 class="page-title" id="intro">{{page.title}}</h3>
+  </header>
+  {% include platforms-icons.html %}
+  {% include player.html %}
+  <div class="article-content">
+    <ul class="nav article-tabs nav-fill" id="post-content" role="tablist">
+      <li class="nav-item col-12 col-md-6 active" role="presentation" aria-current="page">
+        <button class="w-100 active" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" id="notes-tab"
+          data-bs-target="#notes" aria-controls="notes">Anotações do programa</button>
+      </li>
+      <li class="nav-item col-12 col-md-6" role="presentation">
+        <button class="w-100" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="transcription-tab"
+          data-bs-target="#transcription" aria-controls="transcription">Transcrição</button>
+      </li>
+    </ul>
+    <div class="article-tabs-content tab-content">
+      {{ content }}
 
-  <div class="content pt-4 mt-4 border-top p-0" id="conteudo">
-    <!-- Conteudo -->
-    {{ content }}
+      <!-- COMMENTS -->
+      {% if page.comments %}
+      <h3 class="mt-5">Comentários</h3>
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          var disqus_shortname = '{{ site.disqus_shortname }}';
+          var disqus_identifier = '{{ page.url | absolute }}';
+        };
+        (function () {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://foco-acessivel.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Ative o JavaScript para visualizar o sistema de <a href="https://disqus.com/?ref_noscript">comentários
+          do Disqus.</a></noscript>
 
-    <!-- Player -->
-    {% if page.file-ogg or page.file-mp3 %}
-    {% include player.html %}
-    {% else %}
-    {% endif %}
+      <script id="dsq-count-scr" src="//foco-acessivel.disqus.com/count.js" async></script>
+      <!-- COMMENTS -->
 
+      <!-- SHARE -->
+
+      {% endif %}
+
+      {% if include.pageurl != nil and include.pageurl != '' %}
+      {% assign pageurl = include.pageurl %}
+      {% else %}
+      {% assign pageurl = page.url %}
+      {% endif %}
+      <section class="border-top mt-5 pt-5 share">
+        <h3 class="mb-3">Compartilhe</h3>
+        <a title="Este link vai abrir uma nova aba para você compartilhar no Facebook" target="_blank"
+          class="rounded py-2 px-3      share-icon-facebook"
+          href="http://www.facebook.com/share.php?u={{ site.url }}{{ pageurl }}"><i class="bi bi-facebook"></i>
+          <span>Facebook</span></a>
+        <a title="Este link vai abrir uma nova aba para você compartilhar no Twitter" target="_blank"
+          class="rounded py-2 px-3 mx-3 share-icon-twitter"
+          href='http://twitter.com/home?status={{ site.url }}{{ pageurl }}'><i class="bi bi-twitter"></i>
+          <span>Twitter</span></a>
+        <a title="Este link vai abrir uma nova aba para você compartilhar no Linkedin" target="_blank"
+          class="rounded py-2 px-3      share-icon-linkedin"
+          href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ pageurl }}&title=&summary=&source="><i
+            class="bi bi-linkedin"></i> <span>Linkedin</span></i></a>
+        <a title="Este link vai abrir uma nova aba para você enviar esse link por Email" target="_blank"
+          class="rounded py-2 px-3 mx-3 share-icon-mail" href="mailto:?&body={{ site.url }}{{ pageurl }}"><i
+            class="bi bi-envelope-fill"></i> <span>Email</span></a>
+        <a title="Este link vai abrir uma nova aba para você compartilhar no  Pinterest" target="_blank"
+          class="rounded py-2 px-3      share-icon-pinterest"
+          href="https://pinterest.com/pin/create/button/?url=&media={{ site.url }}{{ page.image }}&description="><i
+            class="bi bi-pinterest"></i><span>Pinterest</span></a>
+      </section>
+
+      <!-- SHARE -->
+
+    </div>
   </div>
-  {% include share.html %}
 </article>
-
-{% include json-ld.html %} 
-{% include comments.html %} 
-    
+<!-- JSON-LD -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "url": "{{ site.url }}{{ page.url }}",
+    "name": {{ page.title | jsonify }},
+    "headline": {{ page.title | jsonify }},
+    "keywords": {{ page.tags | join: ',' | jsonify }},
+    "description": {{ page.excerpt | strip_newlines | strip | jsonify }},
+    "articleBody": {{ page.content | strip_html | jsonify }},
+    "datePublished": {{ page.date | jsonify }},
+    "dateModified": {{ page.last_modified_at | default: page.date | jsonify }},
+    "author": {
+      "@type": "Person",
+      "name": Wagner Beethoven // {{ site.author_name | jsonify }},
+      "givenName": Wagner // {{ site.author_first_name | jsonify }},
+      "familyName": Beethoven // {{ site.author_last_name | jsonify }},
+      "email": {{ site.email | jsonify }}
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ site.title | jsonify }},
+      "url": "{{ site.url }}",
+      "logo": {
+        "@type": "ImageObject",
+        "width": 32,
+        "height": 32,
+        "url": "{{ site.url }}/img/logo.svg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ page.url }}"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "width": 100% ,
+      "height": 100%,
+      "url": "{{ site.url }}/{{ page.image | default: site.image }}"
+    }
+  }
+  </script>
+<!-- JSON-LD -->

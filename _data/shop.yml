@@ -1,0 +1,16 @@
+item:
+  - name: Acabe com o capacitismo, agora!
+    price: R$ 8,50
+    link: #
+    picture: shop/botons.png
+    alt: a
+  - name: Nem toda deficiência é visível
+    price: R$ 45,00
+    link: #
+    picture: shop/caderneta.png
+    alt: a
+  - name: Todo mundo é bem vindo aqui
+    price: R$ 84,90
+    link: #
+    picture: shop/camisa1.png
+    alt: a

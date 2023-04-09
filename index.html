@@ -4,31 +4,43 @@ image: 'img/banner.png'
 title: Podcast sobre tecnologia, acessibilidade e inclusão
 ---
 
+<section>
+  <h2 class="py-5 px-3 banner">Um podcast sobre <br>acessibilidade, <br>diversidade e inclusão.</h2>
+  <h2 class="section-subtitle text-uppercase">Episódio recente</h2>
 
-{% for post in site.categories.episodios limit:1%}
-<h2 class="h4 mb-5">Episódio recente</h2>
-{% include banner-home.html %}
-{% endfor %}
+  {% for post in site.posts limit:1%}
+  <article class="recent p-lg-5 p-md-4 p-3 rounded">
+      <div class="row">
+          <div class="col-lg-4 col-12 pl-0">
+              <img src="{{site.url}}/{{post.image}}" class="program-gust-picture w-100 object-fit-cover border rounded" alt="{{post.alt}}">
+          </div>
+          <div class="col-lg-8 col-12 col-md">
+              <h3 class="h2 program-title"><a href="{{post.url}}">{{post.title}}</a></h3>
+              <h4 class="h4 mt-3 mb-5 program-guest">{{post.guest}} &bull; {{post.role}}</h4>
+              {% include player.html %}
+              <a href="{{post.url}}" class="btn btn-primary" role="button">Veja a transcrição e acesse os detalhes</a>
+          </div>
+      </div>
+  </article>
+  {% endfor %}
 
-<section class="text-center py-5 my-5">
-  <h2 class="h4 mb-4">Acesse o podcast através das plataformas</h2>
-  {% include platforms.html %}
+  {% include platforms-icons.html %}
+    
 </section>
-
-{% for post in site.categories.episodios limit:1%}
-<section class="episodes">
-  <h2 class="mb-4">Outros episódios</h2>
-  <div class="list-group">
+<!-- 
+<section class="programs">
+  <h2 class="section-title">Nossos últimos episódios</h2>
+  <ul class="row">
+      {% for post in site.posts limit:6%}
+           {% include program-loop.html %}
     {% endfor %}
-    {% for post in site.categories.episodios limit:4%}
+  </ul>
+</section> -->
 
-    {% include looping.html %}
-    {% endfor %}
-    {% for post in site.categories.episodios limit:1%}
-  </div>
-</section>
-{% endfor %}
+<!--
+    {% include stats.html %}
 
-</body>
+    {% include sponsors.html %}
 
-</html>
+    {% include shop.html %}
+-->

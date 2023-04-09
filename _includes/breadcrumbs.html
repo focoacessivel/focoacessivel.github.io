@@ -1,23 +1,17 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb text-muted mb-5 pb-3 border-bottom">
-    {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
     <li class="breadcrumb-item">
       Você está em: <a href="/">Página inicial</a>
     </li>
-    {% for crumb in crumbs offset: 1 %}
-    {% if forloop.last %}
-    <li class="breadcrumb-item active" aria-current="page">
-      {{ page.title }}
-    </li>
-    {% else %}
+
+    {% if page.path contains '_posts' %}
     <li class="breadcrumb-item">
-      <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">
-        {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
-      </a>
+      <a href="{{site.url}}/episodios">Episódios</a>
     </li>
-    {% endif %}
-    {% endfor %}
+    {% else %}{% endif %}
+    
+    <li class="breadcrumb-item active" aria-current="page">
+    {{ page.title }}
+    </li>
   </ol>
 </nav>
-
-<style>.breadcrumb {font-size: small;}</style>

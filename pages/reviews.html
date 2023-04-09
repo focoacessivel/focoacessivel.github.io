@@ -1,0 +1,47 @@
+---
+layout: page
+title: "Reviews"
+permalink: reviews.html
+---
+
+<section class="banner">
+    <div class="row">
+        <div class="col-12 col-md-8">"Incrível! Tão feliz que eu encontrei isso antes da minha viagem. Eu comi quase todos os episódios."</div>
+        <div class="col-12 col-md-4 d-flex justify-content-center text-center flex-column banner-grade align-self-end">
+            <p>
+                <strong>4.95</strong>
+                <br> Avalição média
+            </p>
+        </div>    
+    </div>
+</section>
+
+<div class="row" data-masonry='{"percentPosition": true }'>
+    {% for item in site.data.statistic.review %}
+    <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="border rounded p-4">
+            <div class="review-content">
+                <div class="review-grade" title="Nota: {{item.grade}}">
+                    <span class="d-block" style="width:{{item.size}}% !important"></span>
+                    <span class="visually-hidden-focusable">{{item.grade}}</span>
+                </div>
+
+                <div class="review-comment">
+                    {{item.comment}}
+                </div>
+            </div>
+            <div class="review-footer">
+                <img alt="Logo {{item.platform}}" class="me-3" title="Comentário publicado no {{item.platform}}"
+                    src="{{site.url}}/img/platform/{{item.platform | slugify }}.svg" alt="">
+                {{item.author}}
+            </div>
+
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+ {% include stats.html %}
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>

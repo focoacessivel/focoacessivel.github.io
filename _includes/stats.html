@@ -1,0 +1,16 @@
+<section class="stats text-center">
+    <ul class="row  list-inline">
+        <li class="col-12 col-md">
+            <span class="stats-text">{% for item in site.data.statistic.stats %}{{item.grade}}{% endfor %}</span>
+            <div class="stats-description">Nota</div>
+        </li>
+        <li class="col-12 col-md">
+            <span class="stats-text">{% for item in site.data.statistic.stats %}{{item.subscribers}}{% endfor %}</span>
+            <div class="stats-description">Assinantes</div>
+        </li>
+        <li class="col-12 col-md">
+            <span class="stats-text">{% for item in site.data.statistic.stats %}{{item.listeners}}{% endfor %}</span>
+            <div class="stats-description">Ouvintes</div>
+        </li>
+    </ul>
+</section>

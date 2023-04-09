@@ -2,12 +2,15 @@ menu:
   - name: "Página Inicial"
     link: "./"
     description: "Retorne à página inicial"
-  - name: "Episódios"
-    link: "episodios"
-    description: "Acesse todos os nossos episódios"
-  - name: "Convidados"
-    link: "convidados"
-    description: "Veja quem já participou"
+  # - name: "Episódios"
+  #   link: "episodios"
+  #   description: "Acesse todos os nossos episódios"
+  # - name: "Convidados"
+  #   link: "convidados"
+  #   description: "Veja quem já participou"
+  # - name: "Reviews"
+  #   link: "reviews"
+  #   description: "Confira o que andam falando da gente"
   - name: "Sobre"
     link: "sobre"
     description: "Conheça quem faz"
@@ -37,7 +40,7 @@ network:
     icon: '<i class="bi bi-tiktok"></i>'
     color: "000000"
 
-plataformas:
+platafrms:
   - name: Amazon Music
     link: 'Amazon Music'
   - name: Apple
@@ -60,5 +63,5 @@ plataformas:
     link: "http://tunein.com"
   - name: Youtube
     link: "https://www.youtube.com/@focoacessivelpodcast?sub_confirmation=1"
-  - name: RSS
-    link: "http://focoacessivel.github.io/feed.xml"
+  # - name: RSS
+  #   link: "http://focoacessivel.github.io/feed.xml"

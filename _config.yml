@@ -3,13 +3,21 @@ description: "Foco Acessível: conversas inspiradoras e informativas sobre acess
 tagline : Podcast com profissionais de tecnologia e acessibilidade
 permalink: /:categories/:title
 
+
+footer-description: >
+  Espaço dedicado à promoção da acessibilidade, diversidade e inclusão na tecnologia, com a participação de profissionais que compartilham suas vivências, desafios e conquistas.
+  <br><br>
+  Neste podcast, queremos inspirar você a contribuir para um mundo mais acessível e inclusivo para todas as pessoas.
+
+log-alt: >
+  Do lado esquerdo dois circulos um maior e outro menor, estão centralizados um dentro do outro. O maior é tracejado e não é preenchido com cor e o menor é preenchido com cor. Ao lado das formas, o texto 'Foco Acessível'. A logo está apresentada na cor verde escuro.
 email: focoacessivel@gmail.com
 disqus_shortname: foco-acessivel
 
 author: Wagner Beethoven
 banner: 'img/banner.png'
 image: 'img/banner.png'
-logo: '/img/logo/logo.png'
+logo: '/img/logo.svg'
 
 twitter:
   username: focoacessivel

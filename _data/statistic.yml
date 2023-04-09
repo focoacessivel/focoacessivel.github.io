@@ -1,0 +1,41 @@
+stats:
+  - grade: 4.96
+  - subscribers: 25k
+  - listeners: 60k
+
+review:
+  - author: Seth
+    grade: 5
+    size: 100
+    comment: Este é um podcast tão inspirador. Estou ansioso para cada episódio de semanas! Incrível! Tão feliz que eu encontrei isso antes da minha viagem. Eu comi quase todos os episódios.
+    platform: Spotify
+
+  - author: Jacob
+    grade: 4.5
+    size: 90
+    comment: Incrível! Tão feliz que eu encontrei isso antes da minha viagem. Eu comi quase todos os episódios.
+    platform: Deezer
+
+  - author: Sarah
+    grade: 4
+    size: 80
+    comment: Abordagens extremamente ponderadas da vida. Este podcast é uma ótima audição e eu recomendo a qualquer um que queira entrar em algo novo.
+    platform: Google
+
+  - author: Bill
+    grade: 4.8
+    size: 96
+    comment: Abordagens extremamente ponderadas da vida. Este podcast é uma ótima audição e eu recomendo a qualquer um que queira entrar em algo novo.
+    platform: Google    
+
+  - author: Jospeh
+    grade: 3.7
+    size: 74
+    comment: Este é um podcast tão inspirador. Estou ansioso para cada episódio de semanas!
+    platform: Spotify
+
+  - author: Becca
+    grade: 4.5
+    size: 90
+    comment: Incrível! Tão feliz que eu encontrei isso antes da minha viagem. Eu comi quase todos os episódios.
+    platform: Deezer

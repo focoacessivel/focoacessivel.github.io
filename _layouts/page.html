@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-<div class="">
+
+
+
+<div class="page">
     {% include breadcrumbs.html %}
     {% if page.image %}
         <figure class="mb-5">
@@ -10,6 +13,6 @@ layout: default
         </figure>
         {% else%}
     {% endif %}
-    <h2 class="display-4 mb-4" id="intro">{{page.title}}</h2>
+    <h2 class="page-title" id="intro">{{page.title}}</h2>
     {{ content }}
 </div>
