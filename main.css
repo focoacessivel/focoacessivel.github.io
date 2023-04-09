@@ -32,8 +32,8 @@ a {
 }
 .btn {
   --bs-btn-color: #fff;
-  --bs-btn-bg:  var(--main-color);;
-  --bs-btn-border-color:  var(--main-color);;
+  --bs-btn-bg: var(--main-color);
+  --bs-btn-border-color: var(--main-color);
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #000;
   --bs-btn-hover-border-color: #000;
@@ -43,8 +43,8 @@ a {
   --bs-btn-active-border-color: #000;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.5);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg:  var(--main-color);;
-  --bs-btn-disabled-border-color:  var(--main-color);;
+  --bs-btn-disabled-bg: var(--main-color);
+  --bs-btn-disabled-border-color: var(--main-color);
 }
 .breadcrumb {
   font-size: small;
@@ -140,15 +140,13 @@ section {
   padding-right: 2rem;
 }
 .program-number,
-.program-duration{
+.program-duration {
   color: var(--bs-dark);
   font-weight: 400;
   font-size: 0.75rem;
-
-
 }
 .program-number {
-  margin:0;
+  margin: 0;
   line-height: 1;
   letter-spacing: 1px;
 }
@@ -471,4 +469,15 @@ footer a {
 
 .shop .btn {
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .page-title,
+  .section-title,
+  .banner {
+    font-size: 3rem;
+  }
+  .program-title {
+    font-size: 2rem;
+  }
 }
