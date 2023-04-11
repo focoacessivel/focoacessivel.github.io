@@ -17,8 +17,8 @@ layout: compress
 
         <meta keywords="{% if page.path contains '_posts' %}{{ page.tags | array_to_sentence_string }}{% else %}Acessibilidade, Inclusão, Diversidade, Podcast, {{site.author}}{% endif %}">
         
-        <meta author="{{site.author}}">
-        
+        <meta author="{{site.author}}">   
+
         <link rel="stylesheet" href="{{ '/main.css' | prepend: site.baseurl }}">
         
         <!-- <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/diagnostics/diagnostic.css"> -->
@@ -32,11 +32,11 @@ layout: compress
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
         <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
         <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}" />
+        <meta name="theme-color" content="#005757" />
+        <link rel="manifest" href="{{site.url}}/manifest.json">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-        <meta name="theme-color" content="#005757"/>
-
+     
         {% seo %}
     </head>
 
@@ -57,7 +57,7 @@ layout: compress
                 <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
                     <h1 class="col-md-3 mb-2 mb-md-0">
                         <a href="/" class="text-decoration-none" title=" {{site.title}}">
-                            <img src="{{site.url}}/img/logo.svg" class="d-block w-100" alt="{{site.logo-alt}}">
+                            <img title="Link para a página inicial do {{site.title}}" src="{{site.url}}/img/logo.svg" class="d-block w-100" alt="{{site.logo-alt}}">
                             <span class="visually-hidden-focusable">
                                 {{site.title}}
                             </span>
@@ -87,14 +87,11 @@ layout: compress
               <h2 class="visually-hidden-focusable">Rodapé do site</h2>
               <div class="row">
                   <div class="col-12 col-md-5 mb-3">
-                    <img width="200px" src="{{site.url}}/img/logo.svg" class="d-block mb-5" alt="{{site.logo-alt}}">
-                      <h3 class="visually-hidden-focusable">
-                        {{site.title}}
+                    <h3>
+                        <img width="200px" title="Sobre o {{site.title}}" src="{{site.url}}/img/logo.svg" class="d-block mb-5" alt="{{site.logo-alt}}">
+                        <span class="visually-hidden-focusable">{{site.title}}</span>
                       </h3>
                       <p class="col-12 col-md-8">{{site.footer-description}}</p>
-                        <div class="w-100 d-block"></div>
-                        <p class="col-12 col-md-8"> 
-                      </p>
                   </div>
               
                   <div class="col-12 col-md-3 mb-3">

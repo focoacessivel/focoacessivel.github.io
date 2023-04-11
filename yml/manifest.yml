@@ -1,0 +1,22 @@
+---
+permalink: manifest.json
+---
+
+{
+  "name": "{{site.title}}",
+  "description": "{{site.description}}",
+  "start_url": "http://focoacessivel.github.io",
+  "short_name": "{{site.title}}",
+  "lang": "pt-br",
+  "dir": "ltr\rtl",
+  "theme_color": "#005757",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "url": "http://focoacessivel.github.io",
+  "scope": "/",
+  "icons": [
+    {"src":"{{site.url}}/img/favicon.png",  "sizes":  "309x309",  "type": "image/png"}
+    ],
+  "screenshots": []
+  }

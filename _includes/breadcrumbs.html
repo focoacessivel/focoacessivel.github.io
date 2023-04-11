@@ -1,12 +1,12 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb text-muted mb-5 pb-3 border-bottom">
     <li class="breadcrumb-item">
-      Você está em: <a href="/">Página inicial</a>
+      Você está em: <a href="{{site.url}}" title="Ir para a Página inicial">Página inicial</a>
     </li>
 
     {% if page.path contains '_posts' %}
     <li class="breadcrumb-item">
-      <a href="{{site.url}}/episodios">Episódios</a>
+      <a href="{{site.url}}/episodios" title="Acesse todos os episódios">Episódios</a>
     </li>
     {% else %}{% endif %}
     

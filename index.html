@@ -12,13 +12,13 @@ title: Podcast sobre tecnologia, acessibilidade e inclusão
   <article class="recent p-lg-5 p-md-4 p-3 rounded">
       <div class="row">
           <div class="col-lg-4 col-12 pl-0">
-              <img src="{{site.url}}/{{post.image}}" class="program-gust-picture w-100 object-fit-cover border rounded" alt="{{post.alt}}">
+              <img src="{{site.url}}/{{post.image}}" class="program-gust-picture w-100 object-fit-cover border rounded" title="Foto de {{post.guest}}" alt="{{post.alt}}">
           </div>
           <div class="col-lg-8 col-12 col-md">
-              <h3 class="h2 program-title"><a href="{{post.url}}">{{post.title}}</a></h3>
+              <h3 class="h2 program-title"><a title="Clique para acessar o episódio" href="{{post.url}}">{{post.title}}</a></h3>
               <h4 class="h4 mt-3 mb-5 program-guest">{{post.guest}} &bull; {{post.role}}</h4>
               {% include player.html %}
-              <a href="{{post.url}}" class="btn btn-primary" role="button">Veja a transcrição e acesse os detalhes</a>
+              <a href="{{post.url}}" title="Clique para acessar informações sobre o episódio" class="btn btn-primary" role="button">Veja a transcrição e acesse os detalhes</a>
           </div>
       </div>
   </article>
