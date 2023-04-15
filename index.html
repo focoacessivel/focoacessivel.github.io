@@ -18,16 +18,16 @@ title: Podcast sobre tecnologia, acessibilidade e inclusão
               <h3 class="h2 program-title"><a title="Clique para acessar o episódio" href="{{post.url}}">{{post.title}}</a></h3>
               <h4 class="h4 mt-3 mb-5 program-guest">{{post.guest}} &bull; {{post.role}}</h4>
               {% include player.html %}
-              <a href="{{post.url}}" title="Clique para acessar informações sobre o episódio" class="btn btn-primary" role="button">Veja a transcrição e acesse os detalhes</a>
+              <a href="{{post.url}}" title="Clique para acessar informações sobre o episódio" class="button" role="button">Veja a transcrição e acesse os detalhes</a>
           </div>
       </div>
   </article>
   {% endfor %}
 
-  {% include platforms-icons.html %}
+  <div class="mt-5 pt-5 text-center">{% include platforms.html %}</div>
     
 </section>
-<!-- 
+
 <section class="programs">
   <h2 class="section-title">Nossos últimos episódios</h2>
   <ul class="row">
@@ -35,12 +35,11 @@ title: Podcast sobre tecnologia, acessibilidade e inclusão
            {% include program-loop.html %}
     {% endfor %}
   </ul>
-</section> -->
+</section>
 
-<!--
-    {% include stats.html %}
 
-    {% include sponsors.html %}
+{% include stats.html %}
 
-    {% include shop.html %}
--->
+{% include sponsors.html %}
+
+{% include shop.html %}

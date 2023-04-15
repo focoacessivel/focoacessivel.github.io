@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="page">
-  {% include breadcrumbs.html  %}
+  {% include breadcrumbs.html %}
 
   <header class="text-center">
     <h2 class="sub-title">
@@ -14,7 +14,9 @@ layout: default
     <h4 class="h6 mb-3"><span> {{page.guest}} &bull; {{page.role}}</span></h4>
     <h3 class="page-title" id="intro">{{page.title}}</h3>
   </header>
-  {% include platforms-icons.html %}
+  <div class="text-center">
+    {% include platforms.html %}
+  </div>
   {% include player.html %}
   <div class="article-content">
     <ul class="nav article-tabs nav-fill" id="post-content" role="tablist">
@@ -30,7 +32,7 @@ layout: default
     <div class="article-tabs-content tab-content">
       {{ content }}
 
-      <!-- COMMENTS -->
+
       {% if page.comments %}
       <h3 class="mt-5">Comentários</h3>
       <div id="disqus_thread"></div>
@@ -50,9 +52,9 @@ layout: default
           do Disqus.</a></noscript>
 
       <script id="dsq-count-scr" src="//foco-acessivel.disqus.com/count.js" async></script>
-      <!-- COMMENTS -->
 
-      <!-- SHARE -->
+
+
 
       {% endif %}
 
@@ -84,12 +86,12 @@ layout: default
             class="bi bi-pinterest"></i><span>Pinterest</span></a>
       </section>
 
-      <!-- SHARE -->
+
 
     </div>
   </div>
 </article>
-<!-- JSON-LD -->
+
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -132,4 +134,3 @@ layout: default
     }
   }
   </script>
-<!-- JSON-LD -->

@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="399.5" height="400" viewBox="0 0 399.5 400"><defs><style>.a{clip-path:url(#b);}.b{fill:#e64e18;}.c{fill:#fff;}</style><clipPath id="b"><rect width="399.5" height="400"/></clipPath></defs><g id="a" class="a"><rect class="c" width="399.5" height="400"/><g transform="translate(-1785.25 -75)"><path class="b" d="M1839.55,475a54.1,54.1,0,1,1,54.1-54.1A54.073,54.073,0,0,1,1839.55,475Zm129.3,0c-1.1-100.8-82.8-182.5-183.6-183.6V211.2c145.3,1.2,262.7,118.7,263.8,263.8Zm135.8,0c-.3-85.3-33.6-165.6-94-225.9s-140.3-93.6-225.4-94V75c220.5.8,399.1,179.5,399.5,400Z"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E64E18;}
+</style>
+<g>
+	<g id="a">
+		<g transform="translate(-1785.25 -75)">
+			<path class="st0" d="M1853.4,575c-37.4,0-67.6-30.2-67.6-67.6s30.2-67.6,67.6-67.6s67.6,30.2,67.6,67.6l0,0
+				C1921.1,544.8,1890.8,575,1853.4,575L1853.4,575z M2015.1,575c-1.4-126-103.5-228.1-229.5-229.5V245.2
+				c181.6,1.5,328.4,148.4,329.8,329.8H2015.1z M2184.8,575c-0.4-106.6-42-207-117.5-282.4c-75.5-75.4-175.4-117-281.7-117.5V75
+				c275.6,1,498.9,224.4,499.4,500H2184.8z"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="496" height="496" viewBox="0 0 496 496"><defs><style>.a{clip-path:url(#b);}.b{fill:#e0282c;}.b,.c{fill-rule:evenodd;}.c,.d{fill:#fff;}</style><clipPath id="b"><rect width="496" height="496"/></clipPath></defs><g id="a" class="a"><rect class="d" width="496" height="496"/><g transform="translate(-27 -597)"><path class="b" d="M523,845c0,137-111,248-248,248S27,982,27,845,138,597,275,597,523,708,523,845Z"/><path class="c" d="M82.1,845c0-106.5,86.4-192.9,192.9-192.9S467.9,738.5,467.9,845H419.7A144.7,144.7,0,1,0,275,989.7v48.2C168.5,1037.9,82.1,951.5,82.1,845ZM275,960.7A115.7,115.7,0,1,1,390.7,845H348.6A73.6,73.6,0,1,0,275,918.6Z"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 496 500" style="enable-background:new 0 0 496 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#E0282C;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<g>
+	<g id="a">
+		<g transform="translate(-27 -597)">
+			<path class="st0" d="M525,847c0,138.1-111.9,250-250,250S25,985.1,25,847s111.9-250,250-250S525,708.9,525,847z"/>
+			<path class="st1" d="M80.5,847c0-107.4,87.1-194.5,194.5-194.5S469.5,739.6,469.5,847h-48.6c0-80.5-65.3-145.9-145.9-145.9
+				S129.1,766.5,129.1,847S194.5,992.9,275,992.9v48.6C167.6,1041.5,80.5,954.4,80.5,847z M275,963.6
+				c-64.4,0-116.6-52.2-116.6-116.6S210.6,730.4,275,730.4S391.6,782.6,391.6,847h-42.4c0-40.9-33.3-74.2-74.2-74.2
+				s-74.2,33.3-74.2,74.2s33.3,74.2,74.2,74.2l0,0V963.6z"/>
+		</g>
+	</g>
+</g>
+</svg>

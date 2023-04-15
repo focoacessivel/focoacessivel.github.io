@@ -1,16 +1,8 @@
 <section class="subscribe">
-    <div class="row">
-            <h2 class="section-title mb-5">
-                Assine
-            </h2>
-            <ul class="nav-platforms list-inline m-0">
-              {% for item in site.data.links.platafrms %}
-              <li class="list-inline-item me-0 p-3 platform-{{item.name | slugify}}">
-                <a href="{{item.link}}" target="_blank" rel="noopener noreferrer">
-                  <img src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" title="Assine no {{item.name}} - nova aba" alt="Logo da {{item.name}}" />
-                </a>
-              </li>
-              {% endfor %}
-            </ul>
-    </div>
-  </section>
+  <div class="row">
+      <h2 class="section-title mb-5">
+        Assine
+      </h2>
+      {% include platforms.html %}
+  </div>
+</section>

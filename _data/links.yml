@@ -40,7 +40,22 @@ network:
     icon: '<i class="bi bi-tiktok"></i>'
     color: "000000"
 
-platafrms:
+platforms-main:
+  - name: Apple
+    link: "http://apple.com"
+  - name: Deezer
+    link: "http://deezer.com"
+  - name: Google
+    link: "http://Google.com"
+  - name: Soundcloud
+    link: "https://soundcloud.com/focoacessivel"
+  - name: Spotify
+    link: "http://Spotify.com"
+  - name: Youtube
+    link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
+
+
+platforms:
   - name: Amazon Music
     link: 'Amazon Music'
   - name: Apple
@@ -62,6 +77,6 @@ platafrms:
   - name: Tune In
     link: "http://tunein.com"
   - name: Youtube
-    link: "https://www.youtube.com/@focoacessivelpodcast?sub_confirmation=1"
+    link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
   # - name: RSS
   #   link: "http://focoacessivel.github.io/feed.xml"
