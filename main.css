@@ -79,11 +79,11 @@ a {
 
 .banner {
   padding-bottom: 4rem;
-  line-height: 1;
+  line-height: 1.25;
   font-weight: 700;
   font-size: 6rem;
-  hyphens: auto;
-  word-break: keep-all;
+  /* hyphens: auto; */
+  /* word-break: break-all; */
 }
 
 .banner-grade {
@@ -500,7 +500,7 @@ footer a {
   .page-title,
   .section-title,
   .banner {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .program-title {
     font-size: 2rem;
