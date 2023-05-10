@@ -2,14 +2,14 @@ menu:
   - name: "Página Inicial"
     link: "./"
     description: "Retorne à página inicial"
-  # - name: "Episódios"
-  #   link: "episodios"
-  #   description: "Acesse todos os nossos episódios"
-  # - name: "Convidados"
-  #   link: "convidados"
-  #   description: "Veja quem já participou"
-  # - name: "Reviews"
-  #   link: "reviews"
+  - name: "Episódios"
+    link: "episodios"
+    description: "Acesse todos os nossos episódios"
+  - name: "Convidados"
+    link: "convidados"
+    description: "Veja quem já participou"
+  # - name: "Críticas"
+  #   link: "criticas"
   #   description: "Confira o que andam falando da gente"
   - name: "Sobre"
     link: "sobre"
@@ -19,6 +19,10 @@ menu:
     description: "Fale conosco"
 
 network:
+  - name: Facebook
+    link: http://www.facebook.com/focoacessivel
+    icon: '<i class="bi bi-facebook"></i>'
+    color: "1877f2"
   - name: Instagram
     link: http://www.instagram.com/focoacessivel
     icon: '<i class="bi bi-instagram"></i>'
@@ -27,18 +31,14 @@ network:
     link: http://www.twitter.com/focoacessivel
     icon: '<i class="bi bi-twitter"></i>'
     color: "1da1f2"
-  - name: YouTube
-    link: https://www.youtube.com/@focoacessivelpodcast?sub_confirmation=1
-    icon: '<i class="bi bi-youtube"></i>'
-    color: "ff0000"
-  - name: Facebook
-    link: http://www.facebook.com/focoacessivel
-    icon: '<i class="bi bi-facebook"></i>'
-    color: "1877f2"
   - name: Tik Tok
     link: http://www.tiktok.com/@focoacessivel
     icon: '<i class="bi bi-tiktok"></i>'
     color: "000000"
+  - name: YouTube
+    link: https://www.youtube.com/@focoacessivel?sub_confirmation=1
+    icon: '<i class="bi bi-youtube"></i>'
+    color: "ff0000"
 
 platforms-main:
   - name: Apple
@@ -50,14 +50,14 @@ platforms-main:
   - name: Soundcloud
     link: "https://soundcloud.com/focoacessivel"
   - name: Spotify
-    link: "http://Spotify.com"
+    link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
   - name: Youtube
     link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
 
 
 platforms:
   - name: Amazon Music
-    link: 'Amazon Music'
+    link: "http://amazon.com"
   - name: Apple
     link: "http://apple.com"
   - name: Deezer
@@ -73,7 +73,7 @@ platforms:
   - name: Soundcloud
     link: "https://soundcloud.com/focoacessivel"
   - name: Spotify
-    link: "http://Spotify.com"
+    link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
   - name: Tune In
     link: "http://tunein.com"
   - name: Youtube

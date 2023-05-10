@@ -7,7 +7,7 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
 <section>
   <h2 class="py-5 px-3 banner">Acessibilidade, inclusão e diversidade na tecnologia.</h2>
   
-  {% for post in site.posts limit:1%}
+  <!-- {% for post in site.posts limit:1 | orderby: rand %}
   <h2 class="section-subtitle text-uppercase">Episódio recente</h2>
   <article class="recent p-lg-5 p-md-4 p-3 rounded">
       <div class="row">
@@ -22,13 +22,13 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
           </div>
       </div>
   </article>
-  {% endfor %}
+  {% endfor %} -->
 
   <div class="mt-5 pt-5 text-center">{% include platforms.html %}</div>
     
 </section>
 
-<!-- 
+
 <section class="programs">
   <h2 class="section-title">Nossos últimos episódios</h2>
   <ul class="row">
@@ -39,7 +39,7 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
 </section>
 
 
-{% include stats.html %}
+<!-- {% include stats.html %}
 
 {% include sponsors.html %}
 

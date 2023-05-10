@@ -1,7 +1,7 @@
 <ul class="nav-platforms list-inline">
     {% for item in site.data.links.platforms-main %}
     <li class="list-inline-item p-1">
-      <a href="{{item.link[Amazon Music]}}" target="_blank" title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer" class="button button-outline">
+      <a href="{{item.link}}" target="_blank" title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer" class="button button-outline">
        <img
         src="{{site.url}}/img/platform/{{item.name | slugify}}.svg"
         class="me-2"

@@ -506,3 +506,12 @@ footer a {
     font-size: 2rem;
   }
 }
+
+
+.links{
+  background: var(--main-color);
+}
+
+.links .program-title{
+  font-size: 1.5rem !important;
+}
