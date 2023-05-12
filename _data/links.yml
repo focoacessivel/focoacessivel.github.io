@@ -41,8 +41,8 @@ network:
     color: "ff0000"
 
 platforms-main:
-  - name: Apple
-    link: "http://apple.com"
+  # - name: Apple
+  #   link: "http://apple.com"
   - name: Deezer
     link: "http://deezer.com"
   - name: Google
@@ -57,9 +57,9 @@ platforms-main:
 
 platforms:
   - name: Amazon Music
-    link: "http://amazon.com"
-  - name: Apple
-    link: "http://apple.com"
+    link: "https://music.amazon.com.br/podcasts/f8c8ec0a-d9ab-49af-8c6b-895c8e7c2728/foco-acess%C3%ADvel"
+  # - name: Apple
+  #   link: "http://apple.com"
   - name: Deezer
     link: "http://deezer.com"
   - name: Google
