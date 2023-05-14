@@ -39,44 +39,48 @@ network:
     link: https://www.youtube.com/@focoacessivel?sub_confirmation=1
     icon: '<i class="bi bi-youtube"></i>'
     color: "ff0000"
-
+  
 platforms-main:
   # - name: Apple
   #   link: "http://apple.com"
   - name: Deezer
-    link: "http://deezer.com"
+    link: "https://www.deezer.com/pt/show/6060897"
   - name: Google
-    link: "http://Google.com"
+    link: "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEyMTc4MzMxNDQvc291bmRzLnJzcw"
   - name: Soundcloud
     link: "https://soundcloud.com/focoacessivel"
+    iframe: '<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1621705156&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/focoacessivel" title="Foco Acessível" target="_blank" style="color: #cccccc; text-decoration: none;">Foco Acessível</a> · <a href="https://soundcloud.com/focoacessivel/sets/completa" title="Completa" target="_blank" style="color: #cccccc; text-decoration: none;">Acesse a playlist completa</a></div>'
   - name: Spotify
     link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
+    iframe: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/4D6HigcXDCdNuCXxrkStWL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
   - name: Youtube
     link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
-
-
+  
 platforms:
   - name: Amazon Music
     link: "https://music.amazon.com.br/podcasts/f8c8ec0a-d9ab-49af-8c6b-895c8e7c2728/foco-acess%C3%ADvel"
   # - name: Apple
   #   link: "http://apple.com"
+  - name: Castbox
+    link: https://castbox.fm/channel/id5437486?utm_source=podcaster&utm_medium=dlink&utm_campaign=c_5437486&utm_content=Foco%20Acess%C3%ADvel-CastBox_FM
   - name: Deezer
-    link: "http://deezer.com"
+    link: "https://www.deezer.com/pt/show/6060897"
   - name: Google
-    link: "http://Google.com"
+    link: "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEyMTc4MzMxNDQvc291bmRzLnJzcw"
   - name: Overcast
-    link: "http://Overcast.com"
+    link: "https://overcast.fm/p4283328-xrLc4f"
   - name: Pocket Casts
-    link: "http://Pocket.com"
+    link: "https://pca.st/9m9todni"
   - name: Radiopublic
-    link: "http://Radiopublic.com"
+    link: "https://radiopublic.com/foco-accessvel-GKQpMl"
   - name: Soundcloud
     link: "https://soundcloud.com/focoacessivel"
   - name: Spotify
     link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
   - name: Tune In
-    link: "http://tunein.com"
+    link: "http://tun.in/ptZAV"
   - name: Youtube
     link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
   # - name: RSS
   #   link: "http://focoacessivel.github.io/feed.xml"
+
