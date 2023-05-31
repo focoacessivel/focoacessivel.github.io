@@ -32,14 +32,14 @@ layout: compress
         <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}" />
         <link rel="manifest" href="{{site.url}}/manifest.json">
         <meta name="theme-color" content="#005757" />
-
+                
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
      
         {% seo %}
     </head>
 
     <body class="p-4 mb-5">
-
+      <!-- VLIVRAS -->
       <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -50,6 +50,7 @@ layout: compress
       <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
       </script>
+      <!-- VLIVRAS -->
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-JSVR5N10GY"></script>
         <script>
@@ -74,6 +75,7 @@ layout: compress
                         </a>
                     </h1>
                     <ul class="nav align-items-center justify-content-center mt-3 mt-md-0">
+                        
                         <li class="nav-item">
                             <a class="nav-link nav-link-menu" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas" title="Acesse todos os links do site">Menu</a>
                         </li>
@@ -118,7 +120,7 @@ layout: compress
                           {% endfor %}
                           <li class="nav-item mb-2">
                             <a class="nav-link p-0"
-                            href="{{site.url}}/feed.xml" title="Assine o nosso RSS"> RSS </a>
+                            href="https://anchor.fm/s/e14f7d9c/podcast/rss" title="Assine o nosso RSS"> RSS </a>
                           </li>
                         </ul>
                   </div>
@@ -133,7 +135,6 @@ layout: compress
                           </a>
                           
                           {% endfor %}
-                      
 
                     </div>
                   </div>
@@ -149,7 +150,13 @@ layout: compress
                           {{item.icon}}
                         </a>
                       </li>
-                    {% endfor %}
+                      {% endfor %}
+                      <li class="mx-3">
+                        <a rel="me" href="https://mastodon.social/@focoacessivel" target="_blank"  title="Nos acompanhe também no Mastodon - nova aba" rel="noopener noreferrer" class="mastodon text-decoration-none col-6 mb-2">
+                          <img width="100%" height="20px" src="{{site.url}}/img/icons/mastodon.svg" alt="">
+                        </a>
+
+                        </li>
                   </ul>
               </div>
 
