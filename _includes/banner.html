@@ -30,18 +30,12 @@
                 {{post.excerpt}}
                 <div class="mt-3 mb-4 w-100">{% include player.html %}</div>
 
-
                 {% if page.path contains '_posts' %}
-                <a href="#content-detail" title="Clique para acessar informações sobre o episódio" class="button" role="button">
-                    <i class="bi bi-arrow-down-short me-2"></i>
-                  Detalhes
-                </a>
+                <a href="#content-detail" title="Clique para acessar informações sobre o episódio"><i class="bi bi-arrow-down-short pe-2"></i>Detalhes</a>
                 {% else %}
         
-                <a href="{{post.url}}" title="Clique para acessar informações sobre o episódio" class="button" role="button">
-                  <i class="bi bi-headphones me-2"></i>
-                 Links e a transcrição do episódio<i class="ms-4 bi bi-arrow-right"></i>
-                </a>
+                <a href="{{post.url}}" title="Clique para acessar informações sobre o episódio">
+                  <i class="bi bi-headphones me-2"></i>Acesse os links e a transcrição do episódio</a>
                 {% endif %}
             </div>
         </div>
