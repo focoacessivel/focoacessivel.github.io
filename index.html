@@ -5,26 +5,8 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
 ---
 
 <section>
-  <h2 class="py-5 px-3 banner">Acessibilidade, inclusão e diversidade na tecnologia.</h2>
-  
-  <!-- {% for post in site.posts limit:1 %}
-  <h2 class="section-subtitle text-uppercase">Episódio recente</h2>
-  <article class="recent p-lg-5 p-md-4 p-3 rounded">
-      <div class="row">
-          <div class="col-lg-4 col-12 pl-0">
-              <img src="{{site.url}}/{{post.image}}" class="program-gust-picture w-100 object-fit-cover border rounded" title="Foto de {{post.guest}}" alt="{{post.alt}}">
-          </div>
-          <div class="col-lg-8 col-12 col-md">
-              <h3 class="h2 program-title"><a title="Clique para acessar o episódio" href="{{post.url}}">{{post.title}}</a></h3>
-              <h4 class="h4 mt-3 mb-5 program-guest">{{post.guest}} &bull; {{post.role}}</h4>
-              {% include player.html %}
-              <a href="{{post.url}}" title="Clique para acessar informações sobre o episódio" class="button" role="button">Veja a transcrição e acesse os detalhes</a>
-          </div>
-      </div>
-  </article>
-  {% endfor %} -->
 
-  <div class="mt-5 pt-5 text-center">{% include platforms.html %}</div>
+  {% include banner.html %}
     
 </section>
 

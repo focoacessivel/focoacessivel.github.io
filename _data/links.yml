@@ -41,8 +41,12 @@ network:
     color: "ff0000"
   
 platforms-main:
+  - name: Spotify
+    link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
   - name: Android
     link: "https://www.subscribeonandroid.com/anchor.fm/s/e14f7d9c/podcast/rss"
+  - name: Youtube
+    link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
   - name: Apple
     link: "https://podcasts.apple.com/us/podcast/foco-accessível/id1690286033"
   - name: Deezer
@@ -51,10 +55,6 @@ platforms-main:
     link: "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEyMTc4MzMxNDQvc291bmRzLnJzcw"
   - name: Soundcloud
     link: "https://soundcloud.com/focoacessivel"
-  - name: Spotify
-    link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
-  - name: Youtube
-    link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
   
 platforms:
   - name: Amazon Music
@@ -79,10 +79,10 @@ platforms:
     link: "https://soundcloud.com/focoacessivel"
   - name: Spotify
     link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
+  - name: Stitcher
+    link: "https://www.stitcher.com/show/1071350"
   - name: Tune In
     link: "http://tun.in/ptZAV"
   - name: Youtube
     link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
-  # - name: RSS
-  #   link: "https://anchor.fm/s/e14f7d9c/podcast/rss"
 

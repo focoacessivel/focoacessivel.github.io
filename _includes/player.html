@@ -1,9 +1,5 @@
-<div id="player" class="player">
-    <audio id="player-{{post.title | slugify}}" class="w-100 d-flex align-items-center" aria-describedby="transcript" crossorigin playsinline controls>
-        {% if page.file-ogg %}<source src="{{page.file-ogg}}" type="audio/ogg" />{% else %}{% endif %}
-        {% if page.file-mp3 %}<source src="{{page.file-mp3}}" type="audio/mp3" />{% else %}{% endif %}
-
-        <a id="transcript" href="{{site.url}}/transcripts/program1.txt" download>Faça o download da transcrição do áudio</a>
-
-    </audio>
-</div>
+<!-- <div id="player" class="w-100 player"> -->
+<audio id="player-{{post.title | slugify}}" controls="true"  class="w-100 d-flex align-items-center">
+    <source src="{{post.file}}" type="audio/mp4">
+</audio>
+<!-- </div> -->

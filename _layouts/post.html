@@ -2,23 +2,12 @@
 layout: default
 ---
 
-<article class="page">
-  {% include breadcrumbs.html %}
+  <article class="page">
+    {% include breadcrumbs.html %}
 
-  <header class="text-center">
-    <h2 class="sub-title">
-      {{page.categories}}
-      {% if page.number %} — {{page.number}}{% else %}{% endif%}
-      {% if page.duration %} / {{page.duration}}{% else %}{% endif%}
-    </h2>
-    <h4 class="h6 mb-3"><span> {{page.guest}} &bull; {{page.role}}</span></h4>
-    <h3 class="page-title" id="intro">{{page.title}}</h3>
-  </header>
-  <div class="text-center">
-    {% include platforms.html %}
-  </div>
-  {% include player.html %}
-  <div class="article-content">
+    {% include banner.html %}
+   
+  <div class="article-content" id="content-detail">
     <ul class="nav article-tabs nav-fill" id="post-content" role="tablist">
       <li class="nav-item col-12 col-md-6 active" role="presentation" aria-current="page">
         <button class="w-100 active" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" id="notes-tab"
