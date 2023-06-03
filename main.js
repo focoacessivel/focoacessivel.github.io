@@ -1,5 +1,12 @@
 //Player
-const player = new Plyr("#player");
+// const player = new Plyr("#player");
+
+//Indice do Player
+function seekToTime(time) {
+  var audio = document.getElementById('audioplayer');
+  audio.currentTime = time;
+  audio.play();
+}
 
 window.player = player;
 
@@ -10,3 +17,4 @@ function gtag() {
 }
 gtag("js", new Date());
 gtag("config", "G-JSVR5N10GY");
+

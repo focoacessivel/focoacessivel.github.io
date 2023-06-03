@@ -1,5 +1,6 @@
-<!-- <div id="player" class="w-100 player"> -->
-<audio id="player-{{post.title | slugify}}" controls="true"  class="w-100 d-flex align-items-center">
-    <source src="{{post.file}}" type="audio/mp4">
-</audio>
-<!-- </div> -->
+<div id="player" class="w-100 player">
+    <audio id="audioplayer" controls="true"  class="w-100 d-flex align-items-center">
+        <source src="{{post.file}}" type="audio/mp4">
+        Seu navegador não suporta este arquivo de áudio. Utilize as plataformas de streaming ou o Youtube.
+    </audio>
+</div>
