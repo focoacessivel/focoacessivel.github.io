@@ -1,4 +1,20 @@
-<section class="subscribe">
+
+{% if page.path contains '_posts' %}
+
+<div class="mt-5 pt-5 text-center">
+  {% include platforms.html %}
+
+</div>
+
+
+
+
+
+
+ {% else %}
+ 
+ 
+ <section class="subscribe">
   <div class="row">
       <h2 class="section-title mb-5">
         Assine
@@ -6,3 +22,6 @@
       {% include platforms.html %}
   </div>
 </section>
+
+
+{% endif %}
