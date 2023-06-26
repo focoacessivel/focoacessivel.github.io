@@ -20,7 +20,7 @@
     <div class="col-lg-4 col-12 pl-0">
       <img
       src="{{site.url}}/{% if page.path contains '_posts' %}{{page.image}}{% else %}{{post.image}}{% endif %}"
-      class="program-gust-picture w-100 object-fit-cover border rounded"
+      class="program-gust-picture h-100 w-100 object-fit-cover border rounded"
       title="Foto de {% if page.path contains '_posts' %}{{page.guest}}{% else %}{{post.guest}}{% endif %}"
       alt="{% if page.path contains '_posts' %}{{page.alt}}{% else %}{{post.alt}}{% endif %}"
       >
