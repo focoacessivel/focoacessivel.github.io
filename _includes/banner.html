@@ -17,14 +17,14 @@
 
 <article class="recent p-lg-5 p-md-4 p-3 rounded">
   <div class="row">
-    <div class="col-lg-4 col-12 pl-0">
+    <figure class="col-lg-4 col-12 pl-0 pb-4 pb-md-0">
       <img
       src="{{site.url}}/{% if page.path contains '_posts' %}{{page.image}}{% else %}{{post.image}}{% endif %}"
       class="program-gust-picture h-100 w-100 object-fit-cover border rounded"
       title="Foto de {% if page.path contains '_posts' %}{{page.guest}}{% else %}{{post.guest}}{% endif %}"
       alt="{% if page.path contains '_posts' %}{{page.alt}}{% else %}{{post.alt}}{% endif %}"
       >
-    </div>
+    </figure>
     <div class="col-lg-8 col-12 col-md d-flex align-items-start flex-column">
       <div class="mb-4">
         <h3 class="h2 program-title">
