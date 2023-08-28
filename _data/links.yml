@@ -21,6 +21,24 @@ menu:
     link: "contato"
     description: "Fale conosco"
 
+streaming:
+  - name: Spotify
+    link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
+  # - name: Android
+    # link: "https://www.subscribeonandroid.com/anchor.fm/s/e14f7d9c/podcast/rss"
+  - name: Youtube
+    link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
+  - name: Apple
+    link: "https://podcasts.apple.com/us/podcast/foco-accessível/id1690286033"
+  - name: Deezer
+    link: "https://www.deezer.com/pt/show/6060897"
+  - name: Google
+    link: "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEyMTc4MzMxNDQvc291bmRzLnJzcw"
+  # - name: Soundcloud
+    # link: "https://soundcloud.com/focoacessivel"
+  
+
+
 network:
   - name: Facebook
     link: http://www.facebook.com/focoacessivel

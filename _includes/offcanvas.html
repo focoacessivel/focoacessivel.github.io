@@ -5,7 +5,7 @@
     </div>
     
     <div class="offcanvas-body d-flex flex-column justify-content-between">
-        <div class="paginas py-3">
+        <div class="paginas">
             <h3 class="h5 mb-3">Menu do Site</h3>
             <ul class="list-group list-group-flush">
                 {% for item in site.data.links.menu %}
@@ -16,9 +16,16 @@
                 </li>
                 {% endfor %}
             </ul>
+            <div class=" py-5 row">
+                {% for item in site.data.links.network %}
+                    <a class="col text-center fs-4" href="{{item.link}}" target="_blank"  style="color: #{{item.color}} !important" title="Nos acompanhe também no {{item.name}} - nova aba" rel="noopener noreferrer" class="{{item-name | slugify}} text-decoration-none col-6 mb-2">
+                        {{item.icon}}
+                    </a>
+                {% endfor %}
+            </div>
         </div>
 
-        <div class=" py-3 platforms">
+        <div class="platforms">
             <h3 class="h5 mb-3">Plataformas</h3>
             <ul class="list-group list-group-flush">
                 {% for item in site.data.links.platforms %}

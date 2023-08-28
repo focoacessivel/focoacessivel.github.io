@@ -79,9 +79,15 @@ layout: compress
                         <li class="nav-item">
                             <a class="nav-link nav-link-menu" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas" title="Acesse todos os links do site">Menu</a>
                         </li>
-                        {% for item in site.data.links.network %}
+                        {% for item in site.data.links.streaming %}
                         <li class="nav-item">
-                            <a href="{{item.link}}" target="_blank" class="nav-link " style="color: #{{item.color}} !important" title="Acompanhe o {{site.title}} no {{item.name}}">{{item.icon}}<span class="visually-hidden">{{item.name}}</span></a>
+                            <a href="{{item.link}}"
+                            target="_blank" class="nav-link "
+                            title="Acompanhe o {{site.title}} no {{item.name}}">
+                            <img src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" class="img-fluid" style="weight: 24px; height: 24px" alt="Logo da {{item.name}}" />
+                            <!-- {{item.icon}} -->
+                            <!-- <span class="visually-hidden">{{item.name}}</span> -->
+                          </a         z>
                         </li>
                         {% endfor %}
                     </ul>
