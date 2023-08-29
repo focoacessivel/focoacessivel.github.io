@@ -17,10 +17,10 @@
 
 <article class="recent p-lg-5 p-md-4 p-3 rounded">
   <div class="row">
-    <figure class="col-lg-4 col-12 pl-0 pb-4 pb-md-0">
+    <figure class="col-lg-4 col-12 pl-0 m-0 pb-0">
       <img
       src="{{site.url}}/{% if page.path contains '_posts' %}{{page.image}}{% else %}{{post.image}}{% endif %}"
-      class="program-gust-picture h-100 w-100 object-fit-cover border rounded"
+      class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded"
       title="Foto de {% if page.path contains '_posts' %}{{page.guest}}{% else %}{{post.guest}}{% endif %}"
       alt="{% if page.path contains '_posts' %}{{page.alt}}{% else %}{{post.alt}}{% endif %}"
       >
@@ -39,7 +39,7 @@
         </h4>
       </div>
       {% if page.path contains '_posts' %}{{page.excerpt}}{% else %}{{post.excerpt}}{% endif %}
-      <div class="mt-3 mb-4 w-100">{% include player.html %}</div>
+      <div class="my-3 w-100">{% include player.html %}</div>
 
       {% if page.path contains '_posts' %}
         <a href="#content-detail" title="Clique para acessar informações sobre o episódio">
