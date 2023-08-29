@@ -28,8 +28,8 @@ streaming:
     # link: "https://www.subscribeonandroid.com/anchor.fm/s/e14f7d9c/podcast/rss"
   - name: Youtube
     link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
-  - name: Apple
-    link: "https://podcasts.apple.com/us/podcast/foco-accessível/id1690286033"
+  # - name: Apple
+  #   link: "https://podcasts.apple.com/us/podcast/foco-accessível/id1690286033"
   - name: Deezer
     link: "https://www.deezer.com/pt/show/6060897"
   - name: Google
@@ -68,8 +68,8 @@ platforms-main:
     link: "https://www.subscribeonandroid.com/anchor.fm/s/e14f7d9c/podcast/rss"
   - name: Youtube
     link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
-  - name: Apple
-    link: "https://podcasts.apple.com/us/podcast/foco-accessível/id1690286033"
+  # - name: Apple
+  #   link: "https://podcasts.apple.com/us/podcast/foco-accessível/id1690286033"
   - name: Deezer
     link: "https://www.deezer.com/pt/show/6060897"
   - name: Google
@@ -82,8 +82,8 @@ platforms:
     link: "https://music.amazon.com.br/podcasts/f8c8ec0a-d9ab-49af-8c6b-895c8e7c2728/foco-acess%C3%ADvel"
   - name: Android
     link: "https://www.subscribeonandroid.com/anchor.fm/s/e14f7d9c/podcast/rss"
-  - name: Apple
-    link: "https://podcasts.apple.com/us/podcast/foco-accessível/id1690286033"
+  # - name: Apple
+  #   link: "https://podcasts.apple.com/us/podcast/foco-accessível/id1690286033"
   - name: Castbox
     link: https://castbox.fm/ch/5437486
   - name: Deezer
