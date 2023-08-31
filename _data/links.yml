@@ -15,7 +15,7 @@ menu:
     link: "sobre"
     description: "Saiba o que é e quem faz o Foco Acessível"
   - name: "O que é Podcast?"
-    link: "sobre/#sobre-podcast"
+    link: "sobre#sobre-podcast"
     description: "Saiba o que é um podcast e como você pode consumir e assinar o Foco Acessível"
   - name: "Contato"
     link: "contato"
