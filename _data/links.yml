@@ -44,18 +44,18 @@ network:
     link: http://www.facebook.com/focoacessivel
     icon: '<i class="bi bi-facebook"></i>'
     color: "1877f2"
+  - name: Twitter
+    link: http://www.twitter.com/focoacessivel
+    icon: '<i class="bi bi-twitter-x"></i>'
+    color: "000"
   - name: Instagram
     link: http://www.instagram.com/focoacessivel
     icon: '<i class="bi bi-instagram"></i>'
     color: "c13584"
-  - name: Twitter
-    link: http://www.twitter.com/focoacessivel
-    icon: '<i class="bi bi-twitter"></i>'
-    color: "1da1f2"
   - name: Tik Tok
     link: http://www.tiktok.com/@focoacessivel
     icon: '<i class="bi bi-tiktok"></i>'
-    color: "000000"
+    color: "000"
   - name: YouTube
     link: https://www.youtube.com/@focoacessivel?sub_confirmation=1
     icon: '<i class="bi bi-youtube"></i>'
