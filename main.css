@@ -92,6 +92,7 @@ a {
   --bs-btn-border-color: var(--main-color);
   --bs-btn-bg: var(--main-color);
 }
+
 .btn:hover,
 .btn-primary:hover {
   --background-color: var(--text-color) !important;
@@ -200,6 +201,12 @@ section {
   padding: 1rem;
   border: 1px solid transparent;
   padding-right: 2rem;
+}
+
+.episode,
+.episode > div,
+.episode figure img {
+  height: 100%;
 }
 
 .program-number,
