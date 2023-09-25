@@ -88,6 +88,16 @@ a {
   background-color: #fff;
 }
 
+.btn-primary {
+  --bs-btn-border-color: var(--main-color);
+  --bs-btn-bg: var(--main-color);
+}
+.btn:hover,
+.btn-primary:hover {
+  --background-color: var(--text-color) !important;
+  --border-color: var(--text-color) !important;
+}
+
 .breadcrumb {
   font-size: small;
 }

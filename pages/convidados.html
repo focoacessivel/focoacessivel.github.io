@@ -7,19 +7,46 @@ permalink: convidados.html
 <div class="row d-flex justify-content-center">
     {% for post in site.posts %}
     <div class="col-12 col-md-3 col-lg-3 mb-5">
-        <a href="{{post.url}}" class="text-center text-decoration-none" title="Acesse o episódio">
-
+        
             <figure class="w-100 mb-3 mb-md-0">
                 <img src="{{site.url}}/{{post.image}}" class="img-fluid rounded" alt="{{post.alt}}">
-                <figcaption class="mt-4">
-                    <h3 class="fs-5">{{post.guest}}</h3>
+                <figcaption class="mt-2">
+                    <h3 class="fs-5 mb-0">{{post.guest}}</h3>
                     <span 3 class="fs-6">{{post.role}}</span>
                 </figcaption>
             </figure>
-        </a>
+            <div class="d-flex justify-content-start mt-3 align-items-center">
+                <a href="{{post.url}}" class="btn btn-primary btn-sm text-center" title="Acesse a página do episódio">
+                  <i class="bi bi-headphones me-2"></i> Ouça
+                </a>
+                <div class="px-2"></div>
+                <button title="Biografia do convidado (irá abrir um modal)" type="button" class="btn text-decoration-none btn-sm" data-bs-toggle="modal" data-bs-target="#{{post.guest|slugify}}">
+                    Biografia
+                </button>
+        </div>
     </div>
     {% endfor %}
-    
-    
-
 </div>
+
+
+    {% for post in site.posts %}
+    <div class="modal fade" id="{{post.guest|slugify}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="{{post.guest|slugify}}"  aria-describedby="Biografia do {{post.guest}}" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="{{post.guest|slugify}}Label">{{post.guest}}</h1>
+              <button type="button" title="Fechar a " class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              {{post.bio}}
+            </div>
+            <div class="d-flex justify-content-between modal-footer">
+              <button type="button" class="btn-sm btn btn-link text-decoration-none" data-bs-dismiss="modal">Fechar</button>
+              <a href="{{post.url}}" class="btn-sm btn btn-primary btn-sm text-center" title="Acesse a página do episódio">
+                <i class="bi bi-headphones me-2"></i> Ouça o episódio
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}

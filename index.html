@@ -4,11 +4,11 @@ image: 'img/banner.png'
 title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
 ---
 
-<section>
+<section id="banner">
   {% include banner.html %} 
 </section>
 
-<section class="programs">
+<section class="programs" id="programs">
   <h2 class="section-title">Nossos últimos episódios</h2>
   <ul class="row">
     {% for post in site.posts limit:6%}
