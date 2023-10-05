@@ -7,9 +7,9 @@
 {% for post in site.posts limit:1 %}
 <h2 class="section-subtitle text-uppercase">
   {% if page.path contains '_posts' %}
-    {{page.categories}}
+  <div class=" d-flex justify-content-between">{{page.categories}}
     {% if page.number %} — {{page.number}}{% else %}{% endif%}
-    {% if page.duration %} / {{page.duration}}{% else %}{% endif%}
+    {% if page.duration %} / {{page.duration}}{% else %}{% endif%}</div>
   {% else %}
     Episódio recente
   {% endif %}
