@@ -10,7 +10,7 @@
             <ul class="list-group list-group-flush">
                 {% for item in site.data.links.menu %}
                 <li class="list-group-item px-0 item-{{item.name | slugify}}">
-                    <a class="nav-link p-0 text-muted" href="{{site.url}}/{{item.link}}" title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
+                    <a accesskey="{{item.keys}}" class="nav-link p-0 text-muted" href="{{site.url}}/{{item.link}}" title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
                         {{item.name}}
                     </a>
                 </li>

@@ -2,24 +2,30 @@ menu:
   - name: "Página Inicial"
     link: "./"
     description: "Retorne à página inicial"
+    keys: 1
   - name: "Episódios"
     link: "episodios"
     description: "Acesse todos os nossos episódios"
+    keys: 2
   - name: "Convidados"
     link: "convidados"
     description: "Veja quem já participou"
+    keys: 3
   # - name: "Críticas"
   #   link: "criticas"
   #   description: "Confira o que andam falando da gente"
   - name: "Sobre o Foco Acessível"
     link: "sobre"
     description: "Saiba o que é e quem faz o Foco Acessível"
+    keys: 4
   - name: "O que é Podcast?"
     link: "sobre#sobre-podcast"
     description: "Saiba o que é um podcast e como você pode consumir e assinar o Foco Acessível"
+    keys: 5
   - name: "Contato"
     link: "contato"
     description: "Fale conosco"
+    keys: 6
 
 streaming:
   - name: Spotify
