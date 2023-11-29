@@ -451,7 +451,7 @@ footer a {
 }
 
 .review-grade span {
-  background: transparent url("http://localhost:4000/img/star.svg") repeat-x left center;
+  background: transparent url("/img/star.svg") repeat-x left center;
   object-fit: contain;
   height: 15px;
 }
