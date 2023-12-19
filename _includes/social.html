@@ -1,0 +1,9 @@
+{% for item in site.data.links.network %}
+<li class="px-1">
+    <a href="{{item.link}}" target="_blank" style="color: #{{item.color}} !important"
+        title="Nos acompanhe também no {{item.name}} - nova aba" rel="noopener noreferrer"
+        class="{{item-name | slugify}} text-decoration-none col-6 mb-2">
+        <span>{{item.icon}}</span>
+    </a>
+</li>
+{% endfor %}
