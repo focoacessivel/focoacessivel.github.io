@@ -1,0 +1,44 @@
+{% if page.comments %}
+
+<div class="my-5 accordion" id="accordionComments">
+  <div class="accordion-item">
+    <h2 class="accordion-header comment-section">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseComments" aria-expanded="false" aria-controls="collapseComments">
+        <span class="a2a_kit a2a_default_style d-inline-block" data-a2a-url="{{site.url}}{{page.url}}"
+          data-a2a-title="{{site.title}}: {{page.title}}">
+          <a class="text-decoration-none a2a_dd a2a_counter" title="Clique para compartilhar nas redes sociais"
+            href="https://www.addtoany.com/share">Compartilhe</a>
+        </span>
+        ou faça seu comentário 😉
+      </button>
+    </h2>
+    <div id="collapseComments" class="accordion-collapse collapse" data-bs-parent="#accordionComments">
+      <div class="accordion-body" id="disqus_thread">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  var disqus_config = function () {
+    var disqus_shortname = '{{ site.disqus_shortname }}';
+    var disqus_identifier = '{{ page.url | absolute }}';
+  };
+  (function () {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://foco-acessivel.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Ative o JavaScript para visualizar o sistema de <a href="https://disqus.com/?ref_noscript">comentários
+    do Disqus.</a></noscript>
+
+<script id="dsq-count-scr" src="//foco-acessivel.disqus.com/count.js" async></script>
+{% endif %}
+
+<style>
+
+</style>

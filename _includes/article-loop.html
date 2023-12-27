@@ -1,0 +1,13 @@
+
+    {% if post.categories contains 'Artigos' %}
+    <li class="mb-3 col-12 col-md-6 col-lg-4">
+      <div class=" p-md-4 p-3 rounded bg-body-secondary">
+        <a href="{{ post.url }}#intro" class="position-relative">
+          <span class="post-label">{{post.label}}</span>
+          <img src="{{ post.image }}" class="img-fluid rounded-3" alt="{{ post.alt }}">
+        </a>
+          <h3 class="mt-4 mb-2card-title"><a href="{{ post.url }}#intro" class="fw-bold">{{ post.title }}</a></h3>
+          <p>{{ post.excerpt }}</p>
+      </div>
+    </li>
+    {% endif %}

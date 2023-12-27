@@ -18,10 +18,10 @@ menu:
     link: "sobre"
     description: "Saiba o que é e quem faz o Foco Acessível"
     keys: 4
-  - name: "O que é Podcast?"
-    link: "sobre#sobre-podcast"
-    description: "Saiba o que é um podcast e como você pode consumir e assinar o Foco Acessível"
-    keys: 5
+  # - name: "Artigos"
+  #   link: "artigos"
+  #   description: "Conheça as referências que são faladas nos textos dos nossos episódios"
+  #   keys: 5
   - name: "Contato"
     link: "contato"
     description: "Fale conosco"

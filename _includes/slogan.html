@@ -1,6 +1,17 @@
 {% if page.path contains '_posts' %}
 {% else %}
-<h2 class="py-5 px-3 banner"><a href="{{site.url}}/sobre#sobre-podcast" class="mouse-info"
-        title="Saiba mais sobre o que é um podcast e como consumir esse tipo de material">Podcast</a> sobre
-    acessibilidade, inclusão e diversidade na tecnologia.</h2>
+<h2 class="py-5 px-3 banner"><a data-toggle="popover" data-content-id="popover-content" tabindex="0"
+        title="O que é podcast?" class="mouse-info">Podcast</a> sobre acessibilidade, inclusão e diversidade na
+    tecnologia.</h2>
+<div id="popover-content" class="d-none">
+    <p>Podcast é parecido com um programa de rádio, mas a diferença está no fato desta mídia digital ser disponibilizada
+        na internet, podendo assim ser acessada a qualquer momento.</p>
+
+    <p><a href="{{site.url}}/sobre#sobre-podcast"> Saiba mais sobre o que é um podcast e como consumir esse tipo de
+            material</a>.</p>
+</div>
+
+<style>
+    .popover-arrow{display: none;}
+</style>
 {% endif %}

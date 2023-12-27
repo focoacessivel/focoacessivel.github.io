@@ -5,6 +5,7 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
 ---
 
 <section id="banner">
+  {% include slogan.html %} 
   {% include banner.html %} 
 </section>
 
@@ -16,3 +17,13 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
     {% endfor %}
   </ul>
 </section>
+<!-- <section class="articles" id="articles">
+  <h2 class="section-title">Artigos</h2>
+  <ul class="row">
+    {% for post in site.posts limit:3%}
+
+    {% include article-loop.html %}
+    {% endfor %}
+
+  </ul>
+</section> -->

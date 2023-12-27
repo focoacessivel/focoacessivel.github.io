@@ -6,6 +6,8 @@ permalink: convidados.html
 
 <div class="row d-flex justify-content-center">
     {% for post in site.posts %}
+    {% if post.categories contains 'Episodios' %}
+
     <div class="col-12 col-md-3 col-lg-3 mb-5">
         
             <figure class="w-100 mb-3 mb-md-0">
@@ -25,6 +27,8 @@ permalink: convidados.html
                 </button>
         </div>
     </div>
+  {% endif %}
+
     {% endfor %}
 </div>
 

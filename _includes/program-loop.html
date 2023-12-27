@@ -1,25 +1,32 @@
-<li class="col-12 col-lg-6 pb-4">
-    <div class="episode rounded">
-        <div class="row">
-            <figure class="col-lg-4 col-12 pl-0 m-0 pb-0">
-                <img src="{{site.url}}/{{post.image}}" class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded" alt="{{post.alt}}">
-            </figure>
-            <div class="program-content d-flex justify-content-between flex-column col-lg-8 col-12 col-md p-3">
-                <div class="program-header">
-                    <div class=" d-flex justify-content-between">
-                        <h3 class="h3 program-number text-uppercase">{{post.categories}}{% if post.number %} — {{post.number}}{% else %}{% endif %}</h3>                  
-                        <span class="program-duration">{{post.duration}}</span>
+{% if post.categories contains 'Episodios' %}
+    <li class="col-12 col-lg-6 pb-4">
+        <div class="episode rounded">
+            <div class="row">
+                <figure class="col-lg-4 col-12 pl-0 m-0 pb-0">
+                    <a href="{{post.url}}" title="Acesse o episódio">
+                        <img src="{{site.url}}/{{post.image}}" class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded" alt="{{post.alt}}">
+                    </a>
+                </figure>
+                <div class="program-content d-flex justify-content-between flex-column col-lg-8 col-12 col-md p-3">
+                    <div class="program-header">
+                        <div class=" d-flex justify-content-between">
+                            <h3 class="h3 program-number text-uppercase">
+                                <span class="episodiosItem">
+                                    {{post.categories}}</span>
+                                    {% if post.number %}&nbsp;&mdash;&nbsp;{{post.number}}{% else %}{% endif %}</h3>
+                            <span class="program-duration">{{post.duration}}</span>
+                        </div>
+                        <h4 class="h2 program-title">
+                            <a href="{{post.url}}" title="Acesse o episódio">{{post.title}}</a>
+                        </h4>
+                        
                     </div>
-                    <h4 class="h2 program-title">
-                        <a href="{{post.url}}" title="Acesse o episódio">{{post.title}}</a>
-                    </h4>
-                    
-                </div>
-                <div class="program-footer">
-                    <span> {{post.guest}} &bull; {{post.role}}</span>
-                    
+                    <div class="program-footer">
+                        <span> {{post.guest}} &bull; {{post.role}}</span>
+                        
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</li>
+    </li>
+{% endif %}

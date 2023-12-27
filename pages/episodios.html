@@ -3,11 +3,10 @@ layout: page
 title: "Episódios"
 permalink: episodios.html
 ---
-<div  class="programs">
-
-<ul class="row">
-    {% for post in site.posts %}
-         {% include program-loop.html %}
-    {% endfor %}
-</ul>
+<div class="programs">
+    <ul class="row">
+        {% for post in site.posts %}
+        {% include program-loop.html %}
+        {% endfor %}
+    </ul>
 </div>

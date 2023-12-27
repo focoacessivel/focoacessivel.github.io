@@ -1,0 +1,39 @@
+<h2 class="mt-5 mb-3">Ouça o episódio completo <i class="ms-2bi bi-arrow-down"></i></h2>
+
+<div class="episode rounded">
+    <div class="row">
+        <figure class="col-lg-4 col-12 pl-0 m-0 pb-0">
+            <a href="{{page.url}}" title-ep="Acesse o episódio">
+                <img src="{{site.url}}/{{page.image-ep}}"
+                    class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded" alt="{{page.alt}}">
+            </a>
+        </figure>
+        <div class="program-content d-flex justify-content-between flex-column col-lg-8 col-12 col-md p-3">
+            <div class="program-header">
+                <div class=" d-flex justify-content-between">
+                    <h3 class="h3 program-number text-uppercase">
+                        <span class="episodiosItem">
+                            EPISÓDIO</span>
+                        {% if page.number %}&nbsp;&mdash;&nbsp;{{page.number}}{% else %}{% endif %}
+                    </h3>
+                    <span class="program-duration">{{page.duration}}</span>
+                </div>
+                <h4 class="h2 program-title-ep">
+                    <a href="{{site.url}}/episodios/{{page.link-ep}}" title-ep="Acesse o episódio">{{page.title-ep}}</a>
+                </h4>
+                <div class="program-footer mt-2 mb-3">
+                    <span> {{page.guest}} &bull; {{page.role}}</span>
+
+                </div>
+                {% if page.path contains '_posts' %}{{page.excerpt}}{% else %}{{post.excerpt}}{% endif %}
+
+            </div>
+            <div class="my-3 w-100">{% include player.html %}</div>
+
+            <a href="{{post.link-ep}}" title="Clique para acessar informações sobre o episódio">
+                <i class="bi bi-headphones me-2"></i>
+                Acesse os links e a transcrição do episódio
+              </a>
+        </div>
+    </div>
+</div>
