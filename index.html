@@ -15,18 +15,8 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
     {% assign episodios = site.categories.Episodios | sort: 'date' | reverse %}
     {% for post in episodios offset:1 %}
       {% if post.categories contains 'Episodios' %}
-    {% include program-loop.html %}
+        {% include loop-program.html %}
     {% endif %}
     {% endfor %}
   </ul>
 </section>
-<!-- <section class="articles" id="articles">
-  <h2 class="section-title">Artigos</h2>
-  <ul class="row">
-    {% for post in site.posts limit:3%}
-
-    {% include article-loop.html %}
-    {% endfor %}
-
-  </ul>
-</section> -->

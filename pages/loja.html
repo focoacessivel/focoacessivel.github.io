@@ -1,0 +1,25 @@
+---
+published: false
+layout: page
+title: "Loja"
+permalink: loja.html
+image: /img/banners/page_loja.jpg
+alt: "Ilustração de várias bananas formando um gesto com a mão onde os dedos indicado, médio e o dedo estão juntos e levantados e os demais abaixados"
+summary: 'Compre uma peça e ajude o podcast. Prdução responsável, zero plástico e ainda bastante estilo!<br><small>Você será redirecionado para o site: <a class="fw-bold" href="http://umapenca.com/focoacessivel">http://umapenca.com/focoacessivel</a></small>'
+legend: Ilustração criada por Uma Penca
+---
+
+
+
+<div class="programs">
+    <ul class="row">
+        {% for item in site.data.loja.item %}
+        <li class="col-12 col-md-4 col-lg-3 pb-5 mb-5 shop-item text-center">
+            <img class="rounded img-fluid shop-item-picture" src="{{site.url}}/img/{{item.picture}}" alt="{{item.alt}}">
+            <h3 class="shop-item-title">{{item.name}}</h3>
+            <div class="shop-item-price">{{item.price}}</div>
+            <a class="button" href="{{item.link}}" class="shop-item-link">Saiba mais</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

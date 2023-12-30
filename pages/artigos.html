@@ -10,22 +10,12 @@ summary: Boas-vindas a nossa página com os artigos, popularmente chamada de blo
 ---
 
 <ul class="row" data-masonry='{"percentPosition": true }'>
-  {% for post in site.posts %}
-  {% if post.categories contains 'Artigos' %}
-  <li class="mb-3 col-12 col-md-6 col-lg-4">
-    <div class=" p-md-4 p-3 rounded bg-body-secondary">
-      <a href="{{ post.url }}#intro" class="position-relative">
-        <span class="post-label">{{post.label}}</span>
-        <img src="{{ post.image }}" class="img-fluid rounded-3" alt="{{ post.alt }}">
-      </a>
-        <h3 class="mt-4 mb-2 card-title"><a href="{{ post.url }}#intro" class="fw-bold">{{ post.title }}</a></h3>
-        <p>{{ post.excerpt }}</p>
-    </div>
-  </li>
-  {% endif %}
-  {% endfor %}
-</ul>
-<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-  integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
-  async></script>
 
+  {% assign artigos = site.categories.Artigos | sort: 'date' | reverse %}
+  {% for post in artigos %}
+    {% if post.categories contains 'Artigos' %}
+      {% include loop-article.html%}
+    {% endif %}
+  {% endfor %}
+
+</ul>

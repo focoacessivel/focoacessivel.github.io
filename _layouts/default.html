@@ -36,12 +36,11 @@ layout: compress
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&&display=swap">
   <link rel="stylesheet" href="{{ '/main.css' | prepend: site.baseurl }}">
+  <!-- <link rel="stylesheet" href="{{site.url}}/diagnostic.css"> -->
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
-    href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="sitemap" type="application/xml" title="Sitemap"
-    href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="manifest" href="{{site.url}}/manifest.json">
   <meta name="theme-color" content="#005757" />
 
@@ -95,7 +94,7 @@ layout: compress
             <a href="{{item.link}}" target="_blank" class="nav-link "
               title="Acompanhe o {{site.title}} no {{item.name}}">
               <img src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" class="img-fluid"
-                style="weight: 24px; height: 24px" alt="Logo da {{item.name}}" />
+                style="width: 24px; height: 24px" alt="Logo da {{item.name}}" />
               <!-- {{item.icon}} -->
               <!-- <span class="visually-hidden">{{item.name}}</span> -->
             </a>
@@ -178,6 +177,9 @@ layout: compress
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.3/plyr.min.js"></script> -->
     <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
     <script src="{{site.url}}/main.js"></script>
 
     {% include offcanvas.html %}

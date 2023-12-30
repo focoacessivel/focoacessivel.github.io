@@ -1,8 +1,8 @@
 <section class="shop" id="shop">
     <h2 class="section-title">Confira nossa loja</h2>
     <ul class="row">
-        {% for item in site.data.shop.item %}
-        <li class="col-12 col-md shop-item text-center">
+        {% for item in site.data.loja.item-destaque %}
+        <li class="col-12 col-md-4 shop-item text-center">
             <img class="rounded img-fluid shop-item-picture" src="{{site.url}}/img/{{item.picture}}" alt="{{item.alt}}">
             <h3 class="shop-item-title">{{item.name}}</h3>
             <div class="shop-item-price">{{item.price}}</div>

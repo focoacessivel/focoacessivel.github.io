@@ -3,8 +3,13 @@
 
 <h2 class="section-subtitle text-uppercase">
   {% if page.path contains '_posts' %}
+  {% if page.number %}
   <div class=" d-flex justify-content-start">
-    <span class="episodiosItem">{{post.categories}}</span>{% if page.number %}&nbsp;&mdash;&nbsp;{{page.number}}{% else %}{% endif%}{% if page.duration %} / {{page.duration}}{% else %}{% endif%}</div>{% else %}Episódio recente{% endif %}
+    <span class="episodiosItem">{{post.categories}}</span>&nbsp;&mdash;&nbsp;{{page.number}} / {{page.duration}}{% endif%}
+  </div>
+  {% else %}
+    Episódio recente
+  {% endif %}
 </h2>
 
 <article class="recent p-lg-5 p-md-4 p-3 rounded-2">

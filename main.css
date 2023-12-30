@@ -7,6 +7,14 @@
   --border-radius: 1rem;
   --main-color: #005757 !important;
   --secondary-color: #e9ecef;
+  --social-icon-color-instagram: #c13584;
+  --social-icon-color-threads: #000;
+  --social-icon-color-facebook: #1877f2;
+  --social-icon-color-tik-tok: #000000;
+  --social-icon-color-youtube: #ff0000;
+  --social-icon-color-x: #000000;
+
+
 }
 
 * {
@@ -21,6 +29,15 @@
 ::selection {
   background-color: var(--main-color);
   color: #fff;
+}
+
+.mouse-info {
+  background-color: transparent;
+  border: 0;
+  box-shadow: 0 6px 0 var(--main-color);
+  color: var(--main-color);
+  padding: 0;
+  margin: 0;
 }
 
 .mouse-info:hover {
@@ -666,7 +683,48 @@ footer a {
   box-shadow: none !important
 }
 
-.popover-header{
+.popover-header {
   border-bottom-width: 0;
   background-color: transparent;
+}
+
+a.social-icon-instagram {
+  color: var(--social-icon-color-instagram) !important
+}
+
+a.social-icon-threads {
+  color: var(--social-icon-color-threads) !important
+}
+
+a.social-icon-facebook {
+  color: var(--social-icon-color-facebook) !important
+}
+
+a.social-icon-tik-tok {
+  color: var(--social-icon-color-tik-tok) !important
+}
+
+a.social-icon-youtube {
+  color: var(--social-icon-color-youtube) !important
+}
+
+a.social-icon-x {
+  color: var(--social-icon-color-x) !important
+}
+
+.banner-loja::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.64;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--bs-card-border-radius);
+  z-index: 1;
+}
+
+.card-img-overlay{
+  z-index: 2;
 }
