@@ -12,8 +12,11 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
 <section class="programs" id="programs">
   <h2 class="section-title">Nossos últimos episódios</h2>
   <ul class="row">
-    {% for post in site.posts limit:6%}
+    {% assign episodios = site.categories.Episodios | sort: 'date' | reverse %}
+    {% for post in episodios offset:1 %}
+      {% if post.categories contains 'Episodios' %}
     {% include program-loop.html %}
+    {% endif %}
     {% endfor %}
   </ul>
 </section>
