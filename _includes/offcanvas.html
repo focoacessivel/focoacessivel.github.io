@@ -1,8 +1,7 @@
 <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
     <div class="offcanvas-header">
         <h2 class="offcanvas-title h4" id="offcanvasLabel">Links do site</h2>
-        <button type="button" title="Fechar menu" class="btn-close" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
+        <button type="button" title="Fechar menu" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
 
     <div class="offcanvas-body d-flex flex-column justify-content-between">
@@ -11,10 +10,7 @@
             <ul class="list-group list-group-flush">
                 {% for item in site.data.links.menu %}
                 <li class="list-group-item px-0 item-{{item.name | slugify}}">
-                    <a accesskey="{{item.keys}}" class="nav-link p-0 text-muted" href="{{site.url}}/{{item.link}}"
-                        title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
-                        {{item.name}}
-                    </a>
+                    <a accesskey="{{item.keys}}" class="nav-link p-0 text-muted" href="{{site.url}}/{{item.link}}" title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}"> {{item.name}} </a>
                 </li>
                 {% endfor %}
             </ul>
@@ -28,21 +24,13 @@
             <ul class="list-group list-group-flush">
                 {% for item in site.data.links.platforms %}
                 <li class="list-group-item px-0">
-                    <a href="{{item.link}}" target="_blank" class="text-decoration-none"
-                        title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer">
-                        <img class=" me-2" src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" height="32"
-                            width="32" alt="Ícone do {{item.name}}">
-                        {{item.name}}
-                    </a>
+                    <a href="{{item.link}}" target="_blank" class="text-decoration-none" title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer"> <img class=" me-2" src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" height="32" width="32" alt="Ícone do {{item.name}}"> {{item.name}} </a>
                 </li>
                 {% endfor %}
 
                 <li class="list-group-item px-0">
-                    <a href="https://anchor.fm/s/e14f7d9c/podcast/rss" target="_blank" class="text-decoration-none"
-                        title="Assine nosso RSS - nova aba" rel="noopener noreferrer">
-                        <img class=" me-2" src="{{site.url}}/img/platform/rss.svg" height="24" width="24"
-                            alt="Ícone do RSS">
-                        Assine o nosso RSS
+                    <a href="https://anchor.fm/s/e14f7d9c/podcast/rss" target="_blank" class="text-decoration-none" title="Assine nosso RSS - nova aba" rel="noopener noreferrer">
+                        <img class=" me-2" src="{{site.url}}/img/platform/rss.svg" height="24" width="24" alt="Ícone do RSS"> Assine o nosso RSS
                     </a>
                 </li>
             </ul>

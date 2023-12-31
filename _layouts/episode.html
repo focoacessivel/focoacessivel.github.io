@@ -5,8 +5,37 @@ layout: default
 <article class="page">
   {% include breadcrumbs.html %}
 
-  {% include banner.html %}
 
+  <h2 class="section-subtitle text-uppercase">
+    <div class=" d-flex justify-content-start">
+      <span class="episodiosItem">{{post.categories}}</span>&nbsp;&mdash;&nbsp;{{page.number}} / {{page.duration}}
+    </div>
+  </h2>
+
+  <div class="recent p-lg-5 p-md-4 p-3 rounded-2">
+    <div class="row">
+      <figure class="col-lg-4 col-12 pl-0 m-0 pb-0">
+        <img src="{{site.url}}/{{page.image}}"
+          class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded-2"
+          title="Foto de {{page.guest}}"
+          alt="{{page.alt}}">
+      </figure>
+      <div class="col-lg-8 col-12 col-md d-flex align-items-start flex-column">
+        <div class="mb-4">
+          <h3 class="h2 program-title">
+              {{page.title}}
+          </h3>
+          <h4 class="h4 mt-3 program-guest">
+            {{page.guest}} &bull; {{page.role}}
+          </h4>
+        </div>
+        {{page.excerpt}}
+        <div class="my-3 w-100">{% include player.html %}</div>
+        <a href="#content-detail" title="Clique para acessar informações sobre o episódio"><i class="bi bi-arrow-down-short pe-2"></i>Detalhes</a>      
+      </div>
+    </div>
+  </div>
+  {% include subscribe.html %}
   <div class="article-content" id="content-detail">
     <ul class="nav article-tabs nav-fill" id="post-content" role="tablist">
       <li class="nav-item col-12 col-md-6 active" role="presentation" aria-current="page">
@@ -21,7 +50,7 @@ layout: default
     <div class="article-tabs-content tab-content">
 
       {{ content }}
-      
+
       {% include comments.html %}
     </div>
   </div>

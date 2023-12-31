@@ -48,13 +48,14 @@ webmaster_verifications:
 
 
 compress_html:
-  clippings: []
-  comments: []
-  endings: []
-  profile: false
-  blanklines: false
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
   ignore:
-    envs: []
+    envs: [local]
+  blanklines: false
+  profile: true
+  startings: [html, head, body]
 
 brotli:
   extensions:

@@ -6,7 +6,36 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
 
 <section id="banner">
   {% include slogan.html %} 
-  {% include banner.html %} 
+
+  
+  {% assign sorted_posts = site.categories.Episodios | sort: 'date' | reverse %}
+  {% for post in sorted_posts limit:1 %}
+  
+  <h2 class="section-subtitle text-uppercase">Episódio recente</h2>
+  
+  <article class="recent p-lg-5 p-md-4 p-3 rounded-2">
+    <div class="row">
+      <figure class="col-lg-4 col-12 pl-0 m-0 pb-0">
+        <img src="{{site.url}}/{{post.image}}" class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded-2" title="Foto de {{post.guest}}" alt="{{post.alt}}">
+      </figure>
+      <div class="col-lg-8 col-12 col-md d-flex align-items-start flex-column">
+        <div class="mb-4">
+          <h3 class="h2 program-title">
+            <a title="Clique para acessar o episódio" href="{{post.url}}">{{post.title}}</a>
+          </h3>
+          <h4 class="h4 mt-3 program-guest">
+           {{post.guest}} &bull; {{post.role}}
+          </h4>
+        </div>
+        {{post.excerpt}}
+        <div class="my-3 w-100">{% include player.html %}</div>
+        <a href="{{post.url}}" title="Clique para acessar informações sobre o episódio"><i class="bi bi-headphones me-2"></i>Acesse os links e a transcrição do episódio</a>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+  
+  {% include subscribe.html %}
 </section>
 
 <section class="programs" id="programs">
