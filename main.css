@@ -21,6 +21,11 @@
   transition: background-color 0.3s linear;
 }
 
+mark {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
 ::-moz-selection {
   background-color: var(--main-color);
   color: #fff;
@@ -61,39 +66,36 @@ a {
   color: var(--main-color);
 }
 
+
 blockquote {
-  font-size: 1.4em;
+  border-left: .25rem solid var(--main-color);
+  color: var(--text-color);
+  font-family: "Georgia", serif;
+  font-size: 1rem;
   font-style: italic;
-  color: #555555;
-  padding: 1.2em 30px 1.2em 75px;
-  border-left: 8px solid var(--main-color);
-  line-height: 1.6;
+  margin: 3rem 0;
+  padding: 0 1rem;
   position: relative;
-  background: #EDEDED;
+  z-index: 0;
 }
 
-blockquote::before {
-  font-family: Arial;
-  content: "\201C";
-  color: var(--main-color);
-  font-size: 4em;
-  position: absolute;
-  left: 10px;
-  top: -10px;
+/* blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eee;
 }
 
-blockquote::after {
-  content: '';
-}
-
-blockquote cite {
+blockquote footer {
   display: block;
-  color: #333333;
-  font-style: normal;
-  font-weight: bold;
-  margin-top: 1em;
-  font-size: 0.85rem;
+  font-size: 80%;
+  line-height: 1.42857143;
+  color: #777;
 }
+
+blockquote footer::before {
+  content: "\2014 \00A0";
+} */
 
 .form-control:focus {
   border-color: #198754;
@@ -725,6 +727,16 @@ a.social-icon-x {
   z-index: 1;
 }
 
-.card-img-overlay{
+.card-img-overlay {
   z-index: 2;
+}
+
+.artigo-final::before {
+  content: "";
+  background: transparent url(/img/icone.svg) center no-repeat;
+  width: 1rem;
+  height: 1rem;
+  background-size: cover;
+  display: block;
+  margin: 2rem auto;
 }
