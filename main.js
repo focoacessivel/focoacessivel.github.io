@@ -32,23 +32,3 @@ list.map((el) => {
 })
 
 
-
-function updateTextContent(idPattern, text, count) {
-  for (var i = 1; i <= count; i++) {
-      var element = document.getElementById(idPattern + i);
-      if (element) {
-          element.textContent = text;
-      }
-  }
-}
-
-function updateTextContentByClass(className, text) {
-  var elements = document.getElementsByClassName(className);
-  for (var i = 0; i < elements.length; i++) {
-      elements[i].textContent = text;
-  }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  updateTextContentByClass('episodiosItem', 'Episódio');
-});
