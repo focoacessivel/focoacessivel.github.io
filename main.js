@@ -10,7 +10,6 @@ function seekToTime(time) {
 
 window.player = player;
 
-
 // Share button
 var a2a_config = a2a_config || {};
 a2a_config.onclick = 1;
@@ -18,7 +17,6 @@ a2a_config.locale = "pt-BR";
 a2a_config.thanks = { postShare: true };
 
 // Popover
-
 const list = [].slice.call(document.querySelectorAll('[data-toggle="popover"]'))
 list.map((el) => {
   let opts = {
@@ -30,5 +28,3 @@ list.map((el) => {
   }
   new bootstrap.Popover(el, opts);
 })
-
-
