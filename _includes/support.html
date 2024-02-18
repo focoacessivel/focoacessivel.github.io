@@ -16,7 +16,7 @@
                 <div class="accordion accordion-flush" id="accordionSupport">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Transferência via pix</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Por Pix</button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionSupport">
                             <div class="accordion-body">
@@ -31,12 +31,21 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Transferência via "Buy me a coffee" </button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Por PayPal (Recorrente e/ou cartão de crédito)</button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionSupport">
                             <div class="accordion-body">
-                                <p>Por meio da plataforma Buy me a Coffee, você pode contribuir com o podcast em dólares americanos! Basta clicar no botão abaixo para abrir uma nova aba e fazer a sua contribuição.</p>
-                                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="focoacessivel" data-color="#FFDD00" data-emoji="🫂" data-font="Inter" data-text="Buy me a coffe" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff"></script>
+                                <p>Por meio do PayPal, você pode contribuir com o podcast de diversas formas: uma única vez, através de doações recorrentes mensais ou anuais, e também usando seu cartão de crédito. Clique no botão abaixo para abrir uma nova aba e fazer a sua contribuição!</p>
+                                <div class="text-center pt-3">
+                                    <form action="https://www.paypal.com/donate" method="post"  target="_top">
+                                        <input type="hidden" name="business" value="2FDL6XFS6PXA2" />
+                                        <input type="hidden" name="no_recurring" value="0" />
+                                        <input type="hidden" name="item_name" value="Com sua doação, invisto em equipamentos, edição e serviços para o crescimento do podcast!" />
+                                        <input type="hidden" name="currency_code" value="BRL" />
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                                        <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -49,7 +58,7 @@
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionSupport">
                             <div class="accordion-body">
                                 <p>Que legal que você quer apoiar de alguma forma! Existem outras maneiras de ajudar além de contribuições financeiras.</p>
-                                <p>Você pode compartilhar os episódios do podcast com seus amigos e nas redes sociais, deixar comentários positivos e avaliações nas plataformas de podcast, e até mesmo enviar sugestões de temas ou convidados.</p>
+                                <p>Você pode compartilhar os episódios do podcast com seus amigos e nas nos seguir em nossas redes sociais ({% for item in site.data.links.network %}<span class="support-social social-{{item.name | slugify}}"><a href="{{item.link}}" target="_blank" title="Nos acompanhe também no {{item.name}} - nova aba" rel="noopener noreferrer" >{{item.name}}</a></span>{% endfor %}), deixar comentários e avaliações nas plataformas de podcast, e até mesmo enviar sugestões de temas ou convidados.</p>
                                 <p>Cada forma de apoio é muito valiosa e ajuda o podcast a crescer!</p>                          
                             </div>
                         </div>

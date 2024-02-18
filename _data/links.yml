@@ -45,24 +45,25 @@ streaming:
   
 
 network:
-  - name: Instagram
-    link: http://www.instagram.com/focoacessivel
-    icon: '<i class="bi bi-instagram"></i>'
-  - name: Threads
-    link: https://www.threads.net/@focoacessivel
-    icon: '<i class="bi bi-threads"></i>'
-  - name: Facebook
-    link: http://www.facebook.com/focoacessivel
-    icon: '<i class="bi bi-facebook"></i>'
-  - name: Tik Tok
-    link: http://www.tiktok.com/@focoacessivel
-    icon: '<i class="bi bi-tiktok"></i>'
-  - name: YouTube
-    link: https://www.youtube.com/@focoacessivel?sub_confirmation=1
-    icon: '<i class="bi bi-youtube"></i>'
+  - name: LinkedIn
+    link: https://www.linkedin.com/company/focoacessivel
+    icon: '<i class="bi bi-linkedin"></i>'
   - name: X
     link: http://www.twitter.com/focoacessivel
     icon: '<i class="bi bi-twitter-x"></i>'
+  - name: Instagram
+    link: http://www.instagram.com/focoacessivel
+    icon: '<i class="bi bi-instagram"></i>'
+  - name: TikTok
+    link: http://www.tiktok.com/@focoacessivel
+    icon: '<i class="bi bi-tiktok"></i>'
+  - name: Facebook
+    link: http://www.facebook.com/focoacessivel
+    icon: '<i class="bi bi-facebook"></i>'
+  - name: Threads
+    link: https://www.threads.net/@focoacessivel
+    icon: '<i class="bi bi-threads"></i>'
+
  
 platforms-main:
   - name: Spotify

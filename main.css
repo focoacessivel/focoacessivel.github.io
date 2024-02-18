@@ -11,7 +11,7 @@
   --social-icon-color-threads: #000;
   --social-icon-color-facebook: #1877f2;
   --social-icon-color-tik-tok: #000000;
-  --social-icon-color-youtube: #ff0000;
+  --social-icon-color-linkedin: #0a66c2;
   --social-icon-color-x: #000000;
 
 
@@ -706,8 +706,8 @@ a.social-icon-tik-tok {
   color: var(--social-icon-color-tik-tok) !important
 }
 
-a.social-icon-youtube {
-  color: var(--social-icon-color-youtube) !important
+a.social-icon-linkedin {
+  color: var(--social-icon-color-linkedin) !important
 }
 
 a.social-icon-x {
@@ -748,44 +748,12 @@ a.social-icon-x {
   transform: translate(-10%, -30%);
 
 }
-
-.btn-support:before,
-.btn-support:after {
-
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: var(--bs-btn-border-radius);
-  border: 1px solid #005757;
-  left: -0.5rem;
-  right: -0.5rem;
-  bottom: -0.5rem;
-  top: -0.5rem;
-  animation: animate 1.5s linear infinite;
-  opacity: 0;
-  backface-visibility: hidden;
-  z-index: -1;
+.support-social:after{
+  content: ", "
 }
-
-.pulsaDelay:after {
-  animation-delay: '.5' s;
+.support-social:last-of-type:after{
+  content: ""
 }
-
-@keyframes animate {
-
-
-  0% {
-      transform: scale(0.5);
-      opacity: 0;
-  }
-
-  50% {
-      opacity: 1;
-  }
-
-  100% {
-      transform: scale(1.1);
-      opacity: 0;
-  }
-
+.support-social:last-of-type:before{
+  content: " e "
 }
