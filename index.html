@@ -39,12 +39,25 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
 </section>
 
 <section class="programs" id="programs">
-  <h2 class="section-title">Últimos episódios</h2>
+  <h2 class="section-title">Episódios recentes</h2>
   <ul class="row">
     {% assign episodios = site.categories.Episodios | sort: 'date' | reverse %}
     {% for post in episodios offset:1 %}
       {% if post.categories contains 'Episodios' %}
         {% include loop-program.html %}
+    {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+
+
+<section class="Articles" id="Articles">
+  <h2 class="section-title">Recentes do <a href="{{site.url}}/blog">blog</a></h2>
+  <ul class="row">
+    {% assign blog = site.categories.Blog | sort: 'date' | reverse %}
+    {% for post in blog %}
+      {% if post.categories contains 'Blog' %}
+        {% include loop-blog.html %}
     {% endif %}
     {% endfor %}
   </ul>
