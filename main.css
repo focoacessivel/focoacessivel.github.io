@@ -79,6 +79,10 @@ blockquote {
   z-index: 0;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
 /* blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
@@ -748,12 +752,15 @@ a.social-icon-x {
   transform: translate(-10%, -30%);
 
 }
-.support-social:after{
+
+.support-social:after {
   content: ", "
 }
-.support-social:last-of-type:after{
+
+.support-social:last-of-type:after {
   content: ""
 }
-.support-social:last-of-type:before{
+
+.support-social:last-of-type:before {
   content: " e "
 }
