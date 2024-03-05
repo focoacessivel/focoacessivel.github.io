@@ -26,16 +26,392 @@ file: https://d3ctxlq1ktw2nl.cloudfront.net/staging/2023-4-10/328839601-44100-2-
 <p>Dando continuidade as dicas do nosso primeiro episódio, <a href="{{site.url}}/episodios/{{page.link-ep}}" class="fw-bold">Fernando</a> nos apresentou um coletivo formado estúdios, especialistas e acadêmicos que produziram um guia para ser utilizado como uma referência simples e amigável para desenvolvedores de maneiras de evitar a exclusão desnecessária de jogadores e garantir que os jogos sejam tão divertidos para todas as pessoas, o <a href="https://gameaccessibilityguidelines.com/" rel="noopener noreferrer" target="_blank" lang="en">Game Accessibility Guidelines</a> traz bastante coisa, aqui iremos ter uma visão geral deste guia.</p>
 <p>Navegando pelo site, há informações muito valiosas que podem transformar como nós jogamos e desenvolvemos <i lang="en">games</i>. <br> O Guia é organizado em critérios e dentro de cada critérios, existem as categorias. As categorias são baseadas nas deficiências: motoras, cognitivas, visuais, auditivas e de fala.</p>
 <h2>Critérios</h2>
-<p>Antes de qualquer aprofundamento nas recomendações, é importante saber que o guia classifica as recomendações em 3 critérios, abrangendo desde implementações simples até adaptações mais complexas para deficiências específicas, sendo eles:</p>
-<h3>Básico</h3>
-<p>Fácil de implementar e aplicar com amplo alcance, se adequando em quase todas as mecânicas de jogo.</p> <p>As recomendações incluem facilitar/permitir a remapeamento e ajustes de sensibilidade de controles, simplificar a interface do usuário (especialmente em telas menores ou sensíveis ao toque) garantindo que ela seja acessível usando o mesmo método de entrada que o gameplay, tornando elementos interativos grandes e bem espaçados. Essas mudanças, apesar de simples, são fundamentais para tornar os jogos mais acessíveis a um público mais amplo.</p>
-<h3>Intermediário</h3>
-<p>Requer algum planejamento e esforço, mas ainda assim apenas um bom planejamento geral do jogo já satisfaz grande parte dessas recomendações.</p><p>As diretrizes sugerem suportar múltiplos dispositivos de entrada e oferecer opções para ajustar a velocidade do jogo. Essas são adaptações que requerem um pouco mais de esforço e planejamento, mas têm um impacto significativo na experiência do jogador com diferentes necessidades.</p></li>
-<h3>Avançado:</h3>
-<p>Adaptações complexas para deficiências profundas e mecânica de nicho específica.</p><p>Neste critério, é necessário permitir jogar tanto em retrato quanto em paisagem, e garantir que o tempo preciso não seja essencial para a jogabilidade. Aqui, falamos sobre criar esquemas de controle muito simples compatíveis com dispositivos de tecnologia assistiva, como interruptores ou rastreamento ocular, as adaptações são essenciais para jogadores com deficiências mais severas.</p>
-<h2>Categorias</h2>
+<p>Antes de qualquer aprofundamento nas recomendações, é importante saber que o guia classifica as recomendações em 3 critérios, abrangendo desde implementações simples até adaptações mais complexas para deficiências específicas.</p>
+<p>Abaixo, reproduzimos algumas orientações tiradas do guia, suas categorias e recomendações.</p>
+
+<h3 class="mt-5">Básico</h3>
+<p>Fácil de implementar e aplicar com amplo alcance, se adequando em quase todas as mecânicas de jogo.</p>
+<p>As recomendações incluem facilitar/permitir a remapeamento e ajustes de sensibilidade de controles, simplificar a interface do usuário (especialmente em telas menores ou sensíveis ao toque) garantindo que ela seja acessível usando o mesmo método de entrada que o gameplay, tornando elementos interativos grandes e bem espaçados. Essas mudanças, apesar de simples, são fundamentais para tornar os jogos mais acessíveis a um público mais amplo.</p>
+
+<div class="accordion accordion-flush" id="accordionBasico">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseBasicoGeral" aria-expanded="false" aria-controls="flush-collapseBasicoGeral">
+            Geral
+        </button>
+      </h2>
+      <div id="flush-collapseBasicoGeral" class="accordion-collapse collapse" data-bs-parent="#accordionBasico">
+        <div class="accordion-body">
+            <ol class="list-group  list-group-numbered  list-group-flush">
+                <li class="px-0 list-group-item">Oferecer uma ampla escolha de níveis de dificuldade.</li>
+                <li class="px-0 list-group-item">Fornecer detalhes sobre recursos de acessibilidade na embalagem e/ou no site.</li>
+                <li class="px-0 list-group-item">Fornecer detalhes sobre recursos de acessibilidade no jogo.</li>
+                <li class="px-0 list-group-item">Garantir que todas as configurações sejam salvas/lembradas.</li>
+                <li class="px-0 list-group-item">Solicitar feedback sobre acessibilidade.</li>
+            </ol>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseBasicoMotor" aria-expanded="false" aria-controls="flush-collapseBasicoMotor">
+            Motor (Controle / Mobilidade)
+        </button>
+      </h2>
+      <div id="flush-collapseBasicoMotor" class="accordion-collapse collapse" data-bs-parent="#accordionBasico">
+        <div class="accordion-body">
+            <ol class="list-group  list-group-numbered list-group-flush">
+                <li class="px-0 list-group-item">Permitir que os controles sejam remapeados ou reconfigurados.</li>
+                <li class="px-0 list-group-item">Garantir que todas as áreas da interface do usuário possam ser acessadas usando o mesmo método de entrada que o jogo.</li>
+                <li class="px-0 list-group-item">Incluir uma opção para ajustar a sensibilidade dos controles.</li>
+                <li class="px-0 list-group-item">Simplificar os controles ou forneça uma alternativa mais simples.</li>
+                <li class="px-0 list-group-item">Garantir que elementos interativos ou controles virtuais sejam grandes e bem espaçados, especialmente em telas pequenas ou sensíveis ao toque.</li>
+                <li class="px-0 list-group-item">Incluir um controle deslizante para qualquer estimulo tátil.</li>
+            </ol>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseBasicoCognitivo" aria-expanded="false" aria-controls="flush-collapseBasicoCognitivo">
+            Cognitivo (Pensamento / Memória / Processamento de Informações)
+        </button>
+      </h2>
+      <div id="flush-collapseBasicoCognitivo" class="accordion-collapse collapse" data-bs-parent="#accordionBasico">
+        <div class="accordion-body">
+            <ol class="list-group  list-group-numbered list-group-flush">
+                <li class="px-0 list-group-item">Permitir que o jogo seja iniciado sem a necessidade de navegar por vários níveis de menus.</li>
+                <li class="px-0 list-group-item">Usar um tamanho de fonte padrão facilmente legível.</li>
+                <li class="px-0 list-group-item">Utilizar uma linguagem clara e simples.</li>
+                <li class="px-0 list-group-item">Usar formatação de texto clara e simples.</li>
+                <li class="px-0 list-group-item">Incluir tutoriais interativos.</li>
+                <li class="px-0 list-group-item">Permitir que os jogadores avancem pelos <en lang="en">prompts</en> de texto no seu próprio ritmo.</li>
+                <li class="px-0 list-group-item">Evitar imagens piscantes e padrões repetitivos.</li>
+            </ol>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseBasicoVisao" aria-expanded="false" aria-controls="flush-collapseBasicoVisao">
+            Visão
+          </button>
+        </h2>
+        <div id="flush-collapseBasicoVisao" class="accordion-collapse collapse" data-bs-parent="#accordionBasico">
+          <div class="accordion-body">
+                <ol class="list-group  list-group-numbered list-group-flush">
+                    <li class="px-0 list-group-item">Garantir que nenhuma informação essencial seja transmitida apenas por cor.</li>
+                    <li class="px-0 list-group-item">Se o jogo usar campo de visão (apenas motor 3D), defina um padrão apropriado para o ambiente de visualização esperado.</li>
+                    <li class="px-0 list-group-item">Evitar gatilhos de doença de simulação de Realidade Virtual.</li>
+                    <li class="px-0 list-group-item">Usar um tamanho de fonte padrão facilmente legível.</li>
+                    <li class="px-0 list-group-item">Fornecer alto contraste entre texto/interface do usuário e fundo.</li>
+                    <li class="px-0 list-group-item">Garantir que elementos interativos ou controles virtuais sejam grandes e bem espaçados, especialmente em telas pequenas ou sensíveis ao toque.</li>
+                </ol>
+          </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseBasicoAudicao" aria-expanded="false" aria-controls="flush-collapseBasicoAudicao">
+            Audição
+          </button>
+        </h2>
+        <div id="flush-collapseBasicoAudicao" class="accordion-collapse collapse" data-bs-parent="#accordionBasico">
+          <div class="accordion-body">
+            <ol class="list-group  list-group-numbered list-group-flush">
+                <li class="px-0 list-group-item">Fornecer legendas para todos os discursos importantes.</li>
+                <li class="px-0 list-group-item">Fornecer controles de volume separados ou silenciadores para efeitos, fala e fundo/música.</li>
+                <li class="px-0 list-group-item">Garantir que nenhuma informação essencial seja transmitida apenas por sons.</li>
+                <li class="px-0 list-group-item">Ao fornecer legendas, apresente-as de forma clara e fácil de ler.</li>
+            </ol>
+          </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseBasicoFala" aria-expanded="false" aria-controls="flush-collapseBasicoFala">
+            Fala
+          </button>
+        </h2>
+        <div id="flush-collapseBasicoFala" class="accordion-collapse collapse" data-bs-parent="#accordionBasico">
+          <div class="accordion-body">
+            <ol class="list-group  list-group-numbered list-group-flush">
+                <li class="px-0 list-group-item">Garantir que a entrada de fala não seja necessária e seja incluída apenas como um método de entrada suplementar/alternativo.</li>
+            </ol>
+          </div>
+        </div>
+    </div>
+</div>
+
+<h3 class="mt-5">Intermediário</h3>
+<p>Requer algum planejamento e esforço, mas ainda assim apenas um bom planejamento geral do jogo já satisfaz grande parte dessas recomendações.</p>
+<p>As diretrizes sugerem suportar múltiplos dispositivos de entrada e oferecer opções para ajustar a velocidade do jogo. Essas são adaptações que requerem um pouco mais de esforço e planejamento, mas têm um impacto significativo na experiência do jogador com diferentes necessidades.</p>
+
+<div class="accordion accordion-flush" id="accordionIntermediario">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseIntermediarioGeral" aria-expanded="false" aria-controls="flush-collapseIntermediarioGeral">
+          Geral
+      </button>
+    </h2>
+    <div id="flush-collapseIntermediarioGeral" class="accordion-collapse collapse" data-bs-parent="#accordionIntermediario">
+      <div class="accordion-body">
+        <ol class="list-group  list-group-numbered list-group-flush">
+          <li class="px-0 list-group-item">Permitir que o nível de dificuldade seja alterado durante o jogo, seja por meio de configurações ou dificuldade adaptativa.</li>
+          <li class="px-0 list-group-item">Incluir algumas pessoas com deficiências entre os participantes dos testes de jogo.</li>
+          <li class="px-0 list-group-item">Oferecer um meio de contornar elementos de jogo que não fazem parte da mecânica principal, por meio de configurações ou opção de pular no jogo.</li>
+          <li class="px-0 list-group-item">Incluir modos de assistência, como mira automática e direção assistida.</li>
+          <li class="px-0 list-group-item">Fornecer recurso de salvamento manual.</li>
+          <li class="px-0 list-group-item">Fornecer recurso de salvamento automático.</li>
+          <li class="px-0 list-group-item">Permitir que uma preferência seja definida para jogar multijogador online com/sem outros que estão usando recursos de acessibilidade que podem dar uma vantagem competitiva.</li>
+          <li class="px-0 list-group-item">Permitir que a jogabilidade seja ajustada com precisão expondo o máximo de variáveis possível.</li>
+      </ol>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseIntermediarioMotor" aria-expanded="false" aria-controls="flush-collapseIntermediarioMotor">
+          Motor (Controle / Mobilidade)
+      </button>
+    </h2>
+    <div id="flush-collapseIntermediarioMotor" class="accordion-collapse collapse" data-bs-parent="#accordionIntermediario">
+      <div class="accordion-body">
+        <ol class="list-group  list-group-numbered list-group-flush">
+          <li class="px-0 list-group-item">Dar suporte mais de um dispositivo de entrada.</li>
+          <li class="px-0 list-group-item">Fazer com que elementos interativos que requerem precisão (por exemplo, opções de menu controladas por cursor/toque) sejam estacionários.</li>
+          <li class="px-0 list-group-item">Garantir que ações simultâneas múltiplas (por exemplo, clicar/arrastar ou deslizar) não sejam necessárias e sejam incluídas apenas como um método de entrada suplementar/alternativo.</li>
+          <li class="px-0 list-group-item">Garantir que todas as ações principais possam ser realizadas por controles digitais (teclado / teclas / pressionamentos), sem que entradas mais complexas (por exemplo, analógicas, fala, gestos) sejam necessárias, e incluídas apenas como métodos de entrada suplementares/alternativos.</li>
+          <li class="px-0 list-group-item">Incluir uma opção para ajustar a velocidade do jogo.</li>
+          <li class="px-0 list-group-item">Evitar entradas repetidas (pressionamento contínuo de botões/eventos rápidos).</li>
+          <li class="px-0 list-group-item">Se produzir um jogo para PC, suporte o modo janela para compatibilidade com teclados virtuais sobrepostos.</li>
+          <li class="px-0 list-group-item">Evitar ou providenciar alternativas ao exigir que botões sejam mantidos pressionados.</li>
+          <li class="px-0 list-group-item">Permitir que interfaces sejam rearranjadas.</li>
+          <li class="px-0 list-group-item">Permitir que interfaces sejam redimensionadas.</li>
+          <li class="px-0 list-group-item">Fornecer um sistema de macros.</li>
+          <li class="px-0 list-group-item">Não depender do rastreamento de movimento de tipos de corpo específicos.</li>
+      </ol>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseIntermediarioCognitivo" aria-expanded="false" aria-controls="flush-collapseIntermediarioCognitivo">
+          Cognitivo (Pensamento / Memória / Processamento de Informações)
+      </button>
+    </h2>
+    <div id="flush-collapseIntermediarioCognitivo" class="accordion-collapse collapse" data-bs-parent="#accordionIntermediario">
+      <div class="accordion-body">
+        <ol class="list-group  list-group-numbered list-group-flush">
+          <li class="px-0 list-group-item">Incluir ajuda/dicas/orientações contextuais no jogo.</li>
+          <li class="px-0 list-group-item">Indicar/permitir lembretes dos objetivos atuais durante o jogo.</li>
+          <li class="px-0 list-group-item">Indicar/permitir lembretes dos controles durante o jogo.</li>
+          <li class="px-0 list-group-item">Incluir um meio de praticar sem falhas, como um nível de prática ou modo sandbox.</li>
+          <li class="px-0 list-group-item">Empregar uma estrutura narrativa simples e clara.</li>
+          <li class="px-0 list-group-item">Ao usar uma narrativa abrangente longa, forneça resumos do progresso.</li>
+          <li class="px-0 list-group-item">Garantir que nenhuma informação essencial (especialmente instruções) seja transmitida apenas por texto, reforce com visuais e/ou fala.</li>
+          <li class="px-0 list-group-item">Indicar de forma clara de que elementos interativos são interativos.</li>
+          <li class="px-0 list-group-item">Fornece uma opção para desligar/esconder movimento de fundo.</li>
+          <li class="px-0 list-group-item">Suportar chat de voz, bem como texto para jogos multijogador.</li>
+          <li class="px-0 list-group-item">Fornecer miniaturas de jogabilidade com salvamentos de jogo.</li>
+          <li class="px-0 list-group-item">Fornecer controles de volume separados ou silenciadores para efeitos, fala e fundo/música.</li>
+          <li class="px-0 list-group-item">Garantir que as escolhas de som/música para cada objeto/evento chave sejam distintas entre si.</li>
+          <li class="px-0 list-group-item">Incluir uma opção para ajustar a velocidade do jogo.</li>
+          <li class="px-0 list-group-item">Fornecer uma escolha de cor de texto, escolha de contraste baixo/alto como mínimo.</li>
+          <li class="px-0 list-group-item">Destacar palavras importantes.</li>
+          <li class="px-0 list-group-item">Inclir um controle deslizante para qualquer estimulo tátil.</li>
+      </ol>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseIntermediarioVisao" aria-expanded="false" aria-controls="flush-collapseIntermediarioVisao">
+          Visão
+        </button>
+      </h2>
+      <div id="flush-collapseIntermediarioVisao" class="accordion-collapse collapse" data-bs-parent="#accordionIntermediario">
+        <div class="accordion-body">
+          <ol class="list-group  list-group-numbered list-group-flush">
+            <li class="px-0 list-group-item">Se o jogo usar campo de visão (apenas motor 3D), permita um meio para ajustá-lo.</li>
+            <li class="px-0 list-group-item">Evitar (ou fornecer opção para desativar) qualquer diferença entre movimento do controle e movimento da câmera, como balanço de arma/caminhada ou suavização do mouse.</li>
+            <li class="px-0 list-group-item">Usar som surround.</li>
+            <li class="px-0 list-group-item">Fornecer uma opção para desligar/esconder animação de fundo.</li>
+            <li class="px-0 list-group-item">Garantir suporte a leitores de tela para dispositivos móveis.</li>
+            <li class="px-0 list-group-item">Fornecer uma opção para ajustar o contraste.</li>
+            <li class="px-0 list-group-item">Garantir que as escolhas de som/música para objetos/eventos chave sejam distintas entre si.</li>
+            <li class="px-0 list-group-item">Fornecer uma escolha de cores/designs de cursor/mira.</li>
+            <li class="px-0 list-group-item">Dar indicação clara de que elementos interativos são interativos.</li>
+            <li class="px-0 list-group-item">Garantir que manuais/sites sejam fornecidos em um formato amigável para leitores de tela.</li>
+            <li class="px-0 list-group-item">Fornecer controles de volume separados ou silenciadores para efeitos, fala e fundo/música.</li>
+            <li class="px-0 list-group-item">Evitar colocar informações essenciais temporárias fora da linha de visão do jogador.</li>
+            <li class="px-0 list-group-item">Permitir que interfaces sejam redimensionadas.</li>
+        </ol>
+        </div>
+      </div>
+  </div>
+  <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseIntermediarioAudicao" aria-expanded="false" aria-controls="flush-collapseIntermediarioAudicao">
+          Audição
+        </button>
+      </h2>
+      <div id="flush-collapseIntermediarioAudicao" class="accordion-collapse collapse" data-bs-parent="#accordionIntermediario">
+        <div class="accordion-body">
+          <ol class="list-group  list-group-numbered list-group-flush">
+            <li class="px-0 list-group-item">Manter o ruído de fundo ao mínimo durante a fala.</li>
+            <li class="px-0 list-group-item">Fornecer legendas para fala suplementar.</li>
+            <li class="px-0 list-group-item">Garantir que legendas/legendas ocultas possam ser ativadas antes que qualquer som seja reproduzido.</li>
+            <li class="px-0 list-group-item">Fornecer legendas ou visuais para sons de fundo significativos.</li>
+            <li class="px-0 list-group-item">Fornecer uma indicação visual de quem está falando atualmente.</li>
+            <li class="px-0 list-group-item">Permitir que a apresentação de legendas/legendas ocultas seja personalizada.</li>
+            <li class="px-0 list-group-item">Dar suporte chat de texto, bem como voz para multijogador.</li>
+            <li class="px-0 list-group-item">Permitir comunicação baseada em mapa ou ambiente em multijogador.</li>
+            <li class="px-0 list-group-item">Permitir que uma preferência seja definida para jogar multijogador online com jogadores que só jogarão com/estão dispostos a jogar sem chat de voz.</li>
+            <li class="px-0 list-group-item">Garantir que todas as informações suplementares importantes (por exemplo, a direção de onde você está sendo atirado) transmitidas por áudio sejam replicadas em texto/visuais.</li>
+            <li class="px-0 list-group-item">Fornecer um alternador estéreo/mono.</li>
+        </ol>
+        </div>
+      </div>
+  </div>
+  <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseIntermediarioFala" aria-expanded="false" aria-controls="flush-collapseIntermediarioFala">
+          Fala
+        </button>
+      </h2>
+      <div id="flush-collapseIntermediarioFala" class="accordion-collapse collapse" data-bs-parent="#accordionIntermediario">
+        <div class="accordion-body">
+          <ol class="list-group  list-group-numbered list-group-flush">
+            <li class="px-0 list-group-item">Permitir que uma preferência seja definida para jogar multijogador online com jogadores que só jogarão com/estão dispostos a jogar sem chat de voz.</li>
+            <li class="px-0 list-group-item">Dar suporte chat de texto, bem como voz para multijogador online.</li>
+            <li class="px-0 list-group-item">Fornecer meios visuais de comunicação em multijogador.</li>
+            <li class="px-0 list-group-item">Utilize o reconhecimento de fala em palavras individuais de um vocabulário pequeno (por exemplo, 'sim', 'não', 'abrir') em vez de frases longas ou palavras de várias sílabas.</li>
+        </ol>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<h3 class="mt-5">Avançado</h3>
+<p>Adaptações complexas para deficiências profundas e mecânica de nicho específica.</p>
+<p>Neste critério, é necessário permitir jogar tanto em retrato quanto em paisagem, e garantir que o tempo preciso não seja essencial para a jogabilidade. Aqui, falamos sobre criar esquemas de controle muito simples compatíveis com dispositivos de tecnologia assistiva, como interruptores ou rastreamento ocular, as adaptações são essenciais para jogadores com deficiências mais severas.</p>
+
+<div class="accordion accordion-flush" id="accordionAvancado">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAvancadoGeral" aria-expanded="false" aria-controls="flush-collapseAvancadoGeral">
+          Geral
+      </button>
+    </h2>
+    <div id="flush-collapseAvancadoGeral" class="accordion-collapse collapse" data-bs-parent="#accordionAvancado">
+      <div class="accordion-body">
+        <ol class="list-group  list-group-numbered list-group-flush">
+          <li class="px-0 list-group-item">Incluir todas as categorias relevantes de deficiência (motor, cognitivo, etc.) entre os participantes dos testes de jogo, em números representativos com base na idade/demografia do público-alvo.</li>
+          <li class="px-0 list-group-item">Permitir que as configurações sejam salvas em perfis diferentes, no nível do jogo ou da plataforma.</li>
+          <li class="px-0 list-group-item">Transcrição de texto e fala em tempo real.</li>
+      </ol>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAvancadoMotor" aria-expanded="false" aria-controls="flush-collapseAvancadoMotor">
+          Motor (Controle / Mobilidade)
+      </button>
+    </h2>
+    <div id="flush-collapseAvancadoMotor" class="accordion-collapse collapse" data-bs-parent="#accordionAvancado">
+      <div class="accordion-body">
+        <ol class="list-group  list-group-numbered list-group-flush">
+          <li class="px-0 list-group-item">Permitir jogar tanto em retrato quanto em paisagem.</li>
+          <li class="px-0 list-group-item">Não torne o tempo preciso essencial para a jogabilidade - ofereça alternativas, ações que podem ser realizadas enquanto pausadas ou um mecanismo de pular.</li>
+          <li class="px-0 list-group-item">Incluir um período de resfriamento (atraso pós-aceitação) de 0,5 segundos entre as entradas.</li>
+          <li class="px-0 list-group-item">Forneça esquemas de controle muito simples que sejam compatíveis com dispositivos de tecnologia assistiva, como interruptores ou rastreamento ocular.</li>
+      </ol>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAvancadoCognitivo" aria-expanded="false" aria-controls="flush-collapseAvancadoCognitivo">
+          Cognitivo (Pensamento / Memória / Processamento de Informações)
+      </button>
+    </h2>
+    <div id="flush-collapseAvancadoCognitivo" class="accordion-collapse collapse" data-bs-parent="#accordionAvancado">
+      <div class="accordion-body">
+        <ol class="list-group  list-group-numbered list-group-flush">
+          <li class="px-0 list-group-item">Fornecer uma opção para desativar sangue e violência.</li>
+          <li class="px-0 list-group-item">Fornecer narrações pré-gravadas para todo o texto, incluindo menus e instaladores.</li>
+          <li class="px-0 list-group-item">Evitar qualquer movimento ou evento repentino e inesperado.</li>
+          <li class="px-0 list-group-item">Permitir que toda a narrativa e instruções sejam repetidas.</li>
+          <li class="px-0 list-group-item">Usarchat baseado em símbolos (smileys, etc.).</li>
+          <li class="px-0 list-group-item">Forneça uma opção para desligar/esconder todos os elementos não interativos.</li>
+      </ol>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAvancadoVisao" aria-expanded="false" aria-controls="flush-collapseAvancadoVisao">
+          Visão
+        </button>
+      </h2>
+      <div id="flush-collapseAvancadoVisao" class="accordion-collapse collapse" data-bs-parent="#accordionAvancado">
+        <div class="accordion-body">
+          <ol class="list-group  list-group-numbered list-group-flush">
+            <li class="px-0 list-group-item">Permitit que o tamanho da fonte seja ajustado.</li>
+            <li class="px-0 list-group-item">Fornecer um mapa de áudio no estilo sonar que possa ser acionado.</li>
+            <li class="px-0 list-group-item">Fornecer narrações pré-gravadas para todo o texto, incluindo menus e instaladores.</li>
+            <li class="px-0 list-group-item">Fornecer um GPS falado.</li>
+            <li class="px-0 list-group-item">Permitir fácil orientação/movimento ao longo de pontos cardeais.</li>
+            <li class="px-0 list-group-item">Garantir que todas as ações principais possam ser realizadas por controles digitais (teclados/teclas/pressões), sem que entradas mais complexas (por exemplo, analógicas, gestos) sejam necessárias, e incluídas apenas como métodos de entrada suplementares/alternativos.</li>
+            <li class="px-0 list-group-item">Garantit suporte a leitores de tela, incluindo menus e instaladores.</li>
+            <li class="px-0 list-group-item">Usar design de som/música distinto para todos os objetos e eventos.</li>
+            <li class="px-0 list-group-item">Simular gravação binaural.</li>
+            <li class="px-0 list-group-item">Fornecer uma faixa de descrição de áudio.</li>
+        </ol>
+        </div>
+      </div>
+  </div>
+  <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAvancadoAudicao" aria-expanded="false" aria-controls="flush-collapseAvancadoAudicao">
+          Audição
+        </button>
+      </h2>
+      <div id="flush-collapseAvancadoAudicao" class="accordion-collapse collapse" data-bs-parent="#accordionAvancado">
+        <div class="accordion-body">
+          <ol class="list-group  list-group-numbered list-group-flush">
+            <li class="px-0 list-group-item">Garantir que legendas/legendas ocultas sejam reduzidas e apresentadas em um número apropriado de palavras por minuto para o grupo etário alvo.</li>
+            <li class="px-0 list-group-item">Fornecer linguagem de sinais.</li>
+            <li class="px-0 list-group-item">Usar chat baseado em símbolos (smileys, etc.).</li>
+        </ol>
+        </div>
+      </div>
+  </div>
+  <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAvancadoFala" aria-expanded="false" aria-controls="flush-collapseAvancadoFala">
+          Fala
+        </button>
+      </h2>
+      <div id="flush-collapseAvancadoFala" class="accordion-collapse collapse" data-bs-parent="#accordionAvancado">
+        <div class="accordion-body">
+          <ol class="list-group  list-group-numbered list-group-flush">
+            <li class="px-0 list-group-item">Definir o padrão de reconhecimento de fala em atingir um limiar de volume (por exemplo, 50%) em vez de palavras.</li>
+            <li class="px-0 list-group-item">Usar chat baseado em símbolos (smileys, etc.).</li>
+        </ol>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<h2 class="mt-5">Categorias</h2>
 <p>Os critérios estão associados às categorias ou diretrizes que abordam especificidades para diferentes tipos de deficiências, como pessoas com deficiência motoras, cognitivas, visuais, auditivas e de fala, oferecendo recomendações detalhadas para cada uma.</p>
 <p>Por exemplo, para <strong>deficiências motoras</strong>, é essencial permitir a remapeamento de controles e garantir que todos os elementos interativos sejam grandes e bem espaçados, enquanto para <strong>deficiências cognitivas</strong>, recomenda-se o uso de linguagem simples e clara, incluir tutoriais, e permitir que os jogadores se desenvolvam no jogo no seu próprio ritmo. <br>Para as pessoa com <strong>deficiências visuais</strong>, é fundamental garantir que nenhuma informação essencial seja transmitida apenas por cores e oferecer opções de ajuste de tamanho de fonte e contraste e, para as pessoas que tenham <strong>deficiência na fala</strong>, é importante que a entrada de voz não seja obrigatória, mas apenas um método de entrada alternativo, enquanto pessoas com <strong>deficiências auditivas</strong>, a disponibilização de legendas para toda a fala é fundamental e os e controles de volume separados para efeitos, fala e música de fundo.</p>
 <p>. . .</p>
 <p>As diretrizes/recomendações disponibilizadas no Game Accessibility Guidelines nos mostram que a acessibilidade em jogos é um campo vasto, com muitas possibilidades para pessoas desenvolvedoras que desejam criar jogos mais acessíveis e inclusivos. Ainda é um campo muito, muito aberto para novas possibilidades de inovação.</p>
-<p>Mas não fique apenas com essas informações, acesse o site do projeto, já há detalhes de cada critério, acesse o site: <a href="https://gameaccessibilityguidelines.com/" class="fw-bold">https://gameaccessibilityguidelines.com/</a>. Além de visitar o site, nos conta nos comentários o que você achou da dica  ou compartilhar conosco alguma dica ou experiência.🎮🌐</p>
+<p>Mas não fique apenas com essas informações, acesse o site do projeto, já há detalhes de cada critério, acesse o site: <a href="https://gameaccessibilityguidelines.com/" class="fw-bold">https://gameaccessibilityguidelines.com/</a>.
+</p><p>Queremos saber de você, já pensou essas dicas, já pensou ao ler os textos em possíveis melhorias nos jogos que você está jogando que poderia ser sido feita de forma mais acessível? Deixa tua opinião nos comentário.🎮🌐</p>
