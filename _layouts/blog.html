@@ -27,7 +27,7 @@ layout: default
 <div class="col-12 col-md-10 col-lg-8 mx-auto">
     {{ content }}
 
-    <div class="artigo-final"><p>Obrigado por acompanhar até aqui! Siga-nos nas redes sociais e nos serviços de streamin e até a próxima<br><mark>Lembre-se: acessibilidade é um tema que, mais cedo ou mais tarde, afetará a todos nós!</mark></p>
+    <div class="artigo-final"><p>Obrigado por acompanhar até aqui! Inscreva-se em nova <a href="#newsletter" lang="en">newsletter</a> (mandamos no máximos dois emails por mês 🥰), siga-nos nas redes sociais (({% for item in site.data.links.network %}<span class="support-social social-{{item.name | slugify}}"><a href="{{item.link}}" target="_blank" title="Nos acompanhe também no {{item.name}} - nova aba" rel="noopener noreferrer" >{{item.name}}</a></span>{% endfor %})) e nos principais serviços de streaming e até a próxima!</p><p><strong>Lembre-se: acessibilidade é um tema que, mais cedo ou mais tarde, afetará a todos nós!</strong></p>
 </div>
     {% if page.title-ep %}
     <h2 class="mt-5 mb-3">Ouça o episódio completo <i class="ms-2bi bi-arrow-down"></i></h2>
