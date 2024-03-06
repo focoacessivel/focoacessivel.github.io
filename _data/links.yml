@@ -42,7 +42,6 @@ streaming:
     link: "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEyMTc4MzMxNDQvc291bmRzLnJzcw"
   # - name: Soundcloud
     # link: "https://soundcloud.com/focoacessivel"
-  
 
 network:
   - name: LinkedIn
@@ -64,7 +63,6 @@ network:
     link: https://www.threads.net/@focoacessivel
     icon: '<i class="bi bi-threads"></i>'
 
- 
 platforms-main:
   - name: Spotify
     link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"

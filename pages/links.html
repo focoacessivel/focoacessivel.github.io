@@ -1,7 +1,7 @@
 ---
 layout: compress
-title: "Junte-se ao Foco Acessível!"
-permalink: newsletter.html
+title: "Links do Foco Acessível"
+permalink: links.html
 ---
 
 <!DOCTYPE html>
@@ -10,9 +10,11 @@ permalink: newsletter.html
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="{% if page.path contains '_posts' %}{{ page.tags | array_to_sentence_string }}{% else %}Acessibilidade, Inclusão, Diversidade, Podcast, {{site.author}}{% endif %}">
+    <meta name="keywords"
+    content="{% if page.path contains '_posts' %}{{ page.tags | array_to_sentence_string }}{% else %}Acessibilidade, Inclusão, Diversidade, Podcast, {{site.author}}{% endif %}">
     <meta name="author" content="{{site.author}}">
-    <meta name="description" content="{% if description.size > 10 %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description"
+    content="{% if description.size > 10 %}{{ description }}{% else %}{{ site.description }}{% endif %}">
 
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
@@ -46,25 +48,49 @@ permalink: newsletter.html
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
     {% seo %}
-    <style>body{background-color: #f7f7f7;}.logo img{height: 84px;}.mailchimp,.asterisk{font-size: .825rem  !important; opacity: .85;}</style>
+    <style>body{background-color: #f7f7f7;}.logo{height: 84px;}header h1 {font-size: 1.5rem; padding: 2rem 0 1.5rem;}</style>
 </head>
-<body class="flex-column w-100 h-100 p-3 d-flex align-items-center justify-content-center">
-    <div class="container bg-white rounded shadow p-4 col-lg-8 col-12 mx-auto">
-        <div class="logo"><img src="{{site.url}}/img/logo.svg" class="d-block mx-auto" alt="{{site.logo-alt}}"></div>
-        <h1 class="my-5 text-center">Junte-se ao Foco Acessível!</h1>
-        <p>Que bacana que você é uma pessoal interessada em acessibilidade, inclusão e tecnologia! Aqui no Foco Acessível, estamos sempre buscando formas de tornar o mundo digital mais inclusivo e acessível para todos. Junte-se a nós nessa jornada rumo a um mundo mais inclusivo e acessível para todos.</p>
-        <p>Ao se inscrever, você receberá conteúdo exclusivo diretamente em seu e-mail, além de ser o primeiro a saber sobre eventos, cursos e iniciativas ligadas à acessibilidade e inclusão.</p>
-        <p id="emailHelp" class="form-text">Ao adicionar seu email, você concorda com os <a href="{{site.url}}/termos.html">termos de uso</a>.</p>
-        <div id="mc_embed_shell mx-auto pt-5 mt-5">
+<body class="p-4 col-12 col-md-8 mx-auto">
+
+    <header class="mx-auto">
+        <img src="{{site.url}}/img/icone.svg" class="logo d-block mx-auto" alt="{{site.icone-alt}}">
+        <h1 class="text-center">{{site.title}}</h1>
+        <p class="text-center">Acessibilidade, diversidade e inclusão na tecnologia.</p>
+        <ul class=" socials my-5 mx-auto d-flex align-items-center justify-content-around">
+        {% include social.html %}
+
+        <li>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNewsletter" aria-expanded="false" aria-controls="collapseNewsletter">
+                Assine a newsletter
+            </button>
+        </li>
+        </ul>
+
+        <div class="collapse" id="collapseNewsletter">
+        <div class="card card-body">
+            <p id="emailHelp" class="form-text">Ao adicionar seu email, você concorda com os <a href="{{site.url}}/termos.html">termos de uso</a>.</p>
             {% include newsletter-form.html %}
         </div>
-    </div>
+        </div>
+    </header>
+    <div class="section">
+         
+        <div class="row text-center">
+            {% for item in site.data.blog.links %}
+            <div class="col-4 border border-5 border-white" style="background: url({{item.image}}) center no-repeat; background-size: cover;">
+                <a href="{{item.url}}"class="ratio ratio-1x1" title="Acesse '{{item.title}}'">
+                    <span class="d-none">'{{item.title}}'</span>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
 
-    <a href="http://eepurl.com/iLr-K-" class="text-center mailchimp text-decoration-none my-5" title="Mailchimp - marketing por e-mail fácil e divertido">
-        <span class="mb-2 d-block">E-mail enviado através do</span>
-        <img class="d-block refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px;">
-    </a>
+    </div> 
     {% include support.html %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
 </body>
 </html>
 
