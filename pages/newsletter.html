@@ -1,0 +1,72 @@
+---
+layout: compress
+title: "Junte-se ao Foco Acessível!"
+permalink: newsletter.html
+---
+
+<!DOCTYPE html>
+<html lang="en" class=" w-100 h-100">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+    content="{% if page.path contains '_posts' %}{{ page.tags | array_to_sentence_string }}{% else %}Acessibilidade, Inclusão, Diversidade, Podcast, {{site.author}}{% endif %}">
+    <meta name="author" content="{{site.author}}">
+    <meta name="description"
+    content="{% if description.size > 10 %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+    <!-- GOOGLE TAG MANAGER -->
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-WMN29SM');</script>
+
+    <!--  GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <!--  FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="{{ site.url }}/img/icons/icon-72x72.png">
+    <link rel="shortcut icon" sizes="196x196" href="{{ site.url }}/img/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" href="{{ site.url }}/img/icons/favicon.ico">
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&&display=swap">
+    <link rel="stylesheet" href="{{ '/main.css' | prepend: site.baseurl }}">
+    <!-- <link rel="stylesheet" href="{{site.url}}/diagnostic.css"> -->
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="manifest" href="{{site.url}}/manifest.json">
+    <meta name="theme-color" content="#005757" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    {% seo %}
+    <style>body{background-color: #f7f7f7;}.logo img{height: 84px;}.mailchimp,.asterisk{font-size: .825rem  !important; opacity: .85;}</style>
+</head>
+<body class="flex-column w-100 h-100 p-3 d-flex align-items-center justify-content-center">
+    <div class="container bg-white rounded shadow p-4 col-lg-8 col-12 mx-auto">
+        <div class="logo"><img src="{{site.url}}/img/logo.svg" class="d-block mx-auto" alt=""></div>
+        <h1 class="my-5 text-center">Junte-se ao Foco Acessível!</h1>
+        <p>Que bacana que você é uma pessoal interessada em acessibilidade, inclusão e tecnologia! Aqui no Foco Acessível, estamos sempre buscando formas de tornar o mundo digital mais inclusivo e acessível para todos. Junte-se a nós nessa jornada rumo a um mundo mais inclusivo e acessível para todos.</p>
+        <p>Ao se inscrever, você receberá conteúdo exclusivo diretamente em seu e-mail, além de ser o primeiro a saber sobre eventos, cursos e iniciativas ligadas à acessibilidade e inclusão.</p>
+        <p id="emailHelp" class="form-text">Ao adicionar seu email, você concorda com os <a href="{{site.url}}/termos.html">termos de uso</a>.</p>
+        <div id="mc_embed_shell mx-auto pt-5 mt-5">
+            <div id="mc_embed_signup"> <form action="https://github.us21.list-manage.com/subscribe/post?u=1b53d19e5242260344b4ea735&amp;id=d7175742eb&amp;f_id=0076e1e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"><div class="form-floating mc-field-group" id="mc_embed_signup_scroll"> <input type="email" name="EMAIL" class="required email form-control" placeholder="abc@exyz.com" id="mce-EMAIL" required="" value="" aria-describedby="emailHelp" wfd-id="id0"> <label for="mce-EMAIL" class="form-label">Digite o email para receber as comunicações</label></div><button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button mt-3 w-50 button">Confirmar</button> </form></div>
+        </div>
+    </div>
+
+    <a href="http://eepurl.com/iLr-K-" class="text-center mailchimp text-decoration-none my-5" title="Mailchimp - marketing por e-mail fácil e divertido">
+        <span class="mb-2 d-block">E-mail enviado através do</span>
+        <img class="d-block refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px;">
+    </a>
+</body>
+</html>
+
+
