@@ -48,7 +48,7 @@ permalink: links.html
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
     {% seo %}
-    <style>body{background-color: #f7f7f7;}.logo{height: 84px;}header h1 {font-size: 1.5rem; padding: 2rem 0 1.5rem;}</style>
+    <style>.logo{height: 84px;}header h1 {font-size: 1.5rem; padding: 2rem 0 1.5rem;}</style>
 </head>
 <body class="p-4 col-12 col-md-8 mx-auto">
 
@@ -77,10 +77,15 @@ permalink: links.html
          
         <div class="row text-center">
             {% for item in site.data.blog.links %}
-            <div class="col-4 border border-5 border-white" style="background: url({{item.image}}) center no-repeat; background-size: cover;">
-                <a href="{{item.url}}"class="ratio ratio-1x1" title="Acesse '{{item.title}}'">
-                    <span class="d-none">'{{item.title}}'</span>
-                </a>
+            <div class="col-4 p-0">
+                <div class=" border border-5 border-white ratio ratio-1x1" style="background: url({{item.image}}) center no-repeat; background-size: cover;">
+                    <a href="{{item.url}}"class="ratio ratio-1x1" title="{{item.title}}">
+                        <span class="d-none">{{item.title}}</span>
+                    </a>
+                  </div>
+                  
+                  
+                 
             </div>
             {% endfor %}
         </div>
