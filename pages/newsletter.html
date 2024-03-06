@@ -5,7 +5,7 @@ permalink: newsletter.html
 ---
 
 <!DOCTYPE html>
-<html lang="en" class=" w-100 h-100">
+<html lang="en">
 <head>
     <meta charset="utf-8">
 
@@ -48,9 +48,9 @@ permalink: newsletter.html
     {% seo %}
     <style>body{background-color: #f7f7f7;}.logo img{height: 84px;}.mailchimp,.asterisk{font-size: .825rem  !important; opacity: .85;}</style>
 </head>
-<body class="flex-column w-100 h-100 p-3 d-flex align-items-center justify-content-center">
-    <div class="container bg-white rounded shadow p-4 col-lg-8 col-12 mx-auto">
-        <div class="logo"><img src="{{site.url}}/img/logo.svg" class="d-block mx-auto" alt="{{site.logo-alt}}"></div>
+<body class="w-100 h-100 p-3">
+    <div class="container bg-white rounded shadow mty-5 p-4 col-lg-8 col-12 mx-auto">
+        <div class="logo"><img src="{{site.url}}/img/logo.svg" class="d-block img-fluid mx-auto" alt="{{site.logo-alt}}"></div>
         <h1 class="my-5 text-center">Junte-se ao Foco Acessível!</h1>
         <p>Que bacana que você é uma pessoal interessada em acessibilidade, inclusão e tecnologia! Aqui no Foco Acessível, estamos sempre buscando formas de tornar o mundo digital mais inclusivo e acessível para todos. Junte-se a nós nessa jornada rumo a um mundo mais inclusivo e acessível para todos.</p>
         <p>Ao se inscrever, você receberá conteúdo exclusivo diretamente em seu e-mail, além de ser o primeiro a saber sobre eventos, cursos e iniciativas ligadas à acessibilidade e inclusão.</p>
@@ -59,11 +59,13 @@ permalink: newsletter.html
             {% include newsletter-form.html %}
         </div>
     </div>
+    <div class="d-block my-5"></div>
 
-    <a href="http://eepurl.com/iLr-K-" class="text-center mailchimp text-decoration-none my-5" title="Mailchimp - marketing por e-mail fácil e divertido">
+    <a href="http://eepurl.com/iLr-K-" class="text-center mailchimp text-decoration-none" title="Mailchimp - marketing por e-mail fácil e divertido">
         <span class="mb-2 d-block">E-mail enviado através do</span>
-        <img class="d-block refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px;">
+        <img class="d-block mx-auto refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px;">
     </a>
+    <div class="d-block my-5 py-5"></div>
     {% include support.html %}
 </body>
 </html>
