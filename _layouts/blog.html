@@ -35,7 +35,7 @@ layout: default
     <div class="episode rounded">
         <div class="row">
             <figure class="col-lg-4 col-12 pl-0 m-0 pb-0">
-                <a href="{{page.url}}" title-ep="Acesse o episódio">
+                <a href="{{page.url}}" class="ratio ratio-1x1" title-ep="Acesse o episódio">
                     <img src="{{page.image-ep}}"
                         class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded" alt="{{page.alt}}">
                 </a>
@@ -60,13 +60,13 @@ layout: default
                     {% if page.path contains '_pages' %}{{page.excerpt}}{% else %}{{page.excerpt}}{% endif %}
     
                 </div>
-                <div class="my-3 w-100">{% include player.html %}</div>
-    
-                <a href="{{site.url}}/episodios/{{page.link-ep}}" title="Clique para acessar informações sobre o episódio">
-                    <i class="bi bi-headphones me-2"></i>
-                    Acesse os links e a transcrição do episódio
-                  </a>
-            </div>
+              </div>
+              <div class="my-3 w-100">{% include player.html %}</div>
+  
+              <a href="{{site.url}}/episodios/{{page.link-ep}}" title="Clique para acessar informações sobre o episódio">
+                  <i class="bi bi-headphones me-2"></i>
+                  Acesse os links e a transcrição do episódio
+                </a>
         </div>
     </div>
     {% endif %}
