@@ -1,0 +1,63 @@
+---
+title: 'Audiodescrição de Imagens e Vídeos: Um Guia Prático com HTML'
+layout: blog
+categories: Blog
+comments: true
+label: 'Na prática'
+excerpt: 'Conheça o Audio Description Project da American Council of the Blind e saiba como tornar a as mídias acessíveis em seu site'
+tags: [Audiodescrição, Acessibilidade, Inclusão, Tecnologia Assistiva, American Council of the Blind, Audio Description Project, Mídia Acessível,Pessoa cega, Baixa visão, HTML]
+image: "https://raw.githubusercontent.com/focoacessivel/pictures/main/blog/blog-post-audiodescricao-de-imagens-videos-guia-pratico-com-html.png"
+banner-alt: 'Captura do Visual Code exibido um exemplo de código HTML'
+legend: ''
+# Info EP
+link-ep: 'ep-2-audiodescricao-tecnologia-a-favor-da-acessibilidade-e-da-inclusao-francisco-lima'
+title-ep: Audiodescrição e tecnologia a favor da acessibilidade e da inclusão
+guest: Francisco Lima
+role: Cientista e Professor
+number: 2
+duration: "01:53:49"
+# Image
+image-ep: "https://raw.githubusercontent.com/focoacessivel/pictures/main/ep/02-francisco-lima.jpg"
+alt: À direita da fotografia, em pé, o Professor Francisco segura com a mão direita um bloquinho de resina, dentro do qual está preservado um besouro. À esquerda, parcialmente oculto pelo corpo do professor, há um banner apresentando a fotografia colorida da abelha europeia, Apis mellifera. Acima do bolso esquerdo da camisa do professor, há um bottom do SnapSects.
+bio: "<p>Francisco é humanista, tradutor e intérprete, formado em Psicologia, PhD. em psicofísica sensorial com trabalho desenvolvido no museu de história natural dos EUA, consultor pelo <span lang='en'>Audio Description Project</span>, professor adjunto do curso de Pedagogia e em licenciaturas diversas da Universidade Federal de Pernambuco e a pesquisador no sistema tátil.</p><p>A frente de iniciativas como o curso de audiodescrição 'Imagens Que Falam', da publicação acadêmica 'Revista Brasileira de Tradução Visual' e do  '<abbr title='Laboratory of Artificial Intelligence and Machine Aid' lang='en'>Laima</abbr>', laboratório de desenvolvimento de tecnologias acessíveis.</p>"
+# Audio
+file: https://d3ctxlq1ktw2nl.cloudfront.net/staging/2023-5-26/336802538-44100-2-602efae2c8ef1.m4a
+---
+
+<p>Continuamos trazendo mais referências dos nossos episódios, hoje compartilhamos sobre sobre o <a href="https://adp.acb.org/"  rel="noopener noreferrer" target="_blank"  title="O link irá abrir uma nova aba">The Audio Description Project (ADP)</a>, projeto que faz parte da <a href="https://www.acb.org/"  rel="noopener noreferrer" target="_blank"  title="O link irá abrir uma nova aba">American Council of the Blind</a>. O ADP tem a missão de tornar as mídias mais acessíveis para as pessoas cegas ou com baixa visão, através da audiodescrição de filmes, programas de TV, teatro e até exposições de museus, permitindo que todos desfrutem de uma experiência completa, independentemente de sua visão.</p>
+<p>A audiodescrição é uma ferramenta fundamental para tornar conteúdos visuais acessíveis a pessoas com deficiência visual. Ao descrever elementos visuais por meio de áudio, podemos garantir que todos tenham acesso à informação. Neste post, exploraremos como implementar a audiodescrição de imagens e vídeos usando HTML.</p>
+<p><strong>Confira um exemplo do que é a audiodescrição na prática</strong></p>
+<div class="ratio ratio-16x9 mb-3"><iframe src="https://www.youtube.com/embed/c68DJK9MICk" title="Exemplo de vídeo contendo Audiodescrição"></iframe></div>
+<p>Agora que todos foram apresentados, vamos colocar a mão na prática?</p>
+<h3 class="mt-5">Audiodescrição de Imagens com HTML</h3>
+<p>Para audiodescrever imagens em páginas da web, podemos utilizar o atributo <strong><code>alt</code></strong> nas tags de imagem (<strong><code>&lt;img&gt;</code></strong>). Esse atributo é utilizado para fornecer uma descrição textual da imagem, que pode ser lida por leitores de tela.</p>
+<pre><code class="lang-html">&lt;img src="imagem.jpg" alt="Descrição detalhada da imagem"&gt;</code></pre>
+<p>A descrição deve ser concisa, mas informativa, proporcionando contexto e detalhes importantes da imagem para quem não pode vê-la.</p>
+<p>Abaixo você pode conferir o leitor NVDA lendo da descrição do Francisco, nosso convidado.</p>
+<div class="ratio ratio-16x9 mb-3"><iframe src="https://www.youtube.com/embed/ICk8XZ4W148" title="Audiodescrição da foto de Francisco no site Foco Acessíve"></iframe></div>
+<p>Código HTML que garante essa possibilidade está reproduzido abaixo:</p>
+<pre><code>&lt;img
+    src="francisco-lima.jpg"
+    title="Foto de Francisco Lima"
+    alt="À direita da fotografia, em pé, o Professor Francisco segura com a mão direita um bloquinho de resina,
+    dentro do qual está preservado um besouro. À esquerda, parcialmente oculto pelo corpo do professor,
+    há um banner apresentando a fotografia colorida da abelha europeia, Apis mellifera. Acima do bolso
+    esquerdo da camisa do professor, há um bottom do SnapSects."&gt;</code></pre>
+<h3 class="mt-5">Audiodescrição de Vídeos com HTML</h3>
+<p>A audiodescrição de vídeos é um pouco mais complexa, pois requer a sincronização do áudio descritivo com o conteúdo visual. Para vídeos na web, podemos utilizar a tag <strong><code>&lt;video&gt;</code></strong> do HTML5, combinada com trilhas de áudio adicionais que contêm a audiodescrição.</p>
+<pre><code>
+&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  &lt;track kind="descriptions" src="audiodescricao.vtt" srclang="pt" label="Português"&gt;
+&lt;/video&gt;
+</code></pre>
+<p>No exemplo acima, a tag <strong><code>&lt;track&gt;</code></strong> é utilizada para incluir um arquivo de trilha de texto (no formato WebVTT) que contém a audiodescrição. O atributo <strong><code>kind</code></strong> é definido como <strong><code>descriptions</code></strong> para indicar que se trata de uma trilha de audiodescrição. O atributo <strong><code>label</code></strong> pode ser usado para fornecer um nome amigável para a trilha de áudio.</p>
+<h2 class="mt-5">Dica</h2>
+<p>Existe um projeto de player acessível chamado <a href="https://ableplayer.github.io/ableplayer/">Able Player</a>. Abaixo reproduzo um player usando essa ferramenta, ai só você selecionar as opções abaixo na barra cinza.</p>
+<p class="codepen" data-height="650" data-default-tab="result" data-slug-hash="oNOxNVz" data-user="wagnerbeethoven" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"> <span>See the Pen <a href="https://codepen.io/wagnerbeethoven/pen/oNOxNVz"> Able Player | Video with captions, subtitles, chapters, and a transcript</a> by Wagner eethoven (<a href="https://codepen.io/wagnerbeethoven">@wagnerbeethoven</a>) on <a href="https://codepen.io">CodePen</a>. </p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<div class="my-4 text-center">* * *</div>
+<p>A audiodescrição é essencial para tornar o conteúdo digital acessível. Ao incorporar descrições de imagens e vídeos em HTML, podemos garantir que nossos sites e aplicações sejam mais inclusivos. Lembre-se de testar a acessibilidade do seu conteúdo com ferramentas específicas e feedback de usuários com deficiência visual para garantir a eficácia das suas descrições.</p>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css" integrity="sha512-/mZ1FHPkg6EKcxo0fKXF51ak6Cr2ocgDi5ytaTBjsQZIH/RNs6GF6+oId/vPe3eJB836T36nXwVh/WBl/cWT4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js" integrity="sha512-UOoJElONeUNzQbbKQbjldDf9MwOHqxNz49NNJJ1d90yp+X9edsHyJoAs6O4K19CZGaIdjI5ohK+O2y5lBTW6uQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
