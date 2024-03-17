@@ -1,4 +1,7 @@
 links:
+  # - url: "http://focoacessivel.com.br/blog/explorando-o-tato-uma-perspectiva-sobre-acessibilidade-e-inclusao"
+  #   image: "https://raw.githubusercontent.com/focoacessivel/pictures/main/links/explorando-o-tato.webp"
+  #   title: "Explorando o tato: uma perspectiva sobre acessibilidade e inclusão"
   - url: "http://focoacessivel.com.br/blog/audiodescricao-de-imagens-videos-guia-pratico-com-html"
     image: "https://raw.githubusercontent.com/focoacessivel/pictures/main/links/audiodescricao-de-imagens-videos-guia-pratico-com-html.webp"
     title: "Audiodescrição de imagens e vídeos: um guia prático com HTML"

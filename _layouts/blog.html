@@ -57,7 +57,7 @@ layout: default
                         <span> {{page.guest}} &bull; {{page.role}}</span>
     
                     </div>
-                    {% if page.path contains '_pages' %}{{page.excerpt}}{% else %}{{page.excerpt}}{% endif %}
+                    {% if page.path contains '_pages' %}{{page.excerpt-ep}}{% else %}{{page.excerpt-ep}}{% endif %}
     
                 </div>
               </div>
@@ -70,10 +70,10 @@ layout: default
         </div>
     </div>
     {% endif %}
-    
-
+       
     {% include comments.html %}
-
+    
+    {% include related-post.html %}
 
 
   </article>
