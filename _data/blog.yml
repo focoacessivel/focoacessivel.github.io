@@ -1,7 +1,7 @@
 links:
-  # - url: "http://focoacessivel.com.br/blog/explorando-o-tato-uma-perspectiva-sobre-acessibilidade-e-inclusao"
-  #   image: "https://raw.githubusercontent.com/focoacessivel/pictures/main/links/explorando-o-tato.webp"
-  #   title: "Explorando o tato: uma perspectiva sobre acessibilidade e inclusão"
+  - url: "http://focoacessivel.com.br/blog/explorando-o-tato-uma-perspectiva-sobre-acessibilidade-e-inclusao"
+    image: "https://raw.githubusercontent.com/focoacessivel/pictures/main/links/explorando-o-tato.webp"
+    title: "Explorando o tato: uma perspectiva sobre acessibilidade e inclusão"
   - url: "https://focoacessivel.com.br/episodios/ep-2-audiodescricao-tecnologia-a-favor-da-acessibilidade-e-da-inclusao-francisco-lima"
     image: "https://raw.githubusercontent.com/focoacessivel/pictures/main/links/ep2corte2.webp"
     title: "Audiodescrição e tecnologia a favor da acessibilidade e da inclusão"
