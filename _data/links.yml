@@ -14,14 +14,14 @@ menu:
   # - name: "Críticas"
   #   link: "criticas"
   #   description: "Confira o que andam falando da gente"
-  - name: "Sobre o Foco Acessível"
-    link: "sobre"
-    description: "Saiba o que é e quem faz o Foco Acessível"
-    keys: 4
   - name: "Blog"
     link: "blog"
     description: "Conheça as referências que são faladas nos textos dos nossos episódios"
     keys: 5
+  - name: "Sobre"
+    link: "sobre"
+    description: "Saiba o que é e quem faz o Foco Acessível"
+    keys: 4
   - name: "Contato"
     link: "contato"
     description: "Fale conosco"
