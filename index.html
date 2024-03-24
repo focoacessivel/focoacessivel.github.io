@@ -56,8 +56,8 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
 <section class="Articles" id="Articles">
   <h2 class="section-title">Recentes do <a href="{{site.url}}/blog">blog</a></h2>
   <ul class="row">
-    {% assign blog = site.categories.Blog | sort: 'date' | reverse %}
-    {% for post in blog | limit: 3 %}
+    {% assign blog = site.categories.Blog | sort: 'date' | reverse | limit: 3 %}
+    {% for post in blog %}
       {% if post.categories contains 'Blog' %}
         {% include loop-blog.html %}
     {% endif %}
