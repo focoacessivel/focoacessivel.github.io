@@ -4,99 +4,18 @@ title: "Links do Foco Acessível"
 permalink: links.html
 ---
 
+
+
 <!DOCTYPE html>
-<html lang="en" class=" w-100 h-100">
+<html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
+    <title>Meu Redirect</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords"
-    content="{% if page.path contains '_posts' %}{{ page.tags | array_to_sentence_string }}{% else %}Acessibilidade, Inclusão, Diversidade, Podcast, {{site.author}}{% endif %}">
-    <meta name="author" content="{{site.author}}">
-    <meta name="description"
-    content="{% if description.size > 10 %}{{ description }}{% else %}{{ site.description }}{% endif %}">
-
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-
-    <!-- GOOGLE TAG MANAGER -->
-    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-WMN29SM');</script>
-
-    <!--  GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
-    <!--  FAVICON -->
-    <link rel="shortcut icon" type="image/png" href="{{ site.url }}/img/icons/icon-72x72.png">
-    <link rel="shortcut icon" sizes="196x196" href="{{ site.url }}/img/icons/icon-192x192.png">
-    <link rel="apple-touch-icon" href="{{ site.url }}/ifavicon.ico">
-
-    <!--  CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&&display=swap">
-    <link rel="stylesheet" href="{{ '/main.css' | prepend: site.baseurl }}">
-    <!-- <link rel="stylesheet" href="{{site.url}}/diagnostic.css"> -->
-
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}" />
-    <link rel="manifest" href="{{site.url}}/manifest.json">
-    <meta name="theme-color" content="#005757" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-    {% seo %}
-    <style>.logo{height: 84px;}header h1 {font-size: 1.5rem; padding: 2rem 0 1.5rem;}</style>
+    <meta http-equiv="refresh" content="5; URL='https://linkin.bio/foco_acessivel'"/>
 </head>
-<body class="p-4 col-12 col-md-8 mx-auto">
-
-    <header class="mx-auto">
-        <img src="{{site.url}}/img/icone.svg" class="logo d-block mx-auto" alt="{{site.icone-alt}}">
-        <h1 class="text-center">{{site.title}}</h1>
-        <p class="text-center">Acessibilidade, diversidade e inclusão na tecnologia.</p>
-        <ul class=" socials my-5 mx-auto d-flex align-items-center justify-content-around">
-        {% include social.html %}
-
-        <li>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNewsletter" aria-expanded="false" aria-controls="collapseNewsletter">
-                Assine a newsletter
-            </button>
-        </li>
-        </ul>
-
-        <div class="collapse" id="collapseNewsletter">
-        <div class="card card-body">
-            <p id="emailHelp" class="form-text">Ao adicionar seu e-mail, você concorda com os <a href="{{site.url}}/termos.html">termos de uso</a>.</p>
-            {% include newsletter-form.html %}
-        </div>
-        </div>
-    </header>
-    <div class="section">
-         
-        <div class="row text-center">
-            {% for item in site.data.blog.links %}
-            <div class="col-4 p-0">
-                <div class=" border border-5 border-white ratio ratio-1x1" style="background: url({{item.image}}) center no-repeat; background-size: cover;">
-                    <a href="{{item.url}}"class="ratio ratio-1x1" title="{{item.title}}">
-                        <span class="d-none">{{item.title}}</span>
-                    </a>
-                  </div>
-                  
-                  
-                 
-            </div>
-            {% endfor %}
-        </div>
-
-    </div> 
-    {% include support.html %}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-
+<body>
+Você será redirecionado em instantes
 </body>
 </html>
-
 
