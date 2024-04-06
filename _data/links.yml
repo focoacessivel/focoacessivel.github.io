@@ -59,6 +59,9 @@ network:
   - name: Facebook
     link: http://www.facebook.com/focoacessivel
     icon: '<i class="bi bi-facebook"></i>'
+  - name: Pinterest
+    link: https://pinterest.com/focoacessivel/
+    icon: '<i class="bi bi-pinterest"></i>'
   - name: Threads
     link: https://www.threads.net/@focoacessivel
     icon: '<i class="bi bi-threads"></i>'

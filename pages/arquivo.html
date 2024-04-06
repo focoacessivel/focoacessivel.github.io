@@ -24,7 +24,7 @@ title: Arquivo do site
     </h3>
     <ul class="list-group list-group-flush">{% for posts in category %}{% for post in posts %}{% if post.url %}
         <li class="px-0 list-group-item position-relative">
-            <a class="text-decoration-none stretched-link fw-bold" href="{{ post.url }}">{{ post.title }}</a>
+            <time class="text-body-tertiary" datetime="{{ post.date | date: '%Y-%m-%d'}}">{{ post.date | date: "%d/%m/%Y" }}</time>: <a class="text-decoration-none stretched-link fw-bold" href="{{ post.url }}">{{ post.title }}</a>
             <small class="d-block text-secondary">{{post.excerpt}}</small>
         </li>
         {% endif %}{% endfor %}{% endfor %}

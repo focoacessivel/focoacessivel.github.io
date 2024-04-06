@@ -13,6 +13,7 @@
   --social-icon-color-tik-tok: #000000;
   --social-icon-color-linkedin: #0a66c2;
   --social-icon-color-x: #000000;
+  --social-icon-color-pinterest: #e60023;
 
 
 }
@@ -716,6 +717,9 @@ a.social-icon-linkedin {
 
 a.social-icon-x {
   color: var(--social-icon-color-x) !important
+}
+a.social-icon-pinterest {
+  color: var(--social-icon-color-pinterest) !important
 }
 
 .banner-loja::after {
