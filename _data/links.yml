@@ -48,7 +48,7 @@ network:
     link: https://www.linkedin.com/company/focoacessivel
     icon: '<i class="bi bi-linkedin"></i>'
   - name: X
-    link: http://www.x.com/foco_acessivel
+    link: https://x.com/intent/follow?screen_name=foco_acessivel
     icon: '<i class="bi bi-twitter-x"></i>'
   - name: Instagram
     link: http://www.instagram.com/focoacessivel
