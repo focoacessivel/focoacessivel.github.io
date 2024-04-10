@@ -80,7 +80,18 @@ blockquote {
   z-index: 0;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
 }
 
@@ -239,7 +250,7 @@ section {
 .page-title,
 .section-title {
   margin-bottom: 2rem;
-  font-size: 4rem;
+  font-size: 3.467rem;
   line-height: 1.2;
   font-weight: 600;
 }
@@ -670,6 +681,7 @@ footer a {
 .comment-section,
 .comment-section a {
   line-height: 1.4;
+  margin: 0;
 }
 
 .accordion-button:not(.collapsed),
@@ -718,6 +730,7 @@ a.social-icon-linkedin {
 a.social-icon-x {
   color: var(--social-icon-color-x) !important
 }
+
 a.social-icon-pinterest {
   color: var(--social-icon-color-pinterest) !important
 }
@@ -767,4 +780,43 @@ a.social-icon-pinterest {
 
 .support-social:last-of-type:before {
   content: " e "
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  margin-top: 3rem;
+  font-weight: 600;
+}
+
+article h1 {
+  font-size: 2.986rem
+}
+
+article h2 {
+  font-size: 2.488rem
+}
+
+article h3 {
+  font-size: 2.074rem
+}
+
+article h4 {
+  font-size: 1.728rem
+}
+
+article h5 {
+  font-size: 1.44rem
+}
+
+article h6 {
+  font-size: 1.2rem
+}
+
+.episode-related {
+  font-size: calc(1.325rem + .9vw);
+  margin: 3rem 0 1rem;
 }
