@@ -32,6 +32,8 @@ permalink: convidados.html
 </div>
 
 {% for post in site.posts %}
+{% if post.categories contains 'Episodios' %}
+
   <div class="modal fade" id="{{post.guest|slugify}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="{{post.guest|slugify}}" aria-describedby="Biografia do {{post.guest}}" aria-hidden="true">
     <div class="modal-dialog">
@@ -52,4 +54,6 @@ permalink: convidados.html
       </div>
     </div>
   </div>
+  {% endif %}
+
 {% endfor %}

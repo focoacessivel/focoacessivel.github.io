@@ -2,7 +2,7 @@
     <div class="pulsaDelay">Quer ajudar o<br> <span class="fw-bold">{{site.title}}</span>?</div>
 </button>
 
-<div class="modal fade" data-bs-backdrop="static" id="support" tabindex="-1" aria-labelledby="supportLabel"
+<div class="modal modal-lg  fade" data-bs-backdrop="static" id="support" tabindex="-1" aria-labelledby="supportLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
@@ -20,12 +20,19 @@
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionSupport">
                             <div class="accordion-body">
-                                <p>Para ajudar o podcast, basta <a href="https://nubank.com.br/cobrar/2p5k/65d0e131-9703-47c2-bce0-169d918ffb12" target="_blank"><strong>acessar o link</strong></a> e transferir qualquer quantia. Ao fazer isso, você será redirecionado para uma nova aba com o QR code do Nubank!</p>
-                                <p>Caso você não consigar acessar o link, abaixo disponibilizamos a chave-aleatória para transferência e o QR code.</p>
-                                <p><strong>Chave-aleatória</strong> <br> Clique em cima da chave-aleatória abaixo e cole no seu aplicativo de banco.</p>
-                                <div class="mt-3 col-12 rounded-1 p-2 bg-secondary text-truncate text-white">00020126580014BR.GOV.BCB.PIX01365686d2d5-4e24-4920-8053-38b20e86c4835204000053039865802BR5925Wagner Beethoven Martins 6009SAO PAULO62140510PxOUyNMvCp630494F1</div>
-                                <strong class="mt-4 d-block">QR Code</strong>
-                                <img style="width: 350px; height: auto" class="d-block img-fluid mx-auto" src="{{site.url}}/img/qrcode-nubank.png" alt="Aponte a sua camera para ler o QR Code">
+                                <div class="row">
+                                    <div class="col-12 col-lg-8">
+                                        <p>Para ajudar o podcast, basta <a href="https://nubank.com.br/cobrar/2p5k/65d0e131-9703-47c2-bce0-169d918ffb12" target="_blank"><strong>acessar o link</strong></a> e transferir qualquer quantia. Ao fazer isso, você será redirecionado para uma nova aba com o QR code do Nubank!</p>
+                                        <p>Caso você não consigar acessar o link, abaixo disponibilizamos a chave-aleatória para transferência e o QR code.</p>
+                                        <p><strong>Chave-aleatória</strong> <br> Clique em cima da chave-aleatória abaixo e cole no seu aplicativo de banco.</p>
+                                        <div class="mt-3 col-12 rounded-1 p-2 bg-secondary text-truncate text-white">00020126580014BR.GOV.BCB.PIX01365686d2d5-4e24-4920-8053-38b20e86c4835204000053039865802BR5925Wagner Beethoven Martins 6009SAO PAULO62140510PxOUyNMvCp630494F1</div>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                            <strong class="mt-0 d-block">QR Code</strong>
+                                            <img style="width: 350px; height: auto" class="d-block img-fluid mx-auto" src="{{site.url}}/img/qrcode-nubank.png" alt="Aponte a sua camera para ler o QR Code">
+                                        </div>
+                                    </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -44,8 +51,8 @@
                                         <input type="hidden" name="no_recurring" value="0" />
                                         <input type="hidden" name="item_name" value="Com sua doação, invisto em equipamentos, edição e serviços para o crescimento do podcast!" />
                                         <input type="hidden" name="currency_code" value="BRL" />
-                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                                        <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
+                                        <input type="image" src="{{site.url}}/img/paypal.png" class="col-12 col-md-6 img-fluid mx-auto" name="submit" title="PayPal – A maneira mais segura e fácil de pagar online!" alt="Doe com o botão PayPal" />
+                                        <img class="border-0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
                                     </form>
                                 </div>
                             </div>

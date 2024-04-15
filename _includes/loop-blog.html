@@ -1,12 +1,16 @@
 
 {% if post.categories contains 'Blog' %}
 <li class="mb-3 col-12 col-md-6 col-lg-4">
-  <div class=" p-md-4 p-3 rounded bg-body-secondary">
+  <div class="h-100 p-md-4 p-3 rounded bg-body-secondary d-flex flex-column justify-content-between">
+    <div>
     <a href="{{ post.url }}#intro" class="position-relative">
       <img src="{{ post.image }}" class="img-fluid rounded-3" alt="{{ post.banner-alt }}">
     </a>
-    <h3 class="mt-4 mb-2card-title"><a href="{{ post.url }}#intro" class="fw-bold">{{ post.title }}</a></h3>
+      <h3 class="mt-4 mb-2 h5 card-title"><a href="{{ post.url }}#intro" class="fw-bold">{{ post.title }}</a></h3>
+    <time class="card-subtitle mb-2 text-body-secondary" datetime="{{ post.date | date: '%Y-%m-%d'}}">{{ post.date | date: "%d/%m/%Y" }}</time>
     <p>{{ post.excerpt }}</p>
+    </div>
+    <a href="{{ post.url }}" class="card-link">Continue lendo <i class="bi bi-arrow-right"></i></a>
   </div>
 </li>
 {% endif %}

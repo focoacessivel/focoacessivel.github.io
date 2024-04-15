@@ -10,11 +10,19 @@
       {{ page.title }}
     </li>
     {% else %}
+
+    {% if page.categories contains "Blog" %}
+
+    <li class="breadcrumb-item">
+      <a href="{{site.url}}/blog">Blog</a>
+    {%else%}
     <li class="breadcrumb-item">
       <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">
         {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
       </a>
     </li>
+
+    {% endif %}
     {% endif %}
     {% endfor %}
   </ol>

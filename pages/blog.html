@@ -8,7 +8,7 @@ summary: Boas-vindas a nossa página com os artigos, popularmente chamada de blo
 # legend: Foto criada artificiamente através do Adobe Express
 ---
 
-<ul class="row" data-masonry='{"percentPosition": true }'>
+<ul class="row">
 
   {% assign blog = site.categories.Blog | sort: 'date' | reverse %}
   {% for post in blog %}
@@ -16,5 +16,3 @@ summary: Boas-vindas a nossa página com os artigos, popularmente chamada de blo
       {% include loop-blog.html%}
     {% endif %}
   {% endfor %}
-
-</ul>
