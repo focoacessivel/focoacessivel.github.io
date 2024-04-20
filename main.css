@@ -387,17 +387,10 @@ section {
 }
 
 /* Footer */
-footer a {
-  color: var(--bs-secondary-color) !important;
-}
+
 
 .credits {
   font-size: small;
-}
-
-.credits,
-.credits a {
-  color: rgba(33, 37, 41, 0.75);
 }
 
 /* Article */

@@ -68,3 +68,4 @@ plugins:
   - jekyll-feed
   - jekyll-brotli
   - jekyll-seo-tag
+  - jekyll-sitemap

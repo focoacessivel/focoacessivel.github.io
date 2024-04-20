@@ -27,4 +27,4 @@ list.map((el) => {
     opts.html = true;
   }
   new bootstrap.Popover(el, opts);
-})
+});
