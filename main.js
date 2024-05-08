@@ -28,3 +28,19 @@ list.map((el) => {
   }
   new bootstrap.Popover(el, opts);
 });
+
+
+// adiciona _blank e diversos
+document.addEventListener("DOMContentLoaded", function() {
+  const baseUrl = window.location.origin;
+  const links = document.querySelectorAll('a');
+
+  links.forEach(link => {
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('http') && !href.startsWith(baseUrl)) {
+          link.setAttribute('rel', 'external no-referrer noopener');
+          link.setAttribute('target', '_blank');
+          link.setAttribute('title', 'O link irá abrir em uma nova aba');
+      }
+  });
+});

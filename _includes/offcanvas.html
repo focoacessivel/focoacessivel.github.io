@@ -24,12 +24,12 @@
             <ul class="list-group list-group-flush">
                 {% for item in site.data.links.platforms %}
                 <li class="list-group-item px-0">
-                    <a href="{{item.link}}" target="_blank" class="text-decoration-none" title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer"> <img class=" me-2" src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" height="32" width="32" alt="Ícone do {{item.name}}"> {{item.name}} </a>
+                    <a href="{{item.link}}"   class="text-decoration-none" title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer"> <img class=" me-2" src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" height="32" width="32" alt="Ícone do {{item.name}}"> {{item.name}} </a>
                 </li>
                 {% endfor %}
 
                 <li class="list-group-item px-0">
-                    <a href="https://anchor.fm/s/e14f7d9c/podcast/rss" target="_blank" class="text-decoration-none" title="Assine nosso RSS - nova aba" rel="noopener noreferrer">
+                    <a href="https://anchor.fm/s/e14f7d9c/podcast/rss"   class="text-decoration-none" title="Assine nosso RSS - nova aba" rel="noopener noreferrer">
                         <img class=" me-2" src="{{site.url}}/img/platform/rss.svg" height="24" width="24" alt="Ícone do RSS"> Assine o nosso RSS
                     </a>
                 </li>

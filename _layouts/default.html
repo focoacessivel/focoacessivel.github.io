@@ -100,12 +100,10 @@ layout: compress
           </li>
           {% for item in site.data.links.streaming %}
           <li class="nav-item">
-            <a href="{{item.link}}" target="_blank" class="nav-link "
+            <a href="{{item.link}}"   class="nav-link "
               title="Acompanhe o {{site.title}} no {{item.name}}">
               <img src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" class="img-fluid"
-                style="width: 24px; height: 24px" alt="Logo da {{item.name}}" />
-              <!-- {{item.icon}} -->
-              <!-- <span class="visually-hidden">{{item.name}}</span> -->
+                style="width: 24px; height: 24px" alt="Logo do {{item.name}}" />
             </a>
           </li>
           {% endfor %}
@@ -139,22 +137,19 @@ layout: compress
             </li>
             {% endfor %}
             <li class="nav-item mb-2">
-             <span class="p-0" >RSS: 
-              <a class="nav-link p-0 d-inline-block" href="{{site.url}}/feed.xml">Site</a>, 
-              <a class="nav-link p-0 d-inline-block" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCYa1lmVi_lcn_DgT4cf-jRQ" title="Assine o RSS do Youtube">Youtube</a>
-              ou <a class="nav-link p-0 d-inline-block" href="https://anchor.fm/s/e14f7d9c/podcast/rss" title="Assine o RSS do Spotify">Spotify</a>
+             <span class="p-0" >RSS: <a class="nav-link p-0 d-inline-block" href="{{site.url}}/feed.xml" title="Este RSS irá contemplar tudo que for publicado no site">Site</a> e <a class="nav-link p-0 d-inline-block" href="https://anchor.fm/s/e14f7d9c/podcast/rss" title="Este RSS irá contemplar apenas os episódios">Episódios</a>
             </span>
             </li>
           </ul>
         </div>
 
         <div class="menu-footer col-12 col-md-4 mb-3">
-          <div class="row">
+          <div class="row px-2">
             <h3 id="plataformas-rodape" class="pt-3 px-0 h4 mb-5">Plataformas</h3>
             <ul class="nav row">
               {% for item in site.data.links.platforms %}
               <li class="nav-item mb-2 col-6">
-                <a href="{{item.link}}" target="_blank" title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer" class="nav-link p-0 text-decoration-none">
+                <a href="{{item.link}}"   title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer" class="nav-link p-0 text-decoration-none">
                   {{item.name}}
                 </a>
               </li>
@@ -167,15 +162,15 @@ layout: compress
 
       <div
         class="d-flex flex-column flex-md-row justify-content-between pt-4 mt-4 w-100 border-top text-center text-md-start">
-        <p class="col-12 mb-0  col-md-8 credits"> {{site.title}} feito no <a href="http://jekyllrb.com" target="_blank"
+        <div class="col-12 mb-0  col-md-8 credits">
+          <p class="mb-3 mb-md-0">{{site.title}} feito no <a href="http://jekyllrb.com"  
             title="Site do Jekyll - nova aba">Jekyll</a> com <span title="Amor">❤️</span> e <span title="Café">☕</span>
           em Olinda, PE. <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.pt_BR"
-            title="Detalhes sobre o atribuição não comercial 4.0 internacional - nova aba" target="_blank">Creative
+            title="Detalhes sobre o atribuição não comercial 4.0 internacional - nova aba"  >Creative
             Commons</a> &mdash;
-          <a href="{{site.url}}/arquivo">Todas as publicações do site</a>.
-          <br>
-          Este site é membro do <a  href="https://a11y-webring.club/"><strong>a11y-webring.club</strong></a>. Acesse o <a  href="https://a11y-webring.club/prev">site anterior</a>, <a  href="https://a11y-webring.club/next">próximo site</a>, ou um <a  href="https://a11y-webring.club/random">site aleatório</a> do <span lang="en">webring</span>.
-        </p>
+          <a href="{{site.url}}/arquivo" title="Acesse todas as publicações do site">Todas as publicações do site</a>.</p>
+          <p>Este site é membro do <a  href="https://a11y-webring.club/"><strong>a11y-webring.club</strong></a>. Acesse o <a  href="https://a11y-webring.club/prev">site anterior</a>, <a  href="https://a11y-webring.club/next">próximo site</a>, ou um <a  href="https://a11y-webring.club/random">site aleatório</a> do <span lang="en">webring</span>.</p>
+        </div>
         <ul class="col-12 col-md socials mt-5 mt-md-0 mb-0 d-flex justify-content-around">
           {% include social.html %}
         </ul>

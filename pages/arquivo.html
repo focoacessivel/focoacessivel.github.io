@@ -4,30 +4,47 @@ permalink: arquivo
 title: Arquivo do site
 ---
 
-<h2>Navegue pelas categorias</h3>
+<h3>Navegue pelas categorias</h3>
 <nav>
-    <ul class="nav"> {% for category in site.categories %}
-     
-            <li class="nav-item">
-            <a class="nav-link ps-0 " href="#{{ category | first | remove:' ' }}">
-                {{ category | first }}
-            </a>
-        </li>
-        {% if forloop.last %}{% else %}{% endif %}{% endfor %}
+    <ul class="nav">
+        <li class="nav-item"><a class="nav-link ps-0 " href="#Episodios">Episódios</a></li>
+        <li class="nav-item"><a class="nav-link ps-0 " href="#Blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link ps-0 " href="#Paginas">Páginas do site</a></li>
     </ul>
 </nav>
-
-{% for category in site.categories %}
-<div class="pt-5 mt-5" id="{{ category | first | remove:' ' }}">
-    <h2>
-        {{ category | first }}
-    </h3>
-    <ul class="list-group list-group-flush">{% for posts in category %}{% for post in posts %}{% if post.url %}
-        <li class="px-0 list-group-item position-relative">
-            <time class="text-body-tertiary" datetime="{{ post.date | date: '%Y-%m-%d'}}">{{ post.date | date: "%d/%m/%Y" }}</time>: <a class="text-decoration-none stretched-link fw-bold" href="{{ post.url }}">{{ post.title }}</a>
-            <small class="d-block text-secondary">{{post.excerpt}}</small>
-        </li>
-        {% endif %}{% endfor %}{% endfor %}
+<section class="pt-5 mt-5" id="Episodios">
+    <h4>Episódios</h4>
+    <ul class="list-group list-group-flush">
+        {% assign episodios = site.categories.Episodios | sort: 'date' | reverse %}
+        {% for post in episodios %}
+            <li class="px-0 list-group-item position-relative">
+                <time class="text-body-tertiary" datetime="{{ post.date | date: '%Y-%m-%d'}}">{{ post.date | date: "%d/%m/%Y" }} | </time><a class="text-decoration-none stretched-link fw-bold" href="{{ post.url }}">{{post.title }}</a>: <span class="text-secondary">{{post.excerpt}}</span>
+            </li>
+        {% endfor %}
     </ul>
-</div>
-{% endfor %}
+</section>
+<section class="pt-5 mt-5" id="Blog">
+    <h4>Episódios</h4>
+    <ul class="list-group list-group-flush">
+        {% assign posts = site.categories.Blog | sort: 'date' | reverse %}
+        {% for post in posts %}
+            <li class="px-0 list-group-item position-relative">
+                <time class="text-body-tertiary" datetime="{{ post.date | date: '%Y-%m-%d'}}">{{ post.date | date: "%d/%m/%Y" }} | </time><a class="text-decoration-none stretched-link fw-bold" href="{{ post.url }}">{{post.title }}</a>: <span class="text-secondary">{{post.excerpt}}</span>
+            </li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section class="pt-5 mt-5" id="Paginas">
+    <h4>Páginas do site</h4>
+    <ul class="list-group list-group-flush">
+        {% for item in site.data.links.menu %}
+        <li class="px-0 list-group-item position-relative">
+            <a class="text-decoration-none stretched-link" href="{{site.url}}/{{item.link}}"
+                title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
+                {{item.name}}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
