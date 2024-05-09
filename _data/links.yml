@@ -38,8 +38,8 @@ streaming:
     link: "https://www.deezer.com/pt/show/6060897"
   - name: Apple
     link: "https://podcasts.apple.com/us/podcast/foco-accessível/id1690286033"
-  - name: Android
-    link: "https://www.subscribeonandroid.com/anchor.fm/s/e14f7d9c/podcast/rss"
+  # - name: Android
+  #   link: "https://www.subscribeonandroid.com/anchor.fm/s/e14f7d9c/podcast/rss"
   # - name: Google
   #   link: "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEyMTc4MzMxNDQvc291bmRzLnJzcw"
   # - name: Soundcloud

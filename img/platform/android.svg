@@ -1,2 +1,21 @@
-
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1274.37 718"><defs><style>.cls-1{fill:#3ddc84;}</style></defs><title>Android robot</title><path class="cls-1" d="M930.77,536.42a53.07,53.07,0,1,1,53.06-53.08,53.14,53.14,0,0,1-53.06,53.08m-586.54,0a53.07,53.07,0,1,1,53.06-53.08,53.13,53.13,0,0,1-53.06,53.08M949.8,216.77,1055.85,33.09A22.06,22.06,0,1,0,1017.64,11L910.25,197c-82.12-37.48-174.35-58.35-272.76-58.35S446.86,159.55,364.74,197L257.36,11a22.06,22.06,0,1,0-38.22,22.06L325.2,216.77C143.09,315.82,18.53,500.18.31,718H1274.69c-18.24-217.82-142.79-402.18-324.89-501.23"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="450" viewBox="0 0 450 450">
+  <defs>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="450" height="450"/>
+    </clipPath>
+  </defs>
+  <g id="group" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <g id="group1" data-name="Grupo 1" transform="translate(-714 -214)">
+      <rect id="antenna-1" width="17.235" height="114.015" rx="6.5" transform="translate(922.046 313.72) rotate(151)" fill="#a4c639"/>
+      <rect id="antenna-2" width="17.235" height="114.015" rx="6.5" transform="matrix(0.875, 0.485, -0.485, 0.875, 1009.788, 214)" fill="#a4c639"/>
+      <path id="head" d="M100,0h41.287a100,100,0,0,1,100,100v11.363a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V100A100,100,0,0,1,100,0Z" transform="translate(817.636 247.714)" fill="#a4c639"/>
+      <rect id="leg-1" width="63.636" height="176.325" rx="24" transform="translate(1015.173 664) rotate(180)" fill="#a4c639"/>
+      <rect id="arm-1" width="53.03" height="165.719" rx="24" transform="translate(754 369.113)" fill="#a4c639"/>
+      <rect id="arm-2" width="53.03" height="165.719" rx="24" transform="translate(1070.192 369.113)" fill="#a4c639"/>
+      <rect id="leg-2" width="63.636" height="176.325" rx="24" transform="translate(861.386 487.675)" fill="#a4c639"/>
+      <path id="body" d="M0,0H241.287a0,0,0,0,1,0,0V181.669a22,22,0,0,1-22,22H22a22,22,0,0,1-22-22V0A0,0,0,0,1,0,0Z" transform="translate(817.636 369.113)" fill="#a4c639"/>
+      <circle id="eye-1" cx="9.943" cy="9.943" r="9.943" transform="translate(872.655 294.778)" fill="#fff"/>
+      <circle id="eye-2" cx="9.943" cy="9.943" r="9.943" transform="translate(984.018 294.778)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
