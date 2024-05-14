@@ -1,6 +1,11 @@
 {% for item in site.data.links.network %}
-<li class="px-1">
-    <a href="{{item.link}}" target="_blank" title="Nos acompanhe também no {{item.name}} - nova aba" rel="noopener noreferrer" class="social-icon-{{item.name | slugify}} text-decoration-none col-6 mb-2">
+<li class="px-1 d-flex align-self-center">
+    <a
+        href="{{item.link}}"
+        rel="external no-referrer noopener"
+        target="_blank"
+        title="O link do {{item.name}} irá abrir em uma nova aba"
+        class="social-icon-{{item.name | slugify}} text-decoration-none w-100 h-100 d-block">
         {{item.icon}}
     </a>
 </li>

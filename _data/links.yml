@@ -1,3 +1,4 @@
+# MENU OFFCANVAS
 menu:
   - name: "Página Inicial"
     link: "./"
@@ -27,6 +28,7 @@ menu:
     description: "Fale conosco"
     keys: 6
 
+# ITEMS TOP MENU
 streaming:
   - name: Spotify
     link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
@@ -43,6 +45,7 @@ streaming:
   # - name: Soundcloud
     # link: "https://soundcloud.com/focoacessivel"
 
+# NETWORK
 network:
   - name: LinkedIn
     link: https://www.linkedin.com/company/focoacessivel

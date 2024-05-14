@@ -5,7 +5,7 @@ permalink: manifest.json
 {
  "name": "{{site.title}}",
   "description": "{{site.description}}",
-  "start_url": "http://focoacessivel.github.io",
+  "start_url": "{{site.url}}",
   "short_name": "{{site.title}}",
   "lang": "pt-br",
   "dir": "ltr\rtl",
@@ -13,7 +13,7 @@ permalink: manifest.json
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
-  "url": "http://focoacessivel.github.io",
+  "url": "{{site.url}}",
   "scope": "/",
   "icons": [
     {
