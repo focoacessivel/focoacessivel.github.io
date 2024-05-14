@@ -10,7 +10,7 @@
   --social-icon-color-instagram: #c13584;
   --social-icon-color-threads: #000;
   --social-icon-color-facebook: #1877f2;
-  --social-icon-color-tik-tok: #000000;
+  --social-icon-color-tiktok: #000000;
   --social-icon-color-linkedin: #0a66c2;
   --social-icon-color-x: #000000;
   --social-icon-color-pinterest: #e60023;
@@ -717,6 +717,10 @@ a.social-icon-instagram {
 
 a.social-icon-threads {
   color: var(--social-icon-color-threads) !important
+}
+
+a.social-icon-tiktok {
+  color: var(--social-icon-color-tiktok) !important
 }
 
 a.social-icon-facebook {

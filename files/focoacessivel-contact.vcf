@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Beethoven;Wagner ;
+ORG:Foco Acessível
+TITLE:Designer
+EMAIL;TYPE=work:focoacessivel@gmail.com
+EMAIL;TYPE=work:contato@sumo.pe
+ADR;:;;Olinda;Pernambuco;Brasil
+URL;TYPE=linktree:https://focoacessivel.com.br
+END:VCARD
