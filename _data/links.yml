@@ -30,16 +30,16 @@ menu:
 streaming:
   - name: Spotify
     link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
-  # - name: Android
-    # link: "https://www.subscribeonandroid.com/anchor.fm/s/e14f7d9c/podcast/rss"
   - name: Youtube
     link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
-  - name: Apple
-    link: "https://podcasts.apple.com/us/podcast/foco-accessível/id1690286033"
   - name: Deezer
     link: "https://www.deezer.com/pt/show/6060897"
-  - name: Google
-    link: "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEyMTc4MzMxNDQvc291bmRzLnJzcw"
+  - name: Apple
+    link: "https://podcasts.apple.com/us/podcast/foco-accessível/id1690286033"
+  - name: Android
+    link: "https://www.subscribeonandroid.com/anchor.fm/s/e14f7d9c/podcast/rss"
+  # - name: Google
+  #   link: "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEyMTc4MzMxNDQvc291bmRzLnJzcw"
   # - name: Soundcloud
     # link: "https://soundcloud.com/focoacessivel"
 
@@ -66,22 +66,6 @@ network:
     link: https://www.threads.net/@focoacessivel
     icon: '<i class="bi bi-threads"></i>'
 
-platforms-main:
-  - name: Spotify
-    link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
-  - name: Youtube
-    link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
-  - name: Apple
-    link: "https://podcasts.apple.com/us/podcast/foco-accessível/id1690286033"
-  - name: Deezer
-    link: "https://www.deezer.com/pt/show/6060897"
-  - name: Google
-    link: "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEyMTc4MzMxNDQvc291bmRzLnJzcw"
-  # - name: Soundcloud
-  #   link: "https://soundcloud.com/focoacessivel"
-  - name: Android
-    link: "https://www.subscribeonandroid.com/anchor.fm/s/e14f7d9c/podcast/rss"
-
 platforms:
   - name: Amazon Music
     link: "https://music.amazon.com.br/podcasts/9d5a371f-7ea8-4ba1-b558-416e4337591e/foco-accessível"
@@ -93,22 +77,24 @@ platforms:
     link: https://castbox.fm/ch/5437486
   - name: Deezer
     link: "https://www.deezer.com/pt/show/6060897"
-  - name: Google
-    link: "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEyMTc4MzMxNDQvc291bmRzLnJzcw"
   - name: Overcast
     link: "https://overcast.fm/p4283328-xrLc4f"
   - name: Pocket Casts
     link: "https://pca.st/9m9todni"
   - name: Radiopublic
     link: "https://radiopublic.com/foco-accessvel-GKQpMl"
-  # - name: Soundcloud
-  #   link: "https://soundcloud.com/focoacessivel"
   - name: Spotify
     link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
-  # - name: Stitcher
-  #   link: "https://www.stitcher.com/show/1071350"
   - name: Tune In
     link: "http://tun.in/ptZAV"
   - name: Youtube
     link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
+  - name: Youtube Music
+    link: "https://music.youtube.com/playlist?list=PLn1lr_3QMgomQCLIbbcg-TVB_SRkc7aKb"
+  # - name: Google
+  #   link: "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEyMTc4MzMxNDQvc291bmRzLnJzcw"
+  # - name: Soundcloud
+  #   link: "https://soundcloud.com/focoacessivel"
+  # - name: Stitcher
+  #   link: "https://www.stitcher.com/show/1071350"
 
