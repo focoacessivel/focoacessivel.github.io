@@ -21,14 +21,50 @@ layout: default
         {% else%}
         {% endif %}
       </h2>
-
+      <style>
+        .meta figure{width: 124px;height: 124px;}
+      </style>
+      <div class="meta justify-content-center col-md-6 mx-auto col-12 pb-5 d-flex align-items-center">
+        <div class="flex-shrink-0">
+          <figure class="m-0 ratio ratio-1x1">
+            <img src="
+              {% if page.blog-author-img %}
+                  {{page.blog-author-img}}
+                {% else %}
+                  {{site.author-picture}}
+              {% endif %}"
+              
+              alt="{% if page.blog-author-alt %}{{page.blog-author-alt}}{% else %}{{site.author-alt}}{% endif %}" class="object-fit-cover rounded-circle">
+          </figure>
+        </div>
+        <div class="ms-3">
+          Escrito por <br>
+          <span class="fw-bold">
+            {% if page.blog-author-url %}
+              <a href="{{page.blog-author-url}}">
+            {% else %}
+            {% endif %}
+              
+            {% if page.blog-author-name %}
+              {{page.blog-author-name}}
+            {% else %}
+              Wagner Beethoven
+            {% endif %}
+            
+            {% if page.blog-author-url %}
+              </a>
+            {% else %}
+            {% endif %}
+          </span>
+        </div>
+      </div>
+      
     </header>
     <div class="col-12 col-md-10 col-lg-8 mx-auto">
       {{ content }}
 
       <ul class="list-group">
         <li class="border-0 px-0 list-group-item">Texto publicado em: <time class="fw-semibold" datetime="{{ page.date | date: '%Y-%m-%d'}}">{{ page.date | date: "%d/%m/%Y" }}</time></li>
-        <!-- <li class="border-0 px-0 list-group-item">Link do post <span class="d-inline-block text-truncate">{{site.url}}/{{page.url}}</span></li> -->
       </ul>
 
       <div class="artigo-final">
