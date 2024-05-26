@@ -14,8 +14,6 @@
   --social-icon-color-linkedin: #0a66c2;
   --social-icon-color-x: #000000;
   --social-icon-color-pinterest: #e60023;
-
-
 }
 
 .accordion-button:after {
@@ -25,7 +23,7 @@
   background-position: center;
 }
 
-.accordion-header{
+.accordion-header {
   margin: 0;
 }
 
@@ -78,9 +76,8 @@ a {
   color: var(--main-color);
 }
 
-
 blockquote {
-  border-left: .25rem solid var(--main-color);
+  border-left: 0.25rem solid var(--main-color);
   color: var(--text-color);
   font-family: "Georgia", serif;
   font-size: 1rem;
@@ -183,7 +180,18 @@ blockquote footer::before {
   --bs-btn-active-bg: var(--text-color);
   --bs-btn-active-border-color: var(--text-color);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-youtube {
+  height: 54px;
+  border-radius: var(--border-radius);
+  background: #f00;
+  color: #fff
+}
 
+.btn-youtube:hover, 
+.btn-youtube:focus {
+  background: #000;
+  color: #fff !important
 
 }
 
@@ -292,7 +300,7 @@ section {
 }
 
 .episode,
-.episode>div,
+.episode > div,
 .episode figure img {
   height: 100%;
 }
@@ -387,7 +395,6 @@ section {
 }
 
 /* Footer */
-
 
 .credits {
   font-size: small;
@@ -520,7 +527,7 @@ section {
 .post-label {
   position: absolute;
   margin: 1rem 0 0 0rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 0 1rem 1rem 0;
   background: var(--main-color);
   color: #fff;
@@ -661,7 +668,6 @@ section {
 }
 
 @media screen and (max-width: 576px) {
-
   .page-title,
   .section-title,
   .banner {
@@ -681,7 +687,6 @@ section {
   font-size: 1.5rem !important;
 }
 
-
 .comment-section,
 .comment-section a {
   line-height: 1.4;
@@ -690,7 +695,7 @@ section {
 
 .accordion-button:not(.collapsed),
 .accordion-button:not(.collapsed) a {
-  color: #fff !important
+  color: #fff !important;
 }
 
 .accordion-button:not(.collapsed) .a2a_svg,
@@ -699,11 +704,11 @@ section {
 }
 
 .accordion-button:not(.collapsed) .a2a_svg {
-  border: 1px solid #fff !important
+  border: 1px solid #fff !important;
 }
 
 .accordion-button:focus {
-  box-shadow: none !important
+  box-shadow: none !important;
 }
 
 .popover-header {
@@ -712,35 +717,35 @@ section {
 }
 
 a.social-icon-instagram {
-  color: var(--social-icon-color-instagram) !important
+  color: var(--social-icon-color-instagram) !important;
 }
 
 a.social-icon-threads {
-  color: var(--social-icon-color-threads) !important
+  color: var(--social-icon-color-threads) !important;
 }
 
 a.social-icon-tiktok {
-  color: var(--social-icon-color-tiktok) !important
+  color: var(--social-icon-color-tiktok) !important;
 }
 
 a.social-icon-facebook {
-  color: var(--social-icon-color-facebook) !important
+  color: var(--social-icon-color-facebook) !important;
 }
 
 a.social-icon-tiktok {
-  color: var(--social-icon-color-tiktok) !important
+  color: var(--social-icon-color-tiktok) !important;
 }
 
 a.social-icon-linkedin {
-  color: var(--social-icon-color-linkedin) !important
+  color: var(--social-icon-color-linkedin) !important;
 }
 
 a.social-icon-x {
-  color: var(--social-icon-color-x) !important
+  color: var(--social-icon-color-x) !important;
 }
 
 a.social-icon-pinterest {
-  color: var(--social-icon-color-pinterest) !important
+  color: var(--social-icon-color-pinterest) !important;
 }
 
 .banner-loja::after {
@@ -775,19 +780,18 @@ a.social-icon-pinterest {
   right: 1rem;
   bottom: 1rem;
   transform: translate(-10%, -30%);
-
 }
 
 .support-social:after {
-  content: ", "
+  content: ", ";
 }
 
 .support-social:last-of-type:after {
-  content: ""
+  content: "";
 }
 
 .support-social:last-of-type:before {
-  content: " e "
+  content: " e ";
 }
 
 article h1,
@@ -801,31 +805,31 @@ article h6 {
 }
 
 article h1 {
-  font-size: 2.986rem
+  font-size: 2.986rem;
 }
 
 article h2 {
-  font-size: 2.488rem
+  font-size: 2.488rem;
 }
 
 article h3 {
-  font-size: 2.074rem
+  font-size: 2.074rem;
 }
 
 article h4 {
-  font-size: 1.728rem
+  font-size: 1.728rem;
 }
 
 article h5 {
-  font-size: 1.44rem
+  font-size: 1.44rem;
 }
 
 article h6 {
-  font-size: 1.2rem
+  font-size: 1.2rem;
 }
 
 .episode-related {
-  font-size: calc(1.325rem + .9vw);
+  font-size: calc(1.325rem + 0.9vw);
   margin: 3rem 0 1rem;
 }
 
