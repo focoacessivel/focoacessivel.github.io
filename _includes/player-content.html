@@ -1,0 +1,23 @@
+<div class="tab-content mt-5" id="playerContent">
+    <div class="tab-pane fade" id="spotify-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="ratio ratio-16x9">
+            <iframe style="border-radius:1rem"
+                src="https://open.spotify.com/embed/episode/{{page.spotify}}/video?utm_source=generator"
+                title="Episódio #{{page.number}}: {{page.title}} - {{page.guest}}" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="youtube-tab-pane" role="tabpanel" aria-labelledby="youtube-tab" tabindex="0">
+        <div class="ratio ratio-16x9">
+            <iframe style="border-radius:1rem" src="https://www.youtube.com/embed/{{page.youtube}}"
+                title="Episódio #{{page.number}}: {{page.title}} - {{page.guest}}" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...
+    </div>
+    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...
+    </div>
+</div>
