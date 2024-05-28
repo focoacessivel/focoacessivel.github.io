@@ -24,7 +24,7 @@
             <ul class="list-group list-group-flush">
                 {% for item in site.data.links.platforms %}
                 <li class="list-group-item px-0">
-                    <a href="{{item.link}}"   class="text-decoration-none" title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer"> <img class=" me-2" src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" height="32" width="32" alt="Ícone do {{item.name}}"> {{item.name}} </a>
+                    <a href="{{item.link}}"   class="text-decoration-none" title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer"> <img class=" me-2" src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" height="32" width="32" alt="Logo do {{item.name}}"> {{item.name}} </a>
                 </li>
                 {% endfor %}
 

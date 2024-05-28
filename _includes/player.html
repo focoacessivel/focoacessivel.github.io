@@ -1,3 +1,4 @@
+{% if page.path contains '_posts' %}
 <p class="text-center fw-semibold">Ouça o episódio</p>
 <ul class="border-0 nav nav-tabs justify-content-center align-items-center d-flex" id="player" role="tablist">
     {% if page.youtube %}
@@ -24,8 +25,9 @@
     </li>
     {% endif %}
     <li class="nav-item" role="presentation">
-        <a class="mx-2 justify-content-center align-items-center d-flex button button-outline btn-outros" href="#offcanvas" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvas" title="Confira todas as plataformas">
+        <a class=" mt-3 mt-md-0 mx-2 justify-content-center align-items-center d-flex button button-outline btn-outros" href="#offcanvas" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvas" title="Confira todas as plataformas">
             Outras plataformas
         </a>
     </li>
 </ul>
+{% endif %}
