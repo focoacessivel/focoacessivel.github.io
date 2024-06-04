@@ -1,55 +1,33 @@
-{% if page.video %}
-<div class="players d-flex justify-content-between">
-    <div class="w-75 ">
-        <small class="ps-3 d-block pb-1">Ouça</small>
-        <div id="player" class="w-100 player">
-            <audio id="audioplayer" controls="true" class="w-100 d-flex align-items-center">
-                <source src="{% if page.path contains '_posts' %}{{page.file}}{% else %}{{post.file}}{% endif %}"
-                    type="audio/mp4">
-                Seu navegador não suporta este arquivo de áudio. Utilize as plataformas de streaming ou o Youtube.
-            </audio>
-        </div>
-    </div>
-    <div class="w-25">
-        <small class="ps-4 d-block pb-1">Assista</small>
-        <div class="px-3 text-center">
-            <button type="button" class="justify-content-center align-items-center d-flex btn btn-youtube w-100" data-bs-toggle="modal" data-bs-target="#EpisodeVideo">
-                <i style="font-size: 2rem; line-height: 0" class="d-none d-md-block bi bi-youtube me-2"></i>
-                YouTube
-            </button>
-        </div>
-    </div>
-</div>
+{% if page.path contains '_posts' %}
+<p class="text-center fw-semibold">Ouça o episódio</p>
+<ul class="border-0 nav nav-tabs justify-content-center align-items-center d-flex" id="player" role="tablist">
+    {% if page.youtube %}
+    <li class="nav-item" role="presentation">
+        <button class="mx-2 justify-content-center align-items-center d-flex btn btn-youtube" id="youtube-tab"
+            data-bs-toggle="tab" data-bs-target="#youtube-tab-pane" type="button" role="tab"
+            aria-controls="youtube-tab-pane" aria-selected="false">
 
+            <i  class="fs-2 bi bi-youtube me-2"></i>
+            YouTube
+        </button>
+    </li>
+    {% endif %}
 
-<div class="modal modal-xl fade" id="EpisodeVideo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="EpisodeVideoLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable  modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="EpisodeVideoLabel"><span class="fw-light">Episódio #{{page.number}}:</span> {{page.title}} - {{page.guest}} </h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" title="Fechar" aria-label="Fechar"></button>
-            </div>
-            <div class="modal-body p-0">
-                <div class="ratio ratio-16x9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{page.video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-        </div>
-    </div>
-</div>
+    {% if page.spotify %}
 
-
-{%else%}
-<div id="player" class="w-100 player">
-    <audio id="audioplayer" controls="true" class="w-100 d-flex align-items-center">
-        <source src="{% if page.path contains '_posts' %}{{page.file}}{% else %}{{post.file}}{% endif %}"
-            type="audio/mp4">
-        Seu navegador não suporta este arquivo de áudio. Utilize as plataformas de streaming ou o Youtube.
-    </audio>
-</div>
-
+    <li class="nav-item" role="presentation">
+        <button class="mx-2 justify-content-center align-items-center d-flex btn btn-spotify" id="spotify-tab"
+            data-bs-toggle="tab" data-bs-target="#spotify-tab-pane" type="button" role="tab"
+            aria-controls="spotify-tab-pane" aria-selected="false">
+            <i class="fs-2  bi bi-spotify me-2"></i>
+            Spotify
+        </button>
+    </li>
+    {% endif %}
+    <li class="nav-item" role="presentation">
+        <a class=" mt-3 mt-md-0 mx-2 justify-content-center align-items-center d-flex button button-outline btn-outros" href="#offcanvas" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvas" title="Confira todas as plataformas">
+            Outras plataformas
+        </a>
+    </li>
+</ul>
 {% endif %}

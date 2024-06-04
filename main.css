@@ -181,19 +181,37 @@ blockquote footer::before {
   --bs-btn-active-border-color: var(--text-color);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
+
+.btn-outros,
+.btn-spotify,
 .btn-youtube {
   height: 54px;
   border-radius: var(--border-radius);
-  background: #f00;
+
+}
+
+.btn-spotify,
+.btn-youtube {
   color: #fff
 }
 
-.btn-youtube:hover, 
+.btn-youtube {
+  background: #f00;
+}
+
+.btn-spotify {
+  background: #459F41;
+}
+
+.btn-spotify:hover,
+.btn-spotify:focus,
+.btn-youtube:hover,
 .btn-youtube:focus {
   background: #000;
   color: #fff !important
-
 }
+
+.btn-outros {}
 
 .breadcrumb {
   font-size: small;
@@ -300,7 +318,7 @@ section {
 }
 
 .episode,
-.episode > div,
+.episode>div,
 .episode figure img {
   height: 100%;
 }
@@ -668,6 +686,7 @@ section {
 }
 
 @media screen and (max-width: 576px) {
+
   .page-title,
   .section-title,
   .banner {

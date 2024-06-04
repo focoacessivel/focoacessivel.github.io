@@ -1,7 +1,8 @@
 <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
     <div class="offcanvas-header">
         <h2 class="offcanvas-title h4" id="offcanvasLabel">Links do site</h2>
-        <button type="button" title="Fechar menu" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button type="button" title="Fechar menu" class="btn-close" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
     </div>
 
     <div class="offcanvas-body d-flex flex-column justify-content-between">
@@ -10,7 +11,9 @@
             <ul class="list-group list-group-flush">
                 {% for item in site.data.links.menu %}
                 <li class="list-group-item px-0 item-{{item.name | slugify}}">
-                    <a accesskey="{{item.keys}}" class="nav-link p-0 text-muted" href="{{site.url}}/{{item.link}}" title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}"> {{item.name}} </a>
+                    <a accesskey="{{item.keys}}" class="nav-link p-0 text-muted" href="{{site.url}}/{{item.link}}"
+                        title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
+                        {{item.name}} </a>
                 </li>
                 {% endfor %}
             </ul>
@@ -24,16 +27,26 @@
             <ul class="list-group list-group-flush">
                 {% for item in site.data.links.platforms %}
                 <li class="list-group-item px-0">
-                    <a href="{{item.link}}"   class="text-decoration-none" title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer"> <img class=" me-2" src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" height="32" width="32" alt="Ícone do {{item.name}}"> {{item.name}} </a>
+                    <a href="{{item.link}}" class="text-decoration-none" title="Assine no {{item.name}} - nova aba"
+                        rel="noopener noreferrer"> <img class=" me-2"
+                            src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" height="32" width="32"
+                            alt="Logo do {{item.name}}"> {{item.name}} </a>
                 </li>
                 {% endfor %}
 
-                <li class="list-group-item px-0">
+                <!-- <li class="list-group-item px-0">
                     <a href="https://anchor.fm/s/e14f7d9c/podcast/rss"   class="text-decoration-none" title="Assine nosso RSS - nova aba" rel="noopener noreferrer">
                         <img class=" me-2" src="{{site.url}}/img/platform/rss.svg" height="24" width="24" alt="Ícone do RSS"> Assine o nosso RSS
                     </a>
-                </li>
+                </li> -->
             </ul>
+        </div>
+
+        <div class="creative-commons mt-5 position-relative d-flex justify-content-center">
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.pt-br" class="text-center text-decoration-none">
+                <img src="{{site.url}}/img/cc-icons.svg" class="mb-3 d-block mb-2 mx-auto" alt="3 ícones circulares, no 1º duas letra C, no 2º uma figura de uma pessoa em pé, 3º cifrão com uma barra diagonal">
+                <small>CC BY-NC 4.0 Deed<br>Atribuição-NãoComercial 4.0 Internacional</small>
+            </a>
         </div>
     </div>
 </div>

@@ -128,10 +128,6 @@ layout: compress
               </a>
             </li>
             {% endfor %}
-            <li class="nav-item mb-2">
-             <span class="p-0" >RSS: <a class="nav-link p-0 d-inline-block" href="{{site.url}}/feed.xml" title="Este RSS irá contemplar tudo que for publicado no site">Site</a> e <a class="nav-link p-0 d-inline-block" href="https://anchor.fm/s/e14f7d9c/podcast/rss" title="Este RSS irá contemplar apenas os episódios">Episódios</a>
-            </span>
-            </li>
           </ul>
         </div>
 
@@ -162,6 +158,11 @@ layout: compress
             Commons</a> &mdash;
           <a href="{{site.url}}/arquivo" title="Acesse todas as publicações do site">Todas as publicações do site</a>.</p>
           <p>Este site é membro do <a  href="https://a11y-webring.club/"><strong>a11y-webring.club</strong></a>. Acesse o <a  href="https://a11y-webring.club/prev">site anterior</a>, <a  href="https://a11y-webring.club/next">próximo site</a>, ou um <a  href="https://a11y-webring.club/random">site aleatório</a> do <span lang="en">webring</span>.</p>
+          <p>
+            <i style="color: #E64E18" class="bi bi-rss-fill me-1"></i> Assine o RSS
+              <a class="text-decoration-none" href="{{site.url}}/feed.xml" title="RSS do blog"><strong>dos textos do blog</strong></a><span class="me-1">, e dos episódios no</span><a class="text-decoration-none" href="https://anchor.fm/s/e14f7d9c/podcast/rss" title="Assine o RSS dos episódios através do Spotify"><i style="color: #459F41" class="bi bi-spotify me-1"></i><strong>Spotify</strong></a><span class="mx-1">e no</span><a class="text-decoration-none" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCYa1lmVi_lcn_DgT4cf-jRQ" title="Assine o RSS dos episódios através do Youtube"><i style="color:#f00" class="bi bi-youtube me-1"></i><strong>YouTube</strong></a>.
+           </p>
+
         </div>
         <ul class="col-12 col-md socials mt-5 mt-md-0 mb-0 d-flex justify-content-around">
           {% include social.html %}
