@@ -13,14 +13,14 @@ layout: default
     {% else%}
     {% endif %}
     <header>
-      <h2 class="page-title text-center" id="intro">{{page.title}}
+      <h1 class="page-title text-center" id="intro">{{page.title}}
         {% if page.summary %}
         <p class="lh-base fs-6 mt-3 fw-normal col-12 col-md-8">
           {{page.summary}}
         </p>
         {% else%}
         {% endif %}
-      </h2>
+      </h1>
       <style>
         .meta figure{width: 96px;height: 96px;}
       </style>
@@ -93,7 +93,7 @@ layout: default
                 <h3 class="h3 program-number text-uppercase">
                   <span class="episodiosItem">
                     EPISÓDIO</span>
-                  {% if page.number %}&nbsp;&mdash;&nbsp;{{page.number}}{% else %}{% endif %}
+                  {% if page.number %}#{{page.number}}{% else %}{% endif %}
                 </h3>
                 <span class="program-duration">{{page.duration}}</span>
               </div>
@@ -108,6 +108,7 @@ layout: default
 
             </div>
           </div>
+          <div class="my-3 w-100">{% include player.html %}</div>
 
           <a href="{{site.url}}/episodios/{{page.link-ep}}" title="Clique para acessar informações sobre o episódio">
             <i class="bi bi-headphones me-2"></i>
