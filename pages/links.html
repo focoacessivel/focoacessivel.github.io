@@ -181,7 +181,10 @@ permalink: links.html
         <main id='main' class="col-12 col-md-6 col-lg-4 mx-auto">
             <div class=" py-4">
                 <header class="text-center">
-                    <img src="{{site.url}}/img/icone.svg" alt="Circulo tracejado e no seu interior um cículo menor com o interior preenchido" class="bg-white rounded-circle p-1" width="96px">
+                    <img src="{{site.url}}/img/icone.svg" class="bg-white rounded-circle p-1" width="96px" aria-describedby="long-description" alt="{{site.title}}">
+                    <span class="visually-hidden-focusable" id="long-description">
+                      {{site.icone-alt}}]             
+                    </span>
                     <h1>{{site.title}}</h1>
                     <p>Um podcast sobre acessibilidade, inclusão, diversidade e tecnologia.</p>
                 </header>

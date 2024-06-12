@@ -81,9 +81,9 @@ layout: compress
         {% if page.path contains '_posts' %}<div class="col-md-3 mb-2 mb-md-0">{%else%}<h1 class="col-md-3 mb-2 mb-md-0">{%endif%}
           <a href="/" class="text-decoration-none" title=" {{site.title}}">
             <img title="Link para a página inicial do {{site.title}}" src="{{site.url}}/img/logo.svg"
-              class="d-block w-100" alt="{{site.logo-alt}}">
-            <span class="visually-hidden-focusable">
-              {{site.title}}
+              class="d-block w-100"  aria-describedby="long-description" alt="{{site.title}}">
+            <span class="visually-hidden-focusable" id="long-description">
+              {{site.logo-alt}}
             </span>
           </a>
           {% if page.path contains '_posts' %}</div>{%else%}</h1>{%endif%}
