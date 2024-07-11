@@ -106,7 +106,7 @@ layout: compress
 
     {% include newsletter.html %}
 
-    <footer class="py-5">
+    <footer class="pb-5">
       <h2 class="visually-hidden-focusable">Rodapé do site</h2>
       <div class="row">
         <div class="col-12 col-md-5 mb-3">
@@ -158,15 +158,20 @@ layout: compress
         <div class="col-12 mb-0  col-md-8 credits">
           <p class="mb-3 mb-md-0">{{site.title}} feito no <a href="http://jekyllrb.com"  
             title="Site do Jekyll - nova aba">Jekyll</a> com <span title="Amor">❤️</span> e <span title="Café">☕</span>
-          em Olinda, PE. <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.pt_BR"
-            title="Detalhes sobre o atribuição não comercial 4.0 internacional - nova aba"  >Creative
-            Commons</a> &mdash;
+          em Olinda, PE &mdash;
           <a href="{{site.url}}/arquivo" title="Acesse todas as publicações do site">Todas as publicações do site</a>.</p>
           <p>Este site é membro do <a  href="https://a11y-webring.club/"><strong>a11y-webring.club</strong></a>. Acesse o <a  href="https://a11y-webring.club/prev">site anterior</a>, <a  href="https://a11y-webring.club/next">próximo site</a>, ou um <a  href="https://a11y-webring.club/random">site aleatório</a> do <span lang="en">webring</span>.</p>
         </div>
         <ul class="col-12 col-md socials mt-5 mt-md-0 mb-0 d-flex justify-content-around">
           {% include social.html %}
         </ul>
+      </div>
+
+      <div class="text-center">
+
+        {% include cc.html %}
+
+
       </div>
     </footer>
   </main>
