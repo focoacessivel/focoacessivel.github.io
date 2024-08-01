@@ -1,0 +1,17 @@
+---
+layout: page
+permalink: newsletters
+title: Edições da newsletter
+---
+
+<section class="pt-5 mt-5" id="Episodios">
+    <ul class="list-group list-group-flush">
+        {% for item in site.data.newsletters.news %}
+
+        <li class="px-0 list-group-item position-relative">
+            <time class="text-body-tertiary" datetime="{{item.time}}">{{item.date}}</time><span
+                class="text-body-tertiary">: </span><a class="text-decoration-none stretched-link fw-bold"
+                href="{{ site.url }}/newsletter/{{item.link}}">{{item.name}}</a>
+        </li> {% endfor %}
+    </ul>
+</section>

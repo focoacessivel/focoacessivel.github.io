@@ -413,6 +413,9 @@ section {
 }
 
 /* Footer */
+footer {
+  padding-top: 10rem;
+}
 
 .credits {
   font-size: small;
