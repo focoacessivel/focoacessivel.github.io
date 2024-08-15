@@ -48,6 +48,9 @@ layout: compress
   <meta name="theme-color" content="#005757" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfHJxsqAAAAAKNIcatli-dfempXqnWoQYZPmIaC"></script>
 
   {% seo %}
 </head>
@@ -104,7 +107,6 @@ layout: compress
       </header>
     </div> {{ content }}
 
-    {% include newsletter.html %}
 
     <footer class="pb-5">
       <h2 class="visually-hidden-focusable">Rodapé do site</h2>
@@ -165,13 +167,6 @@ layout: compress
         <ul class="col-12 col-md socials mt-5 mt-md-0 mb-0 d-flex justify-content-around">
           {% include social.html %}
         </ul>
-      </div>
-
-      <div class="text-center">
-
-        {% include cc.html %}
-
-
       </div>
     </footer>
   </main>
