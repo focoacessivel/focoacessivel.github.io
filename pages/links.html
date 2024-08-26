@@ -59,7 +59,7 @@ permalink: links.html
     {% seo %}
 </head>
 
-<body>
+<body id="page-links">
 
     <body class="p-4 mb-5">
 
@@ -80,104 +80,6 @@ permalink: links.html
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMN29SM" Height="0" width="0"
                 style="display:none;visibility:hidden"></iframe></noscript>
 
-
-
-        <style>
-            body {
-                background: var(--main-color);
-            }
-
-            header {
-                color: #fff
-            }
-
-            main {
-                max-width: 580px;
-            }
-
-            h1 {
-                font-size: 1.25rem;
-                margin: 1rem 0 0.5rem;
-            }
-
-            .banner-link {
-                height: 10rem;
-                background: transparent url('{{site.url}}/img/banner-link.png') right center no-repeat;
-                background-size: contain;
-            }
-
-            .banner-link a {
-                z-index: 2;
-
-            }
-
-            .banner-link:before {
-                content: "";
-                height: 100%;
-                width: 100%;
-                background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
-                position: absolute;
-                bottom: 0px;
-                left: 0px;
-                z-index: 1;
-                border-radius: 0.375rem;
-                ;
-            }
-
-            .banner-list-button {
-                padding: 0.85rem 1rem;
-                margin: 1rem 0;
-                display: block;
-                color: #000;
-            }
-
-            .banner-list-button i {
-                font-size: 1.5rem;
-            }
-
-
-            a.social-icon-instagram {
-                background-color: var(--social-icon-color-instagram) !important
-            }
-
-            a.social-icon-threads {
-                background-color: var(--social-icon-color-threads) !important
-            }
-
-            a.social-icon-tiktok {
-                background-color: var(--social-icon-color-tiktok)
-            }
-
-            a.social-icon-facebook {
-                background-color: var(--social-icon-color-facebook)
-            }
-
-
-            a.social-icon-linkedin {
-                background-color: var(--social-icon-color-linkedin)
-            }
-
-            a.social-icon-x {
-                background-color: var(--social-icon-color-x)
-            }
-
-            a.social-icon-pinterest {
-                background-color: var(--social-icon-color-pinterest)
-            }
-
-            .socials a {
-                width: 32px !important;
-                height: 32px !important;
-                display: flex !important;
-                justify-content: center;
-                align-items: center;
-                border-radius: 100%;
-            }
-
-            .socials a i {
-                color: #fff
-            }
-        </style>
         <main id='main' class="col-12 col-md-6 col-lg-4 mx-auto">
             <div class=" py-4">
                 <header class="text-center">
@@ -194,20 +96,20 @@ permalink: links.html
                 <h2 class="visually-hidden-focusable">Seções</h2>
 
                 <div class="banner-list">
-                    <button type="button" class="banner-list-button align-items-center  shadow-sm btn btn-light d-flex w-100" data-bs-toggle="modal" data-bs-target="#modalOuca">
+                    <button type="button" class="banner-list-button align-items-center shadow-sm btn border btn-outline-light d-flex w-100" data-bs-toggle="modal" data-bs-target="#modalOuca">
                         <i class="bi bi-earbuds flex-shrink-1"></i>
                         <span class="w-100">Ouça os episódios</span>
                     </button>
-                    <a href="{{site.url}}/blog" class="banner-list-button align-items-center  shadow-sm btn btn-light d-flex w-100">
+                    <a href="{{site.url}}/blog" class="banner-list-button align-items-center shadow-sm btn border btn-outline-light d-flex w-100">
                         <i class="bi bi-chat-right-quote-fill flex-shrink-1"></i>
                         <span class="w-100">Leia os textos do blog</span>
                     </a>
-                    <a  href="{{site.url}}/newsletter" class="banner-list-button align-items-center  shadow-sm btn btn-light d-flex w-100">
+                    <a  href="{{site.url}}/newsletter" class="banner-list-button align-items-center shadow-sm btn border btn-outline-light d-flex w-100">
                         <i class="bi bi-envelope-fill flex-shrink-1"></i>
                         <span class="w-100">Assine a newsletter</span>
                     </a>
                     
-                    <button type="button" class="banner-list-button align-items-center  shadow-sm btn btn-light d-flex w-100" data-bs-toggle="modal" data-bs-target="#modalContato">
+                    <button type="button" class="banner-list-button align-items-center shadow-sm btn border btn-outline-light d-flex w-100" data-bs-toggle="modal" data-bs-target="#modalContato">
                         <i class="bi bi-person-vcard-fill flex-shrink-1"></i>
                         <span class="w-100">Contato</span>
                     </button>
