@@ -63,21 +63,19 @@ layout: default
     <div class="col-12 col-md-10 col-lg-8 mx-auto">
       {{ content }}
 
-      <ul class="list-group">
+      <ul class="mt-5 list-group">
         <li class="border-0 px-0 list-group-item">Texto publicado em: <time class="fw-semibold" datetime="{{ page.date | date: '%Y-%m-%d'}}">{{ page.date | date: "%d/%m/%Y" }}</time></li>
       </ul>
 
       <div class="artigo-final">
-        <p>Obrigado por acompanhar até aqui! Inscreva-se em nossa <a href="#newsletter" lang="en">newsletter</a>
+        <p>Obrigado por acompanhar até aqui! Inscreva-se em nossa <a href="{{site.url}}/newsletter" lang="en">newsletter</a>
           (mandamos no máximos dois e-mails por mês 🥰), siga-nos nas redes sociais ({% for item in
           site.data.links.network %}<span class="support-social social-{{item.name | slugify}}"><a href="{{item.link}}"
                 title="Nos acompanhe também no {{item.name}} - nova aba"
-              rel="noopener noreferrer">{{item.name}}</a></span>{% endfor %}) e nos principais serviços de streaming e
-          até a próxima!</p>
-        <p><strong>Lembre-se: acessibilidade é um tema que, mais cedo ou mais tarde, afetará a todos nós!</strong></p>
+              rel="noopener noreferrer">{{item.name}}</a></span>{% endfor %}) e nos principais serviços de streaming, até a próxima e <span class="fw-bold">lembre-se: acessibilidade é um assunto que cedo ou tarde vai impactar a sua vida!</span></p>
       </div>
       {% if page.title-ep %}
-      <h2 class="episode-related">Ouça o episódio completo <i class="ms-2bi bi-arrow-down"></i></h2>
+      <h2 class="episode-related">Ouça o episódio completo <i class="ms-2 fa-solid fa-arrow-down"></i></h2>
 
       <div class="episode rounded">
         <div class="row">

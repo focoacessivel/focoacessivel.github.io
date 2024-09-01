@@ -7,24 +7,25 @@ permalink: convidados.html
 <div class="row d-flex justify-content-start">
   {% for post in site.posts %}
   {% if post.categories contains 'Episodios' %}
-  <div class="col-12 col-md-3 col-lg-3 mb-5">
+  <div class="col-12 col-md-6 col-lg-3 mb-5">
 
-    <figure class="w-100 mb-3 mb-md-0">
-      <img src="{{post.image}}" class="img-fluid rounded" alt="{{post.alt}}">
-      <figcaption class="mt-2">
-        <h3 class="fs-5 mb-0">{{post.guest}}</h3>
-        <span 3 class="fs-6">{{post.role}}</span>
-      </figcaption>
-    </figure>
-    <div class="d-flex justify-content-start mt-3 align-items-center">
-      <a href="{{post.url}}" class="btn btn-primary btn-sm text-center" title="Acesse a página do episódio">
-        <i class="bi bi-headphones me-2"></i> Ouça
-      </a>
-      <div class="px-2"></div>
-      <button title="Biografia do convidado (irá abrir um modal)" type="button" class="btn text-decoration-none btn-sm"
-        data-bs-toggle="modal" data-bs-target="#{{post.guest|slugify}}">
-        Biografia
-      </button>
+    <div class="border rounded h-100 p-3">
+      <figure class="w-100 mb-3 mb-md-0">
+        <img src="{{post.image}}" class="img-fluid rounded" alt="{{post.alt}}">
+        <figcaption class="mt-2">
+          <h3 class="fs-5 mb-0">{{post.guest}}</h3>
+          <span class="fs-6">{{post.role}}</span>
+        </figcaption>
+      </figure>
+      <div class="d-flex justify-content-start mt-3 align-items-center">
+        <a href="{{post.url}}" class="btn btn-primary btn-sm text-center" title="Acesse a página do episódio">
+          <i class="fa-solid fa-headphones me-2"></i> Ouça</a>
+        <div class="px-2"></div>
+        <button title="Biografia do convidado (irá abrir um modal)" type="button" class="btn text-decoration-none btn-sm"
+          data-bs-toggle="modal" data-bs-target="#{{post.guest|slugify}}">
+          Biografia
+        </button>
+      </div>
     </div>
   </div>
   {% endif %}
@@ -48,8 +49,7 @@ permalink: convidados.html
         <div class="d-flex justify-content-between modal-footer">
           <button type="button" class="btn-sm btn btn-link text-decoration-none" data-bs-dismiss="modal">Fechar</button>
           <a href="{{post.url}}" class="btn-sm btn btn-primary btn-sm text-center" title="Acesse a página do episódio">
-            <i class="bi bi-headphones me-2"></i> Ouça o episódio
-          </a>
+            <i class="fa-solid fa-headphones me-2"></i>Ouça o episódio</a>
         </div>
       </div>
     </div>
