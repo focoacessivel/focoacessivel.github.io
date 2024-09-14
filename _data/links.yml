@@ -53,9 +53,6 @@ network:
   - name: LinkedIn
     link: https://www.linkedin.com/company/focoacessivel
     icon: '<i class="fa-brands fa-linkedin"></i>'
-  # - name: X
-  #   link: https://x.com/intent/follow?screen_name=foco_acessivel
-  #   icon: '<i class="fa-brands fa-twitter-x"></i>'
   - name: Instagram
     link: http://www.instagram.com/focoacessivel
     icon: '<i class="fa-brands fa-instagram"></i>'
@@ -68,6 +65,9 @@ network:
   - name: Pinterest
     link: https://pinterest.com/focoacessivel/
     icon: '<i class="fa-brands fa-pinterest"></i>'
+  - name: Twitter
+    link: https://x.com/intent/follow?screen_name=foco_acessivel
+    icon: '<i class="fa-brands fa-twitter"></i>'
   - name: Threads
     link: https://www.threads.net/@focoacessivel
     icon: '<i class="fa-brands fa-threads"></i>'

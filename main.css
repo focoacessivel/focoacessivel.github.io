@@ -12,7 +12,7 @@
   --social-icon-color-facebook: #1877f2;
   --social-icon-color-tiktok: #000000;
   --social-icon-color-linkedin: #0a66c2;
-  --social-icon-color-x: #000000;
+  --social-icon-color-twitter: #1da1f2;
   --social-icon-color-pinterest: #e60023;
 }
 
@@ -762,8 +762,8 @@ a.social-icon-linkedin {
   color: var(--social-icon-color-linkedin) !important;
 }
 
-a.social-icon-x {
-  color: var(--social-icon-color-x) !important;
+a.social-icon-twitter {
+  color: var(--social-icon-color-twitter) !important;
 }
 
 a.social-icon-pinterest {
@@ -872,7 +872,7 @@ article h6 {
 #page-links a.social-icon-tiktok {color: var(--social-icon-color-tiktok)}
 #page-links a.social-icon-facebook {color: var(--social-icon-color-facebook)}
 #page-links a.social-icon-linkedin {color: var(--social-icon-color-linkedin)}
-#page-links a.social-icon-x {color: var(--social-icon-color-x)}
+#page-links a.social-icontwitter {color: var(--social-icon-color-twitter)}
 #page-links a.social-icon-pinterest {color: var(--social-icon-color-pinterest)}
 #page-links .socials a {font-size: 1.5rem;}
 #page-links .entry__label::after {float: right;}
