@@ -83,9 +83,9 @@ layout: compress
         {% if page.path contains '_posts' %}<div class="col-md-3 mb-2 mb-md-0">{%else%}<h1 class="col-md-3 mb-2 mb-md-0">{%endif%}
           <a href="/" class="text-decoration-none" title=" {{site.title}}">
             <img title="Link para a página inicial do {{site.title}}" src="{{site.url}}/img/logo.svg"
-              class="d-block w-100" alt="Logo do {{site.title}}" aria-describedby="descricao-detalhada-{{ site.title | slugify}}">
+              class="d-block w-100" alt="Logo do {{site.title}}" aria-describedby="descricao-detalhada-logo-header">
 
-              <span id="descricao-detalhada-{{ site.title | slugify}}" class="visually-hidden">{{site.logo-alt}}</span>
+              <span id="descricao-detalhada-logo-header" class="visually-hidden">{{site.logo-alt}}</span>
 
           </a>
           {% if page.path contains '_posts' %}</div>{%else%}</h1>{%endif%}
@@ -113,8 +113,8 @@ layout: compress
       <div class="row">
         <div class="col-12 col-md-5 mb-3">
           <h3>
-            <img width="200px" title="Sobre o {{site.title}}" src="{{site.url}}/img/logo.svg" class="d-block mb-5" alt="Logo do {{site.title}}" aria-describedby="descricao-detalhada-{{ site.title | slugify}}">
-            <span id="descricao-detalhada-{{ site.title | slugify}}" class="visually-hidden">{{site.logo-alt}}</span>
+            <img width="200px" title="Sobre o {{site.title}}" src="{{site.url}}/img/logo.svg" class="d-block mb-5" alt="Logo do {{site.title}}" aria-describedby="descricao-detalhada-logo-rodape">
+            <span id="descricao-detalhada-logo-rodape" class="visually-hidden">{{site.logo-alt}}</span>
           </h3>
           <div class="col-12 col-md-8">{{site.footer-description}}</div>
         </div>
