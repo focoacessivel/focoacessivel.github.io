@@ -5,7 +5,8 @@
                 <div class="col-lg-4 col-12 pl-0">
                     <figure class="ratio-1x1 ratio m-0 pb-0">
                     <a href="{{post.url}}" title="Acesse o episódio">
-                        <img src="{{post.image}}" class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded" alt="{{post.alt}}">
+                        <img src="{{post.image}}" class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded" alt="{{post.guest}}" aria-describedby="descricao-detalhada-{{ post.title | slugify}}">
+                        <span id="descricao-detalhada-{{ post.title | slugify}}" class="visually-hidden">{{ post.alt }}</span>
                     </a>
                 </figure>
                 </div>

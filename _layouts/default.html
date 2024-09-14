@@ -74,10 +74,8 @@ layout: compress
   <!-- GOOGLE TAG MANAGER (NOSCRIPT) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMN29SM" Height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-
   <a class="visually-hidden-focusable" title="Acesso direto ao conteúdo" href="#main">Ir para o conteúdo</a>
   <a class="visually-hidden-focusable" title="Acesso direto ao menu" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas">Acessar o menu principal do site</a>
-
 
   <main id='main' class="container">
     <div class="py-4">
@@ -85,10 +83,10 @@ layout: compress
         {% if page.path contains '_posts' %}<div class="col-md-3 mb-2 mb-md-0">{%else%}<h1 class="col-md-3 mb-2 mb-md-0">{%endif%}
           <a href="/" class="text-decoration-none" title=" {{site.title}}">
             <img title="Link para a página inicial do {{site.title}}" src="{{site.url}}/img/logo.svg"
-              class="d-block w-100"  aria-describedby="long-description" alt="{{site.title}}">
-            <span class="visually-hidden-focusable" id="long-description">
-              {{site.logo-alt}}
-            </span>
+              class="d-block w-100" alt="Logo do {{site.title}}" aria-describedby="descricao-detalhada-{{ site.title | slugify}}">
+
+              <span id="descricao-detalhada-{{ site.title | slugify}}" class="visually-hidden">{{site.logo-alt}}</span>
+
           </a>
           {% if page.path contains '_posts' %}</div>{%else%}</h1>{%endif%}
 
@@ -115,9 +113,8 @@ layout: compress
       <div class="row">
         <div class="col-12 col-md-5 mb-3">
           <h3>
-            <img width="200px" title="Sobre o {{site.title}}" src="{{site.url}}/img/logo.svg" class="d-block mb-5"
-              alt="{{site.logo-alt}}">
-            <span class="visually-hidden-focusable">{{site.title}}</span>
+            <img width="200px" title="Sobre o {{site.title}}" src="{{site.url}}/img/logo.svg" class="d-block mb-5" alt="Logo do {{site.title}}" aria-describedby="descricao-detalhada-{{ site.title | slugify}}">
+            <span id="descricao-detalhada-{{ site.title | slugify}}" class="visually-hidden">{{site.logo-alt}}</span>
           </h3>
           <div class="col-12 col-md-8">{{site.footer-description}}</div>
         </div>
