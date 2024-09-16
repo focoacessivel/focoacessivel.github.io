@@ -13,16 +13,16 @@
                 <div class="program-content d-flex justify-content-between flex-column col-lg-8 col-12 col-md p-3">
                     <div class="program-header">
                         <div class=" d-flex justify-content-between">
-                            <h3 class="h3 program-number text-uppercase">
+                            <div class="h3 program-number text-uppercase">
                                 <span class="episodiosItem text-uppercase">
                                     Episódio
                                 </span>
-                                    #{% if post.number %}{{post.number}}{% else %}{% endif %}</h3>
+                                    #{% if post.number %}{{post.number}}{% else %}{% endif %}</div>
                             <span class="program-duration">{{post.duration}}</span>
                         </div>
-                        <h4 class="h2 program-title">
+                        <h3 class="h2 program-title">
                             <a href="{{post.url}}" title="Acesse o episódio">{{post.title}}</a>
-                        </h4>
+                        </h3>
                         
                     </div>
                     <div class="program-footer">

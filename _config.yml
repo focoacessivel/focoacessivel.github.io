@@ -42,10 +42,11 @@ locale: pt-BR
 webmaster_verifications:
   google: 7-Sd29Rki1XiyKpJpJprXYqISN18fWrbioJ9-SheyC0
   bing: 0CA3CBC6739B201C0C6101FDC414E75B
-  # alexa: 1234
-  # yandex: 1234
-  # baidu: 1234
-  # facebook: 1234
+
+sass:
+  style: compressed
+  sass_dir: _sass
+  cache: 'true'
 
 
 compress_html:

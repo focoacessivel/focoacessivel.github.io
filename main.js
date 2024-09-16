@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       link.setAttribute("rel", "external no-referrer noopener");
       link.setAttribute("target", "_blank");
       link.setAttribute("title", "O link irá abrir em uma nova aba");
+      link.setAttribute("rel", "dns-prefetch");
     }
   });
 });
@@ -47,15 +48,5 @@ function autoPlayYouTubeModal() {
     $(theModal + " button.close").click(function () {
       $(theModal + " iframe").attr("src", videoSRC);
     });
-  });
-}
-
-
-// reCAPTCHA
-
-function onClick(e) {
-  e.preventDefault();
-  grecaptcha.enterprise.ready(async () => {
-    const token = await grecaptcha.enterprise.execute('6LfHJxsqAAAAAKNIcatli-dfempXqnWoQYZPmIaC', {action: 'LOGIN'});
   });
 }

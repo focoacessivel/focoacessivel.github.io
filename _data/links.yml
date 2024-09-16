@@ -52,25 +52,25 @@ streaming:
 network:
   - name: LinkedIn
     link: https://www.linkedin.com/company/focoacessivel
-    icon: '<i class="fa-brands fa-linkedin"></i>'
+    icon: '<span class="fa-brands fa-linkedin"></span>'
   - name: Instagram
     link: http://www.instagram.com/focoacessivel
-    icon: '<i class="fa-brands fa-instagram"></i>'
+    icon: '<span class="fa-brands fa-instagram"></span>'
   - name: TikTok
     link: http://www.tiktok.com/@focoacessivel
-    icon: '<i class="fa-brands fa-tiktok"></i>'
+    icon: '<span class="fa-brands fa-tiktok"></span>'
   - name: Facebook
     link: http://www.facebook.com/focoacessivel
-    icon: '<i class="fa-brands fa-facebook"></i>'
+    icon: '<span class="fa-brands fa-facebook"></span>'
   - name: Pinterest
     link: https://pinterest.com/focoacessivel/
-    icon: '<i class="fa-brands fa-pinterest"></i>'
+    icon: '<span class="fa-brands fa-pinterest"></span>'
   - name: Twitter
     link: https://x.com/intent/follow?screen_name=foco_acessivel
-    icon: '<i class="fa-brands fa-twitter"></i>'
+    icon: '<span class="fa-brands fa-twitter"></span>'
   - name: Threads
     link: https://www.threads.net/@focoacessivel
-    icon: '<i class="fa-brands fa-threads"></i>'
+    icon: '<span class="fa-brands fa-threads"></span>'
 
 platforms:
   - name: Amazon Music

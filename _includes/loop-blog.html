@@ -8,7 +8,7 @@
 
       <span id="descricao-detalhada-{{ post.title | slugify}}" class="visually-hidden">{{ post.banner-alt }}</span>
     </a>
-      <h3 class="mt-4 mb-2 h5 card-title"><a href="{{ post.url }}" class="fw-bold">{{ post.title }}</a></h3>
+      <h2 class="mt-4 mb-2 h5 card-title"><a href="{{ post.url }}" class="fw-bold">{{ post.title }}</a></h2>
     <time class="card-subtitle mb-2 text-body-secondary" datetime="{{ post.date | date: '%Y-%m-%d'}}">{{ post.date | date: "%d/%m/%Y" }}</time>
     <p>{{ post.excerpt }}</p>
     </div>

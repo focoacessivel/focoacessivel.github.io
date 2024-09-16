@@ -15,13 +15,9 @@ layout: compress
 
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
-  <!-- GOOGLE TAG MANAGER -->
-  <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-WMN29SM');</script>
-
   <!--  GOOGLE FONTS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 
   <!--  PINTEREST -->
   <meta name="p:domain_verify" content="f0a4b51290c8d79df0b5e93c43388693" />
@@ -50,9 +46,6 @@ layout: compress
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   
-  <!-- reCAPTCHA -->
-  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfHJxsqAAAAAKNIcatli-dfempXqnWoQYZPmIaC"></script>
-
   {% seo %}
 </head>
 
@@ -66,61 +59,59 @@ layout: compress
     </div>
   </div>
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+  <script> new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
   <!-- VLIVRAS -->
 
-  <!-- GOOGLE TAG MANAGER (NOSCRIPT) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMN29SM" Height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <a class="visually-hidden-focusable" href="#main">Ir para o conteúdo</a>
+  <a class="visually-hidden-focusable" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas">Acessar o menu principal do site</a>
 
-  <a class="visually-hidden-focusable" title="Acesso direto ao conteúdo" href="#main">Ir para o conteúdo</a>
-  <a class="visually-hidden-focusable" title="Acesso direto ao menu" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas">Acessar o menu principal do site</a>
+  <header class="py-4 container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+    {% if page.path contains '_posts' %}<div class="col-md-3 mb-2 mb-md-0">{%else%}<h1 class="col-md-3 mb-2 mb-md-0">{%endif%}
+      <a href="/" class="text-decoration-none" title=" {{site.title}}">
+        <img title="Link para a página inicial do {{site.title}}" src="{{site.url}}/img/logo.svg"
+          class="d-block w-100" alt="Foco Acessível" aria-describedby="descricao-detalhada-logo-header">
 
-  <main id='main' class="container">
-    <div class="py-4">
-      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
-        {% if page.path contains '_posts' %}<div class="col-md-3 mb-2 mb-md-0">{%else%}<h1 class="col-md-3 mb-2 mb-md-0">{%endif%}
-          <a href="/" class="text-decoration-none" title=" {{site.title}}">
-            <img title="Link para a página inicial do {{site.title}}" src="{{site.url}}/img/logo.svg"
-              class="d-block w-100" alt="Logo do {{site.title}}" aria-describedby="descricao-detalhada-logo-header">
+          <span id="descricao-detalhada-logo-header" class="visually-hidden">{{site.logo-alt}}</span>
 
-              <span id="descricao-detalhada-logo-header" class="visually-hidden">{{site.logo-alt}}</span>
+      </a>
+      {% if page.path contains '_posts' %}</div>{%else%}</h1>{%endif%}
 
+    <nav id="plataformas-header">
+      <ul class="nav align-items-center justify-content-center mt-3 mt-md-0">
+        <li class="nav-item">
+          <a accesskey="0" class="nav-link nav-link-menu" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
+            aria-controls="offcanvas" title="Acesse todos os links do site">Menu</a>
+        </li>
+        <li class="w-100 m-3 d-block d-md-none"></li>
+        {% for item in site.data.links.streaming %}
+        <li class="nav-item">
+          <a href="{{item.link}}"   class="nav-link"  title="Acompanhe o {{site.title}} no {{item.name}}">
+            <img src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" class="img-fluid" style="{% if item.custom %}{{item.custom}}{%else%}width: 24px; height: 24px{% endif%}" alt="Logo do {{item.name}}" />
           </a>
-          {% if page.path contains '_posts' %}</div>{%else%}</h1>{%endif%}
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+  <main id='main' class="container">
+    {{ content }}
 
-        <ul class="nav align-items-center justify-content-center mt-3 mt-md-0">
-          <li class="nav-item">
-            <a accesskey="0" class="nav-link nav-link-menu" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
-              aria-controls="offcanvas" title="Acesse todos os links do site">Menu</a>
-          </li>
-          <li class="w-100 m-3 d-block d-md-none"></li>
-          {% for item in site.data.links.streaming %}
-          <li class="nav-item">
-            <a href="{{item.link}}"   class="nav-link"  title="Acompanhe o {{site.title}} no {{item.name}}">
-              <img src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" class="img-fluid" style="{% if item.custom %}{{item.custom}}{%else%}width: 24px; height: 24px{% endif%}" alt="Logo do {{item.name}}" />
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-      </header>
-    </div> {{ content }}
+  </main>
 
+  <footer class="container pb-5">
+    <h2 class="visually-hidden-focusable">Rodapé do site</h2>
+    <div class="row">
+      <div class="col-12 col-md-5 mb-3">
+        <h3>
+          <img width="200px" title="Sobre o {{site.title}}" src="{{site.url}}/img/logo.svg" class="d-block mb-5" alt="Logo do {{site.title}}" aria-describedby="descricao-detalhada-logo-rodape">
+          <span id="descricao-detalhada-logo-rodape" class="visually-hidden">{{site.logo-alt}}</span>
+        </h3>
+        <div class="col-12 col-md-8">{{site.footer-description}}</div>
+      </div>
 
-    <footer class="pb-5">
-      <h2 class="visually-hidden-focusable">Rodapé do site</h2>
-      <div class="row">
-        <div class="col-12 col-md-5 mb-3">
-          <h3>
-            <img width="200px" title="Sobre o {{site.title}}" src="{{site.url}}/img/logo.svg" class="d-block mb-5" alt="Logo do {{site.title}}" aria-describedby="descricao-detalhada-logo-rodape">
-            <span id="descricao-detalhada-logo-rodape" class="visually-hidden">{{site.logo-alt}}</span>
-          </h3>
-          <div class="col-12 col-md-8">{{site.footer-description}}</div>
-        </div>
-
-        <div class="menu-footer col-12 col-md-3 mb-3">
-          <h3 id="menu-rodape" class="pt-3 h4 mb-5">Menu do Site</h3>
+      <div class="menu-footer col-12 col-md-3 mb-3">
+        <h3 id="menu-rodape" class="pt-3 h4 mb-5">Menu do Site</h3>
+        <nav id="menu-paginas-footer">
           <ul class="nav flex-column">
             {% for item in site.data.links.menu %}
             <li class="nav-item mb-2">
@@ -131,44 +122,46 @@ layout: compress
             </li>
             {% endfor %}
             <li class="nav-item mb-2">
-             <span class="p-0" >RSS: <a class="nav-link p-0 d-inline-block" href="{{site.url}}/feed.xml" title="Este RSS irá contemplar tudo que for publicado no site">Site</a> e <a class="nav-link p-0 d-inline-block" href="https://anchor.fm/s/e14f7d9c/podcast/rss" title="Este RSS irá contemplar apenas os episódios">Episódios</a>
+              <span class="p-0" >RSS: <a class="nav-link p-0 d-inline-block" href="{{site.url}}/feed.xml" title="Este RSS irá contemplar tudo que for publicado no site">Site</a> e <a class="nav-link p-0 d-inline-block" href="https://anchor.fm/s/e14f7d9c/podcast/rss" title="Este RSS irá contemplar apenas os episódios">Episódios</a>
             </span>
             </li>
           </ul>
-        </div>
+        </nav>
+      </div>
 
-        <div class="menu-footer col-12 col-md-4 mb-3">
-          <div class="row px-2">
-            <h3 id="plataformas-rodape" class="pt-3 px-0 h4 mb-5">Plataformas</h3>
+      <div class="menu-footer col-12 col-md-4 mb-3">
+        <div class="row px-2">
+          <h3 id="plataformas-rodape" class="pt-3 px-0 h4 mb-5">Plataformas</h3>
+          <nav id="menu-plataformas-footer">
             <ul class="nav row">
               {% for item in site.data.links.platforms %}
               <li class="nav-item mb-2 col-6">
-                <a href="{{item.link}}"   title="Assine no {{item.name}} - nova aba" rel="noopener noreferrer" class="nav-link p-0 text-decoration-none">
+                <a href="{{item.link}}" class="nav-link p-0 text-decoration-none">
                   {{item.name}}
                 </a>
               </li>
               {% endfor %}
             </ul>
-          </div>
+          </nav>
         </div>
-
       </div>
 
-      <div
-        class="d-flex flex-column flex-md-row justify-content-between pt-4 mt-4 w-100 border-top text-center text-md-start">
-        <div class="col-12 mb-0  col-md-8 credits">
-          <p class="mb-3 mb-md-0">{{site.title}} feito no <a href="http://jekyllrb.com"  
-            title="Site do Jekyll - nova aba">Jekyll</a> com <span title="Amor">❤️</span> e <span title="Café">☕</span>
-          em Olinda, PE &mdash;
-          <a href="{{site.url}}/arquivo" title="Acesse todas as publicações do site">Todas as publicações do site</a>.</p>
-          <p>Este site é membro do <a  href="https://a11y-webring.club/"><strong>a11y-webring.club</strong></a>. Acesse o <a  href="https://a11y-webring.club/prev">site anterior</a>, <a  href="https://a11y-webring.club/next">próximo site</a>, ou um <a  href="https://a11y-webring.club/random">site aleatório</a> do <span lang="en">webring</span>.</p>
-        </div>
-        <ul class="col-12 col-md socials mt-5 mt-md-0 mb-0 d-flex justify-content-around">
-          {% include social.html %}
-        </ul>
+    </div>
+
+    <div
+      class="d-flex flex-column flex-md-row justify-content-between pt-4 mt-4 w-100 border-top text-center text-md-start">
+      <div class="col-12 mb-0  col-md-8 credits">
+        <p class="mb-3 mb-md-0">{{site.title}} feito no <a href="http://jekyllrb.com"  
+          title="Site do Jekyll - nova aba">Jekyll</a> com <span>❤️</span> e <span>☕</span>
+        em Olinda, PE &mdash;
+        <a href="{{site.url}}/arquivo" title="Acesse todas as publicações do site">Todas as publicações do site</a>.</p>
+        <p>Este site é membro do <a  href="https://a11y-webring.club/"><strong>a11y-webring.club</strong></a>. Acesse o <a  href="https://a11y-webring.club/prev">site anterior</a>, <a  href="https://a11y-webring.club/next">próximo site</a>, ou um <a  href="https://a11y-webring.club/random">site aleatório</a> do <span lang="en">webring</span>.</p>
       </div>
-    </footer>
-  </main>
+      <ul class="col-12 col-md socials mt-5 mt-md-0 mb-0 d-flex justify-content-around">
+        {% include social.html %}
+      </ul>
+    </div>
+  </footer>
   {% include support.html %}
   {% include offcanvas.html %}
 

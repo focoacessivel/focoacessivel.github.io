@@ -7,6 +7,7 @@
         title="O link do {{item.name}} irá abrir em uma nova aba"
         class="social-icon-{{item.name | slugify}} text-decoration-none w-100 h-100 d-block">
         {{item.icon}}
+        <span class="visually-hidden">{{item.name}}</span> 
     </a>
 </li>
 {% endfor %}

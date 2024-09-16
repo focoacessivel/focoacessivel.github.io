@@ -9,14 +9,15 @@
   {% endfor %}
   <li class="list-inline-item p-1">
     <a href="{{site.url}}/newsletter" rel="noopener noreferrer" class="button button-outline">
-      <img src="{{site.url}}/img/platform/newsletter-subscribe.svg" class="me-2"
-        style="    width: 1.5rem; height: 1.5rem;" alt="Ícone representado por um @" /> Newsletter
+      <img src="{{site.url}}/img/platform/newsletter-subscribe.svg" class="me-2" style="width: 1.5rem; height: 1.5rem;"
+        alt="Ícone representado por um @" /> Newsletter
     </a>
   </li>
   <li class="list-inline-item p-1">
-    <a class="button button-outline" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
-      aria-controls="offcanvas" title="Confira todas as plataformas">
-      <i class="fa-solid fa-ellipsis-vertical"></i>
-    </a>
+    <button class="button button-outline" title="Confira todas as plataformas" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvas" aria-controls="offcanvas"">   
+      <i class=" fa-solid fa-ellipsis-vertical"></i>
+      <span class="visually-hidden">Abrir menu principal</span>
+    </button>
   </li>
 </ul>

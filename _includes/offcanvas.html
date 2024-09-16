@@ -8,15 +8,17 @@
     <div class="offcanvas-body d-flex flex-column justify-content-between">
         <div class="paginas">
             <h3 class="h5 mb-3">Menu do Site</h3>
-            <ul class="list-group list-group-flush">
-                {% for item in site.data.links.menu %}
-                <li class="list-group-item px-0 item-{{item.name | slugify}}">
-                    <a accesskey="{{item.keys}}" class="nav-link p-0 text-muted" href="{{site.url}}/{{item.link}}"
-                        title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
-                        {{item.name}} </a>
-                </li>
-                {% endfor %}
-            </ul>
+            <nav id="menu-paginas-off">
+                <ul class="list-group list-group-flush">
+                    {% for item in site.data.links.menu %}
+                    <li class="list-group-item px-0 item-{{item.name | slugify}}">
+                        <a accesskey="{{item.keys}}" class="nav-link p-0 text-muted" href="{{site.url}}/{{item.link}}"
+                            title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
+                            {{item.name}} </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>
             <ul class="socials py-5 d-flex justify-content-around">
                 {% include social.html %}
             </ul>
@@ -27,22 +29,24 @@
         </div>
         <div class="platforms">
             <h3 class="h5 mb-3">Plataformas</h3>
-            <ul class="list-group list-group-flush">
-                {% for item in site.data.links.platforms %}
-                <li class="list-group-item px-0">
-                    <a href="{{item.link}}" class="text-decoration-none" title="Assine no {{item.name}} - nova aba"
-                        rel="noopener noreferrer"> <img class=" me-2"
-                            src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" height="32" width="32"
-                            alt="Logo do {{item.name}}"> {{item.name}} </a>
-                </li>
-                {% endfor %}
-
-                <!-- <li class="list-group-item px-0">
-                    <a href="https://anchor.fm/s/e14f7d9c/podcast/rss"   class="text-decoration-none" title="Assine nosso RSS - nova aba" rel="noopener noreferrer">
-                        <img class=" me-2" src="{{site.url}}/img/platform/rss.svg" height="24" width="24" alt="Ícone do RSS"> Assine o nosso RSS
-                    </a>
-                </li> -->
-            </ul>
+            <nav id="menu-plataformas-off">
+                <ul class="list-group list-group-flush">
+                    {% for item in site.data.links.platforms %}
+                    <li class="list-group-item px-0">
+                        <a href="{{item.link}}" class="text-decoration-none" title="Assine no {{item.name}} - nova aba"
+                            rel="noopener noreferrer"> <img class=" me-2"
+                                src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" height="32" width="32"
+                                alt="Logo do {{item.name}}"> {{item.name}} </a>
+                    </li>
+                    {% endfor %}
+    
+                    <!-- <li class="list-group-item px-0">
+                        <a href="https://anchor.fm/s/e14f7d9c/podcast/rss"   class="text-decoration-none" title="Assine nosso RSS - nova aba" rel="noopener noreferrer">
+                            <img class=" me-2" src="{{site.url}}/img/platform/rss.svg" height="24" width="24" alt="Ícone do RSS"> Assine o nosso RSS
+                        </a>
+                    </li> -->
+                </ul>
+            </nav>
         </div>
 
         <div class="creative-commons mt-5 position-relative d-flex justify-content-center">

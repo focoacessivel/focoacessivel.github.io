@@ -17,7 +17,10 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
     <div class="row">
       <div class="col-lg-4 col-12 pl-0">
         <figure class="ratio-1x1 ratio m-0 pb-0">
-        <img src="{{post.image}}" class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded-2" title="Foto de {{post.guest}}" alt="{{post.alt}}">
+        <img src="{{post.image}}" class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded-2"  aria-describedby="descricao-detalhada-{{post.guest | slugify}}" alt="{{post.guest}}">
+
+        <span id="descricao-detalhada-{{post.guest | slugify}}" class="visually-hidden">{{post.alt}}</span>
+
       </figure>
     </div>
       <div class="col-lg-8 col-12 col-md d-flex align-items-start flex-column">
@@ -25,9 +28,9 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
           <h3 class="h2 program-title">
             <a title="Clique para acessar o episódio" href="{{post.url}}">{{post.title}}</a>
           </h3>
-          <h4 class="h4 mt-3 program-guest">
+          <div class="h4 mt-3 program-guest">
            {{post.guest}} &bull; {{post.role}}
-          </h4>
+          </div>
         </div>
         {{post.excerpt}}
         <div class="my-3 w-100">{% include player.html %}</div>
