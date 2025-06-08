@@ -29,10 +29,12 @@ document.addEventListener("DOMContentLoaded", function () {
   links.forEach((link) => {
     const href = link.getAttribute("href");
     if (href && href.startsWith("http") && !href.startsWith(baseUrl)) {
-      link.setAttribute("rel", "external no-referrer noopener");
+      link.setAttribute(
+        "rel",
+        "external no-referrer noopener dns-prefetch"
+      );
       link.setAttribute("target", "_blank");
       link.setAttribute("title", "O link irá abrir em uma nova aba");
-      link.setAttribute("rel", "dns-prefetch");
     }
   });
 });
